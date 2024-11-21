@@ -12,7 +12,7 @@ body {
 	font-weight: var(--fw-base);
 	font-size: var(--fz-base);
 	line-height: var(--lh-base);
-	color: var(--c-gray);
+	color: var(--c-base);
 }
 
 a {
@@ -43,37 +43,30 @@ h5,
 .level-6,
 h6 {
 	margin-bottom: calc(var(--lh-base) * 0.5em);
-	color: var(--c-base);
 }
 
 .level-1,
 h1 {
-
 }
 
 .level-2,
 h2 {
-
 }
 
 .level-3,
 h3 {
-
 }
 
 .level-4,
 h4 {
-
 }
 
 .level-5,
 h5 {
-
 }
 
 .level-6,
 h6 {
-
 }
 
 p,

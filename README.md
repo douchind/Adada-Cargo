@@ -2,12 +2,12 @@
 Front-end tool for task automation.
 
 ## Dependencies
-1. [NodeJS](http://nodejs.org/)
-2. Latest version of any of the following package managers
+1. [NodeJS](http://nodejs.org/) v18+ 
+2. [NPM](https://www.npmjs.com/)
 
-- [NPM](https://www.npmjs.com/)
+- 
 
-Please make sure to use npm package manager.
+Please make sure to use npm package manager and Node.js v18+.
 
 ## Install
 In the root directory of the project run:
