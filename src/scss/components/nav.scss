@@ -104,4 +104,13 @@
 	> ul > li > a:hover:before {
 		opacity: 1;
 	}
+
+	// is :current
+	> ul > li.is-current > a {
+		color: #fff;
+	}
+
+	> ul > li.is-current > a:before {
+		opacity: 1;
+	}
 }

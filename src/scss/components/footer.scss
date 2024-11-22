@@ -1,0 +1,17 @@
+/* ------------------------------------------------------------ *\
+	footer
+\* ------------------------------------------------------------ */
+
+.footer {
+	.footer__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2rem;
+	}
+
+	.footer__list-links {
+		// max-width: 29.6rem;
+		margin-bottom: 0;
+	}
+}

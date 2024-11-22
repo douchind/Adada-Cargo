@@ -1,0 +1,42 @@
+/* ------------------------------------------------------------ *\
+	list-links-alt
+\* ------------------------------------------------------------ */
+
+.list-links-alt {
+	list-style: none;
+	display: flex;
+	color: #fff;
+	align-items: center;
+	font-size: 2.9rem;
+	font-family: var(--ff-now);
+	font-weight: 700;
+
+	a {
+		display: block;
+		padding: 0.9rem 0.8rem;
+		// background-color: #E14137;
+		position: relative;
+		text-decoration: none;
+		overflow: hidden;
+	}
+
+	li:nth-child(2) a:before {
+		content: '';
+		position: absolute;
+		top: -2rem;
+		right: -2.2rem;
+		width: 2rem;
+		height: 15rem;
+		background-color: #f7aa1a;
+		transform: rotate(-23deg);
+	}
+
+	li:nth-child(2) a {
+		background-color: #e14137;
+		padding-right: 2rem;
+	}
+
+	li:nth-child(3) a {
+		background-color: #f7aa1a;
+	}
+}
