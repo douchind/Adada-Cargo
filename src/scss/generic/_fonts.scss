@@ -1,3 +1,72 @@
 // ==========================================================================
 // Fonts
 // ==========================================================================
+@font-face {
+	font-family: 'Jumbo Sale Trial';
+	src:
+		url('/assets/fonts/JumboSaleTrial.woff2') format('woff2'),
+		url('/assets/fonts/JumboSaleTrial.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Now';
+	src:
+		url('/assets/fonts/Now-Bold.woff2') format('woff2'),
+		url('/assets/fonts/Now-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Now';
+	src:
+		url('/assets/fonts/Now-Medium.woff2') format('woff2'),
+		url('/assets/fonts/Now-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Now';
+	src:
+		url('/assets/fonts/Now-Regular.woff2') format('woff2'),
+		url('/assets/fonts/Now-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Now Alt';
+	src:
+		url('/assets/fonts/NowAlt-Regular.woff2') format('woff2'),
+		url('/assets/fonts/NowAlt-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Now Alt';
+	src:
+		url('/assets/fonts/NowAlt-Medium.woff2') format('woff2'),
+		url('/assets/fonts/NowAlt-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Now Alt';
+	src:
+		url('/assets/fonts/NowAlt-Bold.woff2') format('woff2'),
+		url('/assets/fonts/NowAlt-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
