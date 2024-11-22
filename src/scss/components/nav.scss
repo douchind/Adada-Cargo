@@ -22,7 +22,7 @@
 	> ul > li {
 		display: inline-block;
 		flex: 0 0 auto;
-		max-width: 16rem;
+		max-width: 15.2rem;
 	}
 
 	> ul > li > a {
@@ -53,6 +53,10 @@
 			opacity: 0;
 			transition: opacity 0.3s ease-in-out;
 		}
+	}
+
+	> ul > li:nth-child(2) {
+		padding-left: 2.7rem;
 	}
 
 	> ul > li:nth-child(2) > a:before {

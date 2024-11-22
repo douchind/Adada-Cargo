@@ -3,11 +3,15 @@
 \* ------------------------------------------------------------ */
 
 .footer {
+	padding: 7.3rem 0;
+
 	.footer__inner {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		gap: 2rem;
+		max-width: 134rem;
+		margin: 0 auto;
 	}
 
 	.footer__list-links {
