@@ -24,19 +24,21 @@
 		content: '';
 		position: absolute;
 		top: -2rem;
-		right: -2.2rem;
-		width: 2rem;
+		right: -2.5rem;
+		width: 2.4rem;
 		height: 15rem;
 		background-color: #f7aa1a;
-		transform: rotate(-23deg);
+		transform: rotate(-11deg);
+		pointer-events: none;
 	}
 
 	li:nth-child(2) a {
 		background-color: #e14137;
-		padding-right: 2rem;
+		padding: 0.9rem 0.8rem 0.9rem 0.8rem;
 	}
 
 	li:nth-child(3) a {
 		background-color: #f7aa1a;
+		padding: 0.9rem 0.8rem 0.9rem 0.1rem;
 	}
 }

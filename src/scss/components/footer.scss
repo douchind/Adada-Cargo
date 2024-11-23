@@ -3,7 +3,7 @@
 \* ------------------------------------------------------------ */
 
 .footer {
-	padding: 7.3rem 0;
+	padding: 6.5rem 0;
 
 	.footer__inner {
 		display: flex;
@@ -15,7 +15,10 @@
 	}
 
 	.footer__list-links {
-		// max-width: 29.6rem;
 		margin-bottom: 0;
+	}
+
+	.footer__logo {
+		margin-left: -2rem;
 	}
 }

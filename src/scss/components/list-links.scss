@@ -12,12 +12,16 @@
 	font-weight: 500;
 
 	a {
-		display: block;
+		display: inline-block;
 		padding: 0.6rem 1.5rem;
 		background-color: #e14137;
 		position: relative;
 		text-decoration: none;
 		overflow: hidden;
+	}
+
+	li:nth-child(3) {
+		margin-top: -0.5rem;
 	}
 
 	li:nth-child(1) a:before {
@@ -33,7 +37,7 @@
 
 	li:nth-child(2) a {
 		background-color: #f7aa1a;
-		padding: 0.6rem 0rem;
+		padding: 0.6rem 0.5rem 0.6rem 0rem;
 	}
 
 	li:nth-child(3) a {
@@ -44,11 +48,11 @@
 			content: '';
 			position: absolute;
 			top: -2rem;
-			right: -1.6rem;
+			right: -2.4rem;
 			width: 3rem;
 			height: 8rem;
 			background-color: #fff;
-			transform: rotate(-23deg);
+			transform: rotate(-32deg);
 		}
 	}
 
