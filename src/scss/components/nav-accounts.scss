@@ -20,6 +20,10 @@
 		font-size: 1.1rem;
 	}
 
+	@include breakpoint-down(mobile-small) {
+		font-size: 1rem;
+	}
+
 	.nav__decoration {
 		position: absolute;
 		top: 0;
@@ -40,6 +44,10 @@
 			gap: 1rem 0;
 			justify-content: center;
 		}
+
+		@include breakpoint-down(mobile-medium) {
+			flex-wrap: wrap;
+		}
 	}
 
 	> ul > li ~ li {
@@ -56,6 +64,11 @@
 				height: 1rem;
 				width: 0.2rem;
 				background-color: #555555;
+
+				@include breakpoint-down(mobile) {
+					left: -0.6rem;
+					height: 0.8rem;
+				}
 			}
 		}
 
