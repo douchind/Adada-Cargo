@@ -3,7 +3,15 @@
 \* ------------------------------------------------------------ */
 
 .footer {
-	padding: 6.5rem 0;
+	padding: 6.5rem 0 3rem;
+
+	@include breakpoint-down(small-desktop) {
+		padding: 4rem 0 1rem;
+	}
+
+	@include breakpoint-down(mobile) {
+		padding: 2.8rem 0 0.5rem;
+	}
 
 	.footer__inner {
 		display: flex;
@@ -12,13 +20,48 @@
 		gap: 2rem;
 		max-width: 134rem;
 		margin: 0 auto;
+
+		@include breakpoint-down(tablet) {
+			flex-wrap: wrap;
+		}
 	}
 
 	.footer__list-links {
 		margin-bottom: 0;
+
+		@media screen and (max-width: 383px) {
+			margin: 0;
+		}
 	}
 
 	.footer__logo {
 		margin-left: -2rem;
+
+		@include breakpoint-down(tablet) {
+			order: 0;
+		}
+
+		@include breakpoint-down(mobile) {
+			width: 12rem;
+		}
+	}
+
+	.footer__list-links-alt {
+		@include breakpoint-down(tablet) {
+			order: 1;
+		}
+	}
+
+	.footer__wrapper {
+		@include breakpoint-down(tablet) {
+			width: 100%;
+			order: 2;
+			display: flex;
+			justify-content: center;
+		}
+
+		@media screen and (max-width: 383px) {
+			justify-content: flex-start;
+		}
 	}
 }

@@ -5,7 +5,6 @@
 .socials {
 	position: relative;
 	padding: 1.4rem 0 1.4rem 2.9rem;
-	max-width: 20rem;
 
 	.socials__decoration {
 		position: absolute;
@@ -23,10 +22,25 @@
 		align-items: center;
 		flex-wrap: wrap;
 		gap: 0.7rem 2.1rem;
+
+		@include breakpoint-down(tablet) {
+			gap: 1rem 1.5rem;
+			justify-content: flex-end;
+		}
+
+		@include breakpoint-down(mobile) {
+			gap: 0.2rem 0.8rem;
+		}
 	}
 
 	> ul a {
 		text-decoration: none;
+	}
+
+	> ul a img {
+		@include breakpoint-down(mobile) {
+			width: 3rem;
+		}
 	}
 
 	> ul li.full-width {
@@ -34,5 +48,18 @@
 		max-width: 100%;
 		text-align: center;
 		display: flex;
+
+		@include breakpoint-down(tablet) {
+			justify-content: flex-end;
+		}
+	}
+
+	> ul li.full-width a img {
+		@include breakpoint-down(tablet) {
+			width: 10rem;
+		}
+		@include breakpoint-down(mobile) {
+			width: 6.5rem;
+		}
 	}
 }

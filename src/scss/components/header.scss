@@ -5,20 +5,141 @@
 .header {
 	padding: 8rem 0 2rem;
 
+	@include breakpoint-down(tablet) {
+		padding: 0 0 2rem;
+	}
+
+	.header__bar {
+		display: none;
+
+		@include breakpoint-down(tablet) {
+			display: block;
+			background-color: #e4e4e4;
+			padding: 2rem 2rem;
+			margin: 0 -2rem 2rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 1.2rem 2rem;
+			margin-bottom: 2.3rem;
+		}
+	}
+
+	.header__nav-accounts-mobile {
+		@include breakpoint-down(tablet) {
+			padding: 0;
+		}
+	}
+
+	.header__socials {
+		max-width: 20rem;
+
+		@include breakpoint-down(tablet) {
+			order: 1;
+			// max-width: 15rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			max-width: 12rem;
+			text-align: right;
+			margin-top: -1rem;
+		}
+	}
+
 	.header__intro {
 		display: flex;
 		align-items: flex-start;
 		justify-content: space-between;
 		gap: 2rem;
 		margin-bottom: 6rem;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: 4rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 3.3rem;
+		}
 	}
 
 	.header__logo {
 		margin-left: -0.6rem;
+
+		@include breakpoint-down(tablet) {
+			width: 26rem;
+			order: 0;
+		}
+
+		@include breakpoint-down(mobile) {
+			width: 15rem;
+		}
+	}
+
+	.header__nav-trigger {
+		display: none;
+
+		@include breakpoint-down(tablet) {
+			display: flex;
+			text-align: center;
+			margin: 0 auto;
+		}
 	}
 
 	.header__wrapper {
 		max-width: 126.7rem;
 		margin: 0 auto;
+
+		@include breakpoint-down(tablet) {
+			display: grid;
+			grid-template-rows: 0fr;
+			transition: grid-template-rows 0.3s ease-in-out;
+		}
+	}
+
+	.header__wrapper-content {
+		@include breakpoint-down(tablet) {
+			overflow: hidden;
+			transition: padding 0.3s ease-in-out;
+		}
+	}
+
+	.header__nav-accounts {
+		@include breakpoint-down(tablet) {
+			display: none;
+		}
+	}
+
+	// menu visible
+	&.menu-visible .header__wrapper {
+		@include breakpoint-down(tablet) {
+			grid-template-rows: 1fr;
+		}
+	}
+
+	&.menu-visible .header__wrapper-content {
+		@include breakpoint-down(tablet) {
+			padding: 3rem 0 0;
+		}
+	}
+
+	&.menu-visible .header__nav-trigger span {
+		transition:
+			transform 0.3s 0.3s,
+			top 0.3s,
+			opacity 0.3s;
+	}
+
+	&.menu-visible .header__nav-trigger span:nth-child(1) {
+		top: 0.8rem;
+		transform: rotate(45deg);
+	}
+
+	&.menu-visible .header__nav-trigger span:nth-child(2) {
+		opacity: 0;
+	}
+
+	&.menu-visible .header__nav-trigger span:nth-child(3) {
+		top: 0.8rem;
+		transform: rotate(-45deg);
 	}
 }
