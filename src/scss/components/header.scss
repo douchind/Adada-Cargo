@@ -3,7 +3,7 @@
 \* ------------------------------------------------------------ */
 
 .header {
-	padding: 8rem 0 2rem;
+	padding: 5rem 0 2rem;
 
 	@include breakpoint-down(tablet) {
 		padding: 0 0 2rem;
@@ -36,7 +36,6 @@
 
 		@include breakpoint-down(tablet) {
 			order: 1;
-			// max-width: 15rem;
 		}
 
 		@include breakpoint-down(mobile) {
@@ -47,14 +46,16 @@
 	}
 
 	.header__intro {
+		position: relative;
 		display: flex;
 		align-items: flex-start;
 		justify-content: space-between;
 		gap: 2rem;
-		margin-bottom: 6rem;
+		margin-bottom: 3rem;
+		isolation: isolate;
 
 		@include breakpoint-down(tablet) {
-			margin-bottom: 4rem;
+			margin-bottom: 2rem;
 		}
 
 		@include breakpoint-down(mobile) {
@@ -62,12 +63,32 @@
 		}
 	}
 
+	.header__decoration {
+		position: absolute;
+		top: 0;
+		right: 14%;
+		width: 30rem;
+		z-index: -1;
+
+		@include breakpoint-down(tablet) {
+			display: none;
+		}
+	}
+
+	// header decoration adjust
+	.header__decoration--adjust {
+		right: unset;
+		left: 14%;
+		transform: rotateY(180deg);
+	}
+
 	.header__logo {
-		margin-left: -0.6rem;
+		margin-left: -6.6rem;
 
 		@include breakpoint-down(tablet) {
 			width: 26rem;
 			order: 0;
+			margin: 0;
 		}
 
 		@include breakpoint-down(mobile) {

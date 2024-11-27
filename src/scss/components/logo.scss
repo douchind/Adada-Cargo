@@ -1,0 +1,19 @@
+/* ------------------------------------------------------------ *\
+	logo
+\* ------------------------------------------------------------ */
+
+.logo {
+	img:nth-child(1) {
+		display: none;
+	}
+
+	@include breakpoint-down(tablet) {
+		img:nth-child(1) {
+			display: block;
+		}
+
+		img:nth-child(2) {
+			display: none;
+		}
+	}
+}
