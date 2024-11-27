@@ -10,7 +10,7 @@
 	}
 
 	@include breakpoint-down(mobile) {
-		padding: 2.8rem 0 0.5rem;
+		padding: 2.8rem 0 0;
 	}
 
 	.footer__inner {
@@ -24,10 +24,22 @@
 		@include breakpoint-down(tablet) {
 			flex-wrap: wrap;
 		}
+
+		@include breakpoint-down(mobile-medium) {
+			gap: 1rem;
+		}
+
+		@media screen and (max-width: 383px) {
+			gap: 0.5rem;
+		}
 	}
 
 	.footer__list-links {
 		margin-bottom: 0;
+
+		@include breakpoint-down(mobile) {
+			width: 100%;
+		}
 
 		@media screen and (max-width: 383px) {
 			margin: 0;
@@ -44,6 +56,10 @@
 		@include breakpoint-down(mobile) {
 			width: 12rem;
 		}
+
+		@media screen and (max-width: 383px) {
+			width: 10rem;
+		}
 	}
 
 	.footer__list-links-alt {
@@ -58,6 +74,11 @@
 			order: 2;
 			display: flex;
 			justify-content: center;
+		}
+
+		@include breakpoint-down(mobile) {
+			width: calc(100% + 4rem);
+			margin: 0 -2rem;
 		}
 
 		@media screen and (max-width: 383px) {

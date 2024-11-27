@@ -5,6 +5,11 @@
 .socials {
 	position: relative;
 	padding: 1.4rem 0 1.4rem 2.9rem;
+	isolation: isolate;
+
+	@include breakpoint-down(tablet) {
+		padding: 0;
+	}
 
 	.socials__decoration {
 		position: absolute;
@@ -12,10 +17,19 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
+		pointer-events: none;
+
+		@include breakpoint-down(tablet) {
+			object-fit: cover;
+			z-index: -1;
+			top: -1rem;
+			height: calc(100% + 2rem);
+		}
 	}
 
 	> ul {
 		position: relative;
+		z-index: 2;
 		z-index: 2;
 		list-style-type: none;
 		display: flex;
@@ -24,12 +38,12 @@
 		gap: 0.7rem 2.1rem;
 
 		@include breakpoint-down(tablet) {
-			gap: 1rem 1.5rem;
-			justify-content: flex-end;
+			flex-direction: column;
+			gap: 1rem;
 		}
 
 		@include breakpoint-down(mobile) {
-			gap: 0.2rem 0.8rem;
+			gap: 1rem;
 		}
 	}
 

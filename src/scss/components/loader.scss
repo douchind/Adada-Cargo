@@ -1,0 +1,18 @@
+/* ------------------------------------------------------------ *\
+	loader
+\* ------------------------------------------------------------ */
+
+.loader {
+	display: inline-block;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 100%;
+	border: 0.5rem solid #1b9da1;
+	border-top-color: transparent;
+	animation: spin 1.4s linear infinite;
+
+	@include breakpoint-down(mobile) {
+		width: 4rem;
+		height: 4rem;
+	}
+}

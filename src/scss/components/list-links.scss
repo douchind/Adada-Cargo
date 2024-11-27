@@ -12,6 +12,12 @@
 	font-weight: 500;
 
 	@include breakpoint-down(mobile) {
+		font-size: 1.2rem;
+		display: flex;
+		align-items: center;
+	}
+
+	@include breakpoint-down(mobile-medium) {
 		font-size: 1.1rem;
 	}
 
@@ -22,10 +28,22 @@
 		position: relative;
 		text-decoration: none;
 		overflow: hidden;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			padding: 0.6rem 2.3rem 0.6rem 1.6rem;
+		}
 	}
 
 	li:nth-child(3) {
 		margin-top: -0.5rem;
+
+		@include breakpoint-down(mobile) {
+			margin: 0;
+		}
 	}
 
 	li:nth-child(1) a:before {
@@ -37,11 +55,19 @@
 		height: 8rem;
 		background-color: #f7aa1a;
 		transform: rotate(-23deg);
+
+		@include breakpoint-down(mobile-medium) {
+			width: 2.5rem;
+		}
 	}
 
 	li:nth-child(2) a {
 		background-color: #f7aa1a;
 		padding: 0.6rem 0.5rem 0.6rem 0rem;
+
+		@include breakpoint-down(mobile-medium) {
+			padding: 0.6rem 1.5rem 0.6rem 0rem;
+		}
 	}
 
 	li:nth-child(3) a {
@@ -63,5 +89,9 @@
 	// full width
 	li.full-width {
 		grid-column: span 2;
+
+		@include breakpoint-down(mobile) {
+			flex: 1 1 auto;
+		}
 	}
 }

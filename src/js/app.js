@@ -8,4 +8,5 @@ import '/scss/style.scss';
  */
 import './modules/observer';
 import './modules/animate';
+import './modules/loader';
 import './modules/nav';

@@ -1,0 +1,41 @@
+/* ------------------------------------------------------------ *\
+	loading-wrapper
+\* ------------------------------------------------------------ */
+
+.loading-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 101svh;
+	z-index: 1000;
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	transition: opacity 0.3s ease-in-out;
+
+	.loading__content {
+		text-align: center;
+	}
+
+	.loading__image {
+		margin-bottom: 2rem;
+	}
+
+	.loading__image img {
+		@include breakpoint-down(mobile) {
+			width: 24rem;
+		}
+	}
+
+	&.page-loaded {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	&.hidden {
+		display: none;
+	}
+}

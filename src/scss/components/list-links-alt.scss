@@ -19,9 +19,21 @@
 		font-size: 1.5rem;
 	}
 
+	@include breakpoint-down(mobile-medium) {
+		font-size: 1.4rem;
+	}
+
+	@media screen and (max-width: 383px) {
+		font-size: 1.2rem;
+	}
+
 	li a img {
 		@include breakpoint-down(mobile) {
 			width: 9rem;
+		}
+
+		@media screen and (max-width: 383px) {
+			width: 7.6rem;
 		}
 	}
 
