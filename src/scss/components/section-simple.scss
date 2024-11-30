@@ -1,0 +1,26 @@
+/* ------------------------------------------------------------ *\
+	section-simple
+\* ------------------------------------------------------------ */
+
+.section-simple {
+	padding: 4rem 0;
+	position: relative;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 120rem;
+		border-top: 0.3rem dashed #9a9a9a;
+
+		@media screen and (max-width: 1240px) {
+			transform: none;
+			left: 2rem;
+			right: 2rem;
+			width: auto;
+		}
+	}
+}

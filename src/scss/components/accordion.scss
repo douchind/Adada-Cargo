@@ -1,0 +1,23 @@
+/* ------------------------------------------------------------ *\
+	accordion
+\* ------------------------------------------------------------ */
+
+.accordion {
+	.accordion__head {
+		background-color: #f7aa1a;
+		padding: 1.9rem 5rem 1.9rem 1.9rem;
+		color: #fff;
+		text-align: center;
+		position: relative;
+
+		&:before {
+			content: '-';
+			position: absolute;
+			right: 4rem;
+			top: 50%;
+			font-size: 8.6rem;
+			transform: translateY(-50%);
+			font-family: var(--ff-jumbo);
+		}
+	}
+}
