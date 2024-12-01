@@ -4,6 +4,7 @@
 
 .accordion {
 	.accordion__head {
+		cursor: pointer;
 		background-color: #f7aa1a;
 		padding: 1.9rem 5rem 1.9rem 1.9rem;
 		color: #fff;
@@ -11,13 +12,40 @@
 		position: relative;
 
 		&:before {
-			content: '-';
+			content: '+';
 			position: absolute;
 			right: 4rem;
 			top: 50%;
 			font-size: 8.6rem;
 			transform: translateY(-50%);
+			margin-top: -0.6rem;
 			font-family: var(--ff-jumbo);
 		}
+	}
+
+	.accordion__body {
+		max-width: 116rem;
+		margin: 0 auto;
+		display: grid;
+		grid-template-rows: 0fr;
+		transition: grid-template-rows 0.3s ease-in-out;
+	}
+
+	.accordion__content {
+		overflow: hidden;
+		transition: padding 0.3s ease-in-out;
+	}
+
+	// is open
+	.is-open .accordion__head:before {
+		content: '-';
+	}
+
+	.is-open .accordion__body {
+		grid-template-rows: 1fr;
+	}
+
+	.is-open .accordion__content {
+		padding: 10rem 0 0;
 	}
 }

@@ -10,6 +10,29 @@
 	cursor: pointer;
 	text-decoration: none;
 	appearance: none;
+	padding: 1.2rem 2.4rem 1.2rem 3.7rem;
+	background-color: #f7aa1a;
+	gap: 4.9rem;
+	color: #000;
+	font-weight: 700;
+	font-family: var(--ff-now);
+	font-size: 3.6rem;
+	-webkit-mask-image: url('/assets/images/svg/btn-decoration.svg');
+	mask-image: url('/assets/images/svg/btn-decoration.svg');
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	transition:
+		background-color 0.3s,
+		color 0.3s;
+
+	&:hover {
+		background-color: #ff0000;
+		color: #fff;
+	}
 }
 
 // Btn block

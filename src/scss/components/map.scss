@@ -1,0 +1,21 @@
+/* ------------------------------------------------------------ *\
+	map
+\* ------------------------------------------------------------ */
+
+.map {
+	.map__image {
+		position: relative;
+		aspect-ratio: 1160 / 750;
+		overflow: hidden;
+	}
+
+	.map__image img,
+	.map__image iframe {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}

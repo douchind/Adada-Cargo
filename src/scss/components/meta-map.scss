@@ -1,0 +1,61 @@
+/* ------------------------------------------------------------ *\
+	meta-map
+\* ------------------------------------------------------------ */
+
+.meta-map {
+	padding: 3.2rem;
+	border: 0.2rem dashed #373737;
+
+	.meta__bar ~ .meta__bar {
+		margin-top: 0.8rem;
+	}
+
+	.meta__bar {
+		color: #fff;
+		font-weight: 700;
+		font-size: 3rem;
+		font-family: var(--ff-now);
+		text-align: center;
+		padding: 1.2rem 2rem;
+		margin: 0 -3.2rem;
+		background-color: #1b9da1;
+	}
+
+	// meta bar red
+	.meta__bar--red {
+		background-color: #e14137;
+	}
+
+	.meta__content {
+		max-width: 78rem;
+		margin: 3.2rem auto 0;
+	}
+
+	.meta__image-placeholder {
+		position: relative;
+		width: 100%;
+		aspect-ratio: 780 / 530;
+		border: 0.2rem dashed #000000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #ff0000;
+		font-weight: 700;
+		font-size: 3.4rem;
+		margin-bottom: 3.2rem;
+		font-family: var(--ff-now);
+	}
+
+	.meta__image-placeholder img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.meta__actions {
+		text-align: center;
+	}
+}

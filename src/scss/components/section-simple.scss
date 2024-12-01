@@ -3,7 +3,7 @@
 \* ------------------------------------------------------------ */
 
 .section-simple {
-	padding: 4rem 0;
+	padding: 4rem 0 5rem;
 	position: relative;
 
 	&:before {
@@ -22,5 +22,29 @@
 			right: 2rem;
 			width: auto;
 		}
+	}
+
+	.section__accordion {
+		margin-bottom: 3.6rem;
+	}
+
+	.section__content {
+		margin-bottom: 10.5rem;
+	}
+
+	.section__foot {
+		display: flex;
+		flex-direction: column;
+		gap: 2.8rem;
+		align-items: center;
+		color: #000;
+		font-family: var(--ff-now);
+		font-size: 2.6rem;
+		font-weight: 700;
+	}
+
+	.section__foot a {
+		font-weight: 400;
+		font-size: 2.6rem;
 	}
 }
