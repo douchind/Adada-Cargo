@@ -6,6 +6,10 @@
 	padding: 3.2rem;
 	border: 0.2rem dashed #373737;
 
+	@include breakpoint-down(mobile) {
+		padding: 1.2rem;
+	}
+
 	.meta__bar ~ .meta__bar {
 		margin-top: 0.8rem;
 	}
@@ -19,6 +23,15 @@
 		padding: 1.2rem 2rem;
 		margin: 0 -3.2rem;
 		background-color: #1b9da1;
+
+		@include breakpoint-down(tablet) {
+			font-size: 2.6rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin: 0 -1.2rem;
+			font-size: 1.4rem;
+		}
 	}
 
 	// meta bar red
@@ -29,6 +42,18 @@
 	.meta__content {
 		max-width: 78rem;
 		margin: 3.2rem auto 0;
+
+		@include breakpoint-down(tablet) {
+			max-width: 72%;
+		}
+
+		@include breakpoint-down(mobile) {
+			max-width: 69.09%;
+		}
+
+		@include breakpoint-down(mobile-small) {
+			max-width: 80%;
+		}
 	}
 
 	.meta__image-placeholder {
@@ -44,6 +69,16 @@
 		font-size: 3.4rem;
 		margin-bottom: 3.2rem;
 		font-family: var(--ff-now);
+
+		@include breakpoint-down(tablet) {
+			font-size: 3rem;
+			margin-bottom: 2.6rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.4rem;
+			margin-bottom: 0.8rem;
+		}
 	}
 
 	.meta__image-placeholder img {

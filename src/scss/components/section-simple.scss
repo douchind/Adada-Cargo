@@ -6,6 +6,10 @@
 	padding: 4rem 0 5rem;
 	position: relative;
 
+	@include breakpoint-down(mobile) {
+		padding: 3rem 0;
+	}
+
 	&:before {
 		content: '';
 		display: inline-block;
@@ -26,10 +30,24 @@
 
 	.section__accordion {
 		margin-bottom: 3.6rem;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 2.4rem;
+		}
+	}
+
+	.section__accordion .accordion__head {
+		@include breakpoint-down(tablet) {
+			margin: 0 -2rem;
+		}
 	}
 
 	.section__content {
 		margin-bottom: 10.5rem;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: 7rem;
+		}
 	}
 
 	.section__foot {
@@ -41,10 +59,28 @@
 		font-family: var(--ff-now);
 		font-size: 2.6rem;
 		font-weight: 700;
+		text-align: center;
+
+		@include breakpoint-down(tablet) {
+			font-size: 2.2rem;
+			gap: 2rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 2rem;
+		}
+	}
+
+	.section__foot p {
+		margin-bottom: 0;
 	}
 
 	.section__foot a {
 		font-weight: 400;
-		font-size: 2.6rem;
+
+		@include breakpoint-down(mobile) {
+			text-wrap: balance;
+			font-size: 1.8rem;
+		}
 	}
 }
