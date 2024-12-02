@@ -1,0 +1,44 @@
+/* ------------------------------------------------------------ *\
+	list-steps
+\* ------------------------------------------------------------ */
+
+.list-steps {
+	list-style-type: none;
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 2rem 6.2rem;
+	padding: 2rem 5.8rem;
+	background-color: #1b9da1;
+	color: #fff;
+	font-size: 2.6rem;
+	font-weight: 700;
+	// font-family: var(--ff-jumbo);
+	font-family: var(--ff-now);
+
+	li:not(:nth-child(1)) {
+		position: relative;
+		padding-left: 13rem;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			top: 0.4rem;
+			width: 6.8rem;
+			height: 2.8rem;
+			background-image: url('/assets/images/svg/arrow.svg');
+			background-repeat: no-repeat;
+		}
+	}
+
+	li span {
+		opacity: 0.7;
+	}
+
+	// is active
+	li.is-active span {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head }}
+<body>
+	<div class="js-loading-wrapper loading-wrapper" style="background-color: #fff; position: fixed; top: 0; left: 0; width: 100vw; height: 101svh; display: flex; justify-content: center; align-items: center;">
+		<div class="loading__content">
+			<figure class="loading__image" style="margin-bottom: 2rem;">
+				<picture>
+					<source media="(min-width:768px)" width="400" height="180" srcset="assets/images/logo-alt.svg">
+				</picture>
+
+				<img src="assets/images/logo-alt.svg" alt="logo" width="240" height="110">
+			</figure><!-- /.loading__image -->
+
+			<span class="loader" style="width: 5rem; height: 5rem; display: inline-block;"></span><!-- /.loader -->
+		</div><!-- /.loading__content -->
+	</div><!-- /.loading-wrapper -->
+
+	<div class="wrapper">
+		{{> header }}
+
+		<section class="section-cargo">
+			<div class="shell">
+				<ul class="list-steps section__list-steps">
+					<li class="is-active">
+						<span>1. LOKASYONLAR ve bİLGİLER</span>
+					</li>
+
+					<li>
+						<span>2. öDEme</span>
+					</li>
+
+					<li>
+						<span>3. Rezervasyon bİLGİLERİ</span>
+					</li>
+				</ul><!-- /.list-steps -->
+
+				<div class="section__intro">
+					<figure class="js-animate section__image-left">
+						<img src="assets/images/svg/section-cargo-img1.svg" alt="box" width="327" height="381">
+					</figure><!-- /.section__image-left -->
+
+					<figure class="section__image-right">
+						<img src="assets/images/svg/section-cargo-img2.svg" alt="table" width="490" height="358">
+					</figure><!-- /.section__image-right -->
+				</div><!-- /.section__intro -->
+
+				<div class="section__content">
+					<h1>Boyut Seçiniz</h1>
+
+						<div class="checkboxes">
+							<div class="checkbox have-discount">
+								<div class="checkbox__head">
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+
+									<label for="checkbox-1"></label>
+
+									<img src="assets/images/svg/discount.svg" width="35" height="81" alt="discount" class="checkbox__discount">
+
+									<figure class="checkbox__image">
+										<img src="assets/images/temp/checkbox-img1.png" alt="book" width="124" height="164">
+									</figure><!-- /.checkbox__image -->
+								</div><!-- /.checkbox__head -->
+
+								<div class="checkbox__body">
+									<div class="checkbox__price">
+										<span class="checkbox__price-old">60₺</span><!-- /.checkbox__price-old -->
+
+										<span>40₺</span>
+									</div><!-- /.checkbox__price -->
+
+									<div class="js-quantity checkbox__quantity">
+										<div class="checkbox__quantity-entry">
+											<a href="#" class="btn-decrease">-</a><!-- /.btn-decrease -->
+
+											<span>XS</span>
+
+											<a href="#" class="btn-increase">+</a><!-- /.btn-increase -->
+										</div><!-- /.checkbox__quantity-entry -->
+
+										<span class="checkbox__count">0</span><!-- /.checkbox__count -->
+									</div><!-- /.checkbox__quantity -->
+								</div><!-- /.checkbox__body -->
+							</div><!-- /.checkbox -->
+
+							<div class="checkbox">
+								<div class="checkbox__head">
+									<input type="checkbox" name="checkbox-2" id="checkbox-2">
+
+									<label for="checkbox-2"></label>
+
+									<img src="assets/images/svg/discount.svg" width="35" height="81" alt="discount" class="checkbox__discount">
+
+									<figure class="checkbox__image">
+										<img src="assets/images/temp/checkbox-img2.png" alt="bag" width="184" height="184">
+									</figure><!-- /.checkbox__image -->
+								</div><!-- /.checkbox__head -->
+
+								<div class="checkbox__body">
+									<div class="checkbox__price">
+										<span>130₺</span>
+									</div><!-- /.checkbox__price -->
+
+									<div class="js-quantity checkbox__quantity">
+										<div class="checkbox__quantity-entry">
+											<a href="#" class="btn-decrease">-</a><!-- /.btn-decrease -->
+
+											<span>S</span>
+
+											<a href="#" class="btn-increase">+</a><!-- /.btn-increase -->
+										</div><!-- /.checkbox__quantity-entry -->
+
+										<span class="checkbox__count">0</span><!-- /.checkbox__count -->
+									</div><!-- /.checkbox__quantity -->
+								</div><!-- /.checkbox__body -->
+							</div><!-- /.checkbox -->
+
+							<div class="checkbox">
+								<div class="checkbox__head">
+									<input type="checkbox" name="checkbox-3" id="checkbox-3">
+
+									<label for="checkbox-3"></label>
+
+									<img src="assets/images/svg/discount.svg" width="35" height="81" alt="discount" class="checkbox__discount">
+
+									<figure class="checkbox__image">
+										<img src="assets/images/temp/checkbox-img3.png" alt="book" width="220" height="190">
+									</figure><!-- /.checkbox__image -->
+								</div><!-- /.checkbox__head -->
+
+								<div class="checkbox__body">
+									<div class="checkbox__price">
+										<span>160₺</span>
+									</div><!-- /.checkbox__price -->
+
+									<div class="js-quantity checkbox__quantity">
+										<div class="checkbox__quantity-entry">
+											<a href="#" class="btn-decrease">-</a><!-- /.btn-decrease -->
+
+											<span>M</span>
+
+											<a href="#" class="btn-increase">+</a><!-- /.btn-increase -->
+										</div><!-- /.checkbox__quantity-entry -->
+
+										<span class="checkbox__count">0</span><!-- /.checkbox__count -->
+									</div><!-- /.checkbox__quantity -->
+								</div><!-- /.checkbox__body -->
+							</div><!-- /.checkbox -->
+
+							<div class="checkbox">
+								<div class="checkbox__head">
+									<input type="checkbox" name="checkbox-4" id="checkbox-4">
+
+									<label for="checkbox-4"></label>
+
+									<img src="assets/images/svg/discount.svg" width="35" height="81" alt="discount" class="checkbox__discount">
+
+									<figure class="checkbox__image">
+										<img src="assets/images/temp/checkbox-img4.png" alt="microwave" width="228" height="150">
+									</figure><!-- /.checkbox__image -->
+								</div><!-- /.checkbox__head -->
+
+								<div class="checkbox__body">
+									<div class="checkbox__price">
+										<span>200₺</span>
+									</div><!-- /.checkbox__price -->
+
+									<div class="js-quantity checkbox__quantity">
+										<div class="checkbox__quantity-entry">
+											<a href="#" class="btn-decrease">-</a><!-- /.btn-decrease -->
+
+											<span>L</span>
+
+											<a href="#" class="btn-increase">+</a><!-- /.btn-increase -->
+										</div><!-- /.checkbox__quantity-entry -->
+
+										<span class="checkbox__count">0</span><!-- /.checkbox__count -->
+									</div><!-- /.checkbox__quantity -->
+								</div><!-- /.checkbox__body -->
+							</div><!-- /.checkbox -->
+
+							<div class="checkbox">
+								<div class="checkbox__head">
+									<input type="checkbox" name="checkbox-5" id="checkbox-5">
+
+									<label for="checkbox-5"></label>
+
+									<img src="assets/images/svg/discount.svg" width="35" height="81" alt="discount" class="checkbox__discount">
+
+									<figure class="checkbox__image">
+										<img src="assets/images/temp/checkbox-img5.png" alt="book" width="128" height="202">
+									</figure><!-- /.checkbox__image -->
+								</div><!-- /.checkbox__head -->
+
+								<div class="checkbox__body">
+									<div class="checkbox__price">
+										<span>280₺</span>
+									</div><!-- /.checkbox__price -->
+
+									<div class="js-quantity checkbox__quantity">
+										<div class="checkbox__quantity-entry">
+											<a href="#" class="btn-decrease">-</a><!-- /.btn-decrease -->
+
+											<span>XL</span>
+
+											<a href="#" class="btn-increase">+</a><!-- /.btn-increase -->
+										</div><!-- /.checkbox__quantity-entry -->
+
+										<span class="checkbox__count">0</span><!-- /.checkbox__count -->
+									</div><!-- /.checkbox__quantity -->
+								</div><!-- /.checkbox__body -->
+							</div><!-- /.checkbox -->
+						</div><!-- /.checkboxes -->
+					</ul><!-- /.list-checkboxes -->
+				</div><!-- /.section__content -->
+			</div><!-- /.shell -->
+		</section><!-- /.section-cargo -->
+	</div><!-- /.wrapper -->
+
+	{{> scripts }}
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* ------------------------------------------------------------ *\
+	checkbox
+\* ------------------------------------------------------------ */
+
+.checkbox {
+	border: 0.2rem dashed #4d4d4d;
+	text-align: center;
+	padding: 8.1rem 2rem 1.3rem;
+	position: relative;
+	color: #4d4d4d;
+	font-family: var(-ff-now);
+	font-size: 4.2rem;
+	font-weight: 700;
+	display: grid;
+	grid-row: span 2;
+	grid-template-rows: subgrid;
+
+	.checkbox__discount {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		display: none;
+	}
+
+	&:has(input:checked) {
+		border-color: #3bb76f;
+	}
+
+	input {
+		display: none;
+	}
+
+	label {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 5;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: 1rem;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 3.2rem;
+			height: 3.2rem;
+			border-radius: 100%;
+			border: 0.1rem solid #4d4d4d;
+		}
+
+		&:after {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: 1.8rem;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 2.2rem;
+			height: 1.6rem;
+			background-image: url('/assets/images/svg/check.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+			opacity: 0;
+		}
+	}
+
+	input:checked + label:after {
+		opacity: 1;
+	}
+
+	.checkbox__price {
+		display: flex;
+		align-items: center;
+		gap: 2.4rem;
+		justify-content: center;
+	}
+
+	.checkbox__price-old {
+		position: relative;
+		font-size: 3.4rem;
+		display: none;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			bottom: 2rem;
+			left: -0.2rem;
+			right: -0.2rem;
+			height: 0.4rem;
+			background-color: #ff0000;
+			transform: rotate(-19deg);
+		}
+	}
+
+	.checkbox__quantity {
+		position: relative;
+		z-index: 10;
+	}
+
+	.checkbox__quantity-entry {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	.checkbox__quantity-entry a {
+		text-decoration: none;
+	}
+
+	// have discount
+	&.have-discount {
+		.checkbox__discount {
+			display: block;
+		}
+
+		.checkbox__price-old {
+			display: inline-block;
+		}
+	}
+}
