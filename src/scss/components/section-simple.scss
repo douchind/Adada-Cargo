@@ -50,6 +50,27 @@
 		}
 	}
 
+	.section__cols {
+		display: flex;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+
+	.section__col {
+		flex: 1 1 auto;
+	}
+
+	.section__col--alt {
+		width: 7.2rem;
+		max-width: 7.2rem;
+	}
+
+	.section__form {
+		width: 100%;
+		max-width: 42rem;
+		margin: 0 auto;
+	}
+
 	.section__foot {
 		display: flex;
 		flex-direction: column;

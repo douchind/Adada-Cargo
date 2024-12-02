@@ -21,6 +21,10 @@
 		opacity: 0;
 	}
 
+	.section__checkboxes {
+		margin-bottom: 4.8rem;
+	}
+
 	// is visible
 	.section__image-left.is-visible {
 		animation: bounce-in 1.6s ease;

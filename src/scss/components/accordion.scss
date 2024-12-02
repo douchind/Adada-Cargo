@@ -66,6 +66,21 @@
 		transition: padding 0.3s ease-in-out;
 	}
 
+	.accordion__inner {
+		display: flex;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+
+	.accordion__inner > img {
+		width: 7.2rem;
+		max-width: 7.2rem;
+	}
+
+	.accordion__col {
+		flex: 1 1 auto;
+	}
+
 	// is open
 	.is-open .accordion__head:before {
 		content: '-';
@@ -85,5 +100,12 @@
 		@include breakpoint-down(mobile) {
 			padding: 4.2rem 0 0;
 		}
+	}
+}
+
+// accordion adjust
+.accordion--adjust {
+	.accordion__body {
+		max-width: 100%;
 	}
 }
