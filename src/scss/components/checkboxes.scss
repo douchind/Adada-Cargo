@@ -13,9 +13,11 @@
 	}
 
 	.checkbox:nth-last-child(1) {
-		grid-column: span 2;
-		width: 100%;
-		max-width: 50%;
-		margin: 0 auto;
+		@include breakpoint-down(tablet) {
+			grid-column: span 2;
+			width: 100%;
+			max-width: 50%;
+			margin: 0 auto;
+		}
 	}
 }

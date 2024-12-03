@@ -6,7 +6,7 @@ import '/scss/style.scss';
 /*
  * Modules
  */
-// import './modules/form-validation';
+import './modules/form-validation';
 import './modules/phone-field';
 import './modules/accordion';
 import './modules/observer';

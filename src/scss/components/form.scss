@@ -90,6 +90,15 @@
 		}
 	}
 
+	// is error
+	.is-error .form__label {
+		color: #E14137;
+	}
+
+	.is-error input {
+		border-color: #E14137;
+	}
+
 	.form__btn {
 		background-color: transparent;
 		border: none;
