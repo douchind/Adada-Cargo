@@ -17,4 +17,20 @@
 	&::placeholder {
 		color: #afafaf;
 	}
+
+	// &:focus ~ .form__number {
+	// 	opacity: 1;
+	// }
 }
+
+// field number
+// .field--number {
+// 	&:focus {
+// 		padding-left: 16rem;
+// 	}
+
+// 	&:focus::placeholder {
+// 		opacity: 0;
+// 		color: red;
+// 	}
+// }
