@@ -11,6 +11,10 @@
 		font-size: 2rem;
 	}
 
+	@include breakpoint-down(mobile-small) {
+		font-size: 1.4rem;
+	}
+
 	input {
 		display: none;
 	}
@@ -88,6 +92,10 @@
 		mask-repeat: no-repeat;
 		-webkit-mask-position: center;
 		mask-position: center;
+
+		@include breakpoint-down(mobile-small) {
+			font-size: 1.4rem;
+		}
 	}
 
 	&.is-error label a {
