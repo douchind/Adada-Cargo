@@ -14,23 +14,13 @@
 	font-weight: 400;
 	font-family: var(--ff-now-alt);
 
+	@include breakpoint-down(mobile) {
+		height: 6.4rem;
+		font-size: 1.8rem;
+		padding-left: 7.8rem;
+	}
+
 	&::placeholder {
 		color: #afafaf;
 	}
-
-	// &:focus ~ .form__number {
-	// 	opacity: 1;
-	// }
 }
-
-// field number
-// .field--number {
-// 	&:focus {
-// 		padding-left: 16rem;
-// 	}
-
-// 	&:focus::placeholder {
-// 		opacity: 0;
-// 		color: red;
-// 	}
-// }

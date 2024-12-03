@@ -42,7 +42,7 @@
 		}
 	}
 
-	.section__content {
+	.section__content:not(:last-child) {
 		margin-bottom: 10.5rem;
 
 		@include breakpoint-down(tablet) {
@@ -54,21 +54,46 @@
 		display: flex;
 		align-items: flex-start;
 		gap: 1rem;
+
+		@include breakpoint-down(tablet) {
+			flex-direction: column;
+			gap: 4rem;
+			align-items: center;
+			justify-content: center;
+		}
+
+		@include breakpoint-down(mobile) {
+			gap: 3rem;
+		}
 	}
 
 	.section__col {
 		flex: 1 1 auto;
+
+		@include breakpoint-down(tablet) {
+			width: 100%;
+			max-width: 100%;
+		}
 	}
 
-	.section__col--alt {
-		width: 7.2rem;
-		max-width: 7.2rem;
+	.section__col-alt img {
+		@include breakpoint-down(tablet) {
+			transform: rotate(90deg);
+		}
+
+		@include breakpoint-down(mobile) {
+			width: 4.4rem;
+		}
 	}
 
 	.section__form {
 		width: 100%;
 		max-width: 42rem;
 		margin: 0 auto;
+
+		@include breakpoint-down(tablet) {
+			max-width: 100%;
+		}
 	}
 
 	.section__foot {
@@ -102,6 +127,26 @@
 		@include breakpoint-down(mobile) {
 			text-wrap: balance;
 			font-size: 1.8rem;
+		}
+	}
+}
+
+// .section-simple--adjust
+.section-simple--adjust {
+	padding: 4rem 0 9rem;
+	position: relative;
+
+	@include breakpoint-down(tablet) {
+		padding-bottom: 5rem;
+	}
+
+	@include breakpoint-down(mobile) {
+		padding: 3rem 0 5rem;
+	}
+
+	.section__accordion {
+		@include breakpoint-down(mobile) {
+			margin-bottom: 4.4rem;
 		}
 	}
 }

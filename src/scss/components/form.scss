@@ -7,6 +7,15 @@
 		margin-bottom: 3.6rem;
 		font-family: var(--ff-now);
 		letter-spacing: 0.01em;
+
+		@include breakpoint-down(tablet) {
+			text-align: center;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.6rem;
+			margin-bottom: 2.4rem;
+		}
 	}
 
 	.level-2 {
@@ -16,10 +25,18 @@
 		margin-bottom: 0.8rem;
 		color: #4d4d4d;
 		letter-spacing: 0;
+
+		@include breakpoint-down(mobile) {
+			font-size: 2.8rem;
+		}
 	}
 
 	.form__row ~ .form__row {
 		margin-top: 3.6rem;
+
+		@include breakpoint-down(mobile) {
+			margin-top: 2.6rem;
+		}
 	}
 
 	.form__label {
@@ -31,27 +48,27 @@
 		font-weight: 500;
 		font-family: var(--ff-now);
 		transition: color 0.3s;
+
+		@include breakpoint-down(mobile) {
+			font-size: 2.4rem;
+		}
 	}
 
 	.form__controls {
 		position: relative;
 	}
 
-	// .form__number {
-	// 	position: absolute;
-	// 	top: 50%;
-	// 	left: 9.2rem;
-	// 	transform: translateY(-50%);
-	// 	font-size: 2.4rem;
-	// 	font-weight: 400;
-	// 	font-family: var(--ff-now-alt);
-	// 	opacity: 0;
-	// }
-
 	.form__controls img {
 		position: absolute;
 		left: 2rem;
 		top: 1.5rem;
+
+		@include breakpoint-down(mobile) {
+			width: 4.2rem;
+			height: 4.2rem;
+			left: 1.8rem;
+			top: 1.2rem;
+		}
 	}
 
 	.form__row > strong {
@@ -64,8 +81,18 @@
 		font-family: var(--ff-now);
 	}
 
-	// error
-	.error .form__label {
-		color: #e14137;
+	.form__actions {
+		margin-top: 3.6rem;
+
+		@include breakpoint-down(tablet) {
+			text-align: center;
+			margin-top: 6rem;
+		}
+	}
+
+	.form__btn {
+		background-color: transparent;
+		border: none;
+		border-radius: 0;
 	}
 }

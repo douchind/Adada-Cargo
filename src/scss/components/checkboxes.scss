@@ -7,4 +7,15 @@
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-auto-rows: repeat(auto auto);
+
+	@include breakpoint-down(tablet) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.checkbox:nth-last-child(1) {
+		grid-column: span 2;
+		width: 100%;
+		max-width: 50%;
+		margin: 0 auto;
+	}
 }

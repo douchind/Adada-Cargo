@@ -7,6 +7,10 @@
 
 	.section__list-steps {
 		margin-bottom: 4.8rem;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: 3rem;
+		}
 	}
 
 	.section__intro {
@@ -15,14 +19,53 @@
 		justify-content: center;
 		gap: 11.2rem;
 		margin-bottom: 5.9rem;
+
+		@include breakpoint-down(tablet) {
+			flex-direction: column;
+			gap: 6rem;
+		}
 	}
 
 	.section__image-left {
 		opacity: 0;
+
+		@include breakpoint-down(tablet) {
+			order: 1;
+		}
+	}
+
+	.section__image-right {
+		@include breakpoint-down(tablet) {
+			order: 0;
+		}
+	}
+
+	.section__content h1 {
+		@include breakpoint-down(tablet) {
+			text-align: center;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 1.6rem;
+		}
 	}
 
 	.section__checkboxes {
 		margin-bottom: 4.8rem;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: 3rem;
+		}
+	}
+
+	.section__entry {
+		@include breakpoint-down(tablet) {
+			font-size: 1.8rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.4rem;
+		}
 	}
 
 	// is visible

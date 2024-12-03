@@ -70,15 +70,40 @@
 		display: flex;
 		align-items: flex-start;
 		gap: 1rem;
+
+		@include breakpoint-down(tablet) {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 4rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			gap: 2rem;
+		}
 	}
 
 	.accordion__inner > img {
 		width: 7.2rem;
 		max-width: 7.2rem;
+
+		@include breakpoint-down(tablet) {
+			transform: rotate(90deg);
+		}
+
+		@include breakpoint-down(mobile) {
+			width: 4.4rem;
+			height: 4.4rem;
+		}
 	}
 
 	.accordion__col {
 		flex: 1 1 auto;
+
+		@include breakpoint-down(tablet) {
+			width: 100%;
+			max-width: 100%;
+		}
 	}
 
 	// is open

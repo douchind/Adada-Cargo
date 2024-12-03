@@ -16,11 +16,31 @@
 	grid-template-rows: subgrid;
 	gap: 0;
 
+	@include breakpoint-down(small-desktop) {
+		font-size: 3.6rem;
+	}
+
+	@include breakpoint-down(mobile) {
+		font-size: 2.8rem;
+		padding-top: 5rem;
+		padding-bottom: 1.8rem;
+	}
+
 	.checkbox__discount {
 		position: absolute;
 		top: 1rem;
 		left: 1rem;
 		display: none;
+
+		@include breakpoint-down(mobile) {
+			width: 2.4rem;
+		}
+	}
+
+	.checkbox__image {
+		@include breakpoint-down(mobile) {
+			display: none;
+		}
 	}
 
 	&:has(input:checked) {
@@ -50,6 +70,11 @@
 			height: 3.2rem;
 			border-radius: 100%;
 			border: 0.1rem solid #4d4d4d;
+
+			@include breakpoint-down(mobile) {
+				width: 1.8rem;
+				height: 1.8rem;
+			}
 		}
 
 		&:after {
@@ -65,11 +90,26 @@
 			background-repeat: no-repeat;
 			background-size: contain;
 			opacity: 0;
+
+			@include breakpoint-down(mobile) {
+				width: 1.3rem;
+				height: 0.9rem;
+				top: 1.4rem;
+			}
 		}
 	}
 
 	input:checked + label:after {
 		opacity: 1;
+	}
+
+	.checkbox__head {
+		@include breakpoint-down(small-desktop) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 
 	.checkbox__price {
@@ -84,6 +124,14 @@
 		font-size: 3.4rem;
 		display: none;
 
+		@include breakpoint-down(small-desktop) {
+			font-size: 2.8rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 2.1rem;
+		}
+
 		&:before {
 			content: '';
 			display: inline-block;
@@ -94,6 +142,11 @@
 			height: 0.4rem;
 			background-color: #ff0000;
 			transform: rotate(-19deg);
+
+			@include breakpoint-down(tablet) {
+				height: 0.3rem;
+				bottom: 1rem;
+			}
 		}
 	}
 

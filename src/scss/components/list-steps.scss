@@ -13,12 +13,43 @@
 	color: #fff;
 	font-size: 2.6rem;
 	font-weight: 700;
-	// font-family: var(--ff-jumbo);
 	font-family: var(--ff-now);
+
+	@media screen and (max-width: 1400px) {
+		font-size: 2.4rem;
+		gap: 2rem 4rem;
+	}
+
+	@include breakpoint-down(small-desktop) {
+		justify-content: center;
+	}
+
+	@include breakpoint-down(tablet) {
+		font-size: 1.8rem;
+		gap: 2rem 3rem;
+	}
+
+	@include breakpoint-down(mobile) {
+		padding: 1rem 2rem;
+		font-size: 1.4rem;
+		gap: 1.8rem 1.6rem;
+	}
 
 	li:not(:nth-child(1)) {
 		position: relative;
 		padding-left: 13rem;
+
+		@media screen and (max-width: 1400px) {
+			padding-left: 8rem;
+		}
+
+		@include breakpoint-down(tablet) {
+			padding-left: 6rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding-left: 4.8rem;
+		}
 
 		&:before {
 			content: '';
@@ -30,6 +61,23 @@
 			height: 2.8rem;
 			background-image: url('/assets/images/svg/arrow.svg');
 			background-repeat: no-repeat;
+			background-size: contain;
+
+			@media screen and (max-width: 1400px) {
+				width: 4.8rem;
+				height: 2.2rem;
+			}
+
+			@include breakpoint-down(tablet) {
+				width: 3.6rem;
+				height: 2.2rem;
+			}
+
+			@include breakpoint-down(mobile) {
+				width: 3.2rem;
+				height: 1.4rem;
+				top: 0.2rem;
+			}
 		}
 	}
 
