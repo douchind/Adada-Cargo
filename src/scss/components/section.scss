@@ -28,7 +28,7 @@
 		display: none;
 
 		@include breakpoint-down(tablet) {
-			display: inline-block;
+			display: block;
 			margin: 4rem 0 0;
 		}
 	}
