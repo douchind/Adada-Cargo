@@ -3,7 +3,7 @@
 \* ------------------------------------------------------------ */
 
 .header {
-	padding: 5rem 0 2rem;
+	padding: 3rem 0 2rem;
 
 	@include breakpoint-down(tablet) {
 		padding: 0 0 2rem;
@@ -86,28 +86,37 @@
 
 	.header__decoration {
 		position: absolute;
-		top: 0;
+		top: 1rem;
 		right: 14%;
-		width: 30rem;
+		width: 25rem;
 		z-index: -1;
+		transform: rotateY(180deg);
 
 		@include breakpoint-down(tablet) {
+			top: 8.4rem;
+			width: 15rem;
+			right: unset;
+			left: 32vw;
 			display: none;
 		}
 	}
 
-	// header decoration adjust
 	.header__decoration--adjust {
+		transform: rotateY(0);
 		right: unset;
 		left: 14%;
-		transform: rotateY(180deg);
+
+		@include breakpoint-down(tablet) {
+			left: unset;
+			right: 32vw;
+		}
 	}
 
 	.header__logo {
 		margin-left: -6.6rem;
 
 		@include breakpoint-down(tablet) {
-			width: 26rem;
+			width: 22rem;
 			margin: 0;
 		}
 
@@ -117,6 +126,70 @@
 
 		@include breakpoint-down(mobile-medium) {
 			width: 18rem;
+		}
+	}
+
+	.header__holder {
+		display: none;
+		position: relative;
+
+		@include breakpoint-down(tablet) {
+			margin: 0 auto;
+			display: block;
+		}
+	}
+
+	.header__decoration-mobile {
+		display: none;
+
+		@include breakpoint-down(tablet) {
+			display: inline-block;
+			position: absolute;
+			top: -4rem;
+			width: 20rem;
+			z-index: -1;
+			transform: rotateY(180deg);
+			left: 50%;
+			margin-left: -30rem;
+			pointer-events: none;
+		}
+
+		@include breakpoint-down(mobile) {
+			width: 15rem;
+			margin-left: -20rem;
+			top: -3rem;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			width: 12rem;
+			top: -1.5rem;
+			margin-left: -17rem;
+		}
+
+		@include breakpoint-down(mobile-small) {
+			width: 10rem;
+			margin-left: -14rem;
+		}
+	}
+
+	.header__decoration-mobile--adjust {
+		@include breakpoint-down(tablet) {
+			transform: none;
+			margin: 0 -30rem 0 0;
+			left: unset;
+			right: 50%;
+
+			@include breakpoint-down(mobile) {
+				margin-right: -20rem;
+			}
+
+			@include breakpoint-down(mobile-medium) {
+				margin-right: -17rem;
+			}
+
+			@include breakpoint-down(mobile-small) {
+				margin-right: -14rem;
+			}
 		}
 	}
 
