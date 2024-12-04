@@ -50,6 +50,12 @@
 		}
 	}
 
+	// seciton content adjust
+	.section__content--adjust {
+		max-width: 116rem;
+		margin: 0 auto;
+	}
+
 	.section__cols {
 		display: flex;
 		align-items: flex-start;
@@ -113,7 +119,7 @@
 		}
 
 		@include breakpoint-down(mobile) {
-			font-size: 2rem;
+			font-size: 1.6rem;
 		}
 	}
 
@@ -126,7 +132,7 @@
 
 		@include breakpoint-down(mobile) {
 			text-wrap: balance;
-			font-size: 1.8rem;
+			font-size: 1.4rem;
 		}
 	}
 }

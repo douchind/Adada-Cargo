@@ -3,6 +3,17 @@
  */
 const $header = $('.js-header');
 
+$('.js-skip').on('click', function(event) {
+	event.preventDefault();
+
+	const target = $($(this).attr('href'));
+	console.log($(target));
+
+	// console.log($('#scroll-target'));
+
+	// $('html, body').animate({scrollTop: $target.offset().top}, 0)
+})
+
 /**
  * Handle nav trigger click event.
  *

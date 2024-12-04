@@ -6,6 +6,7 @@
 	list-style-type: none;
 	display: flex;
 	align-items: flex-start;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: 2rem 6.2rem;
 	padding: 2rem 5.8rem;
@@ -20,13 +21,10 @@
 		gap: 2rem 4rem;
 	}
 
-	@include breakpoint-down(small-desktop) {
-		justify-content: center;
-	}
-
 	@include breakpoint-down(tablet) {
 		font-size: 1.8rem;
 		gap: 2rem 3rem;
+		justify-content: center;
 	}
 
 	@include breakpoint-down(mobile) {

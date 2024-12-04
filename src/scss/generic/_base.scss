@@ -4,6 +4,10 @@
 
 html {
 	font-size: var(--fz-html);
+
+	@include breakpoint-down(mobile) {
+		font-size: 62.5%;
+	}
 }
 
 body {

@@ -15,8 +15,21 @@
 		max-width: 120rem;
 		margin: 0 auto 8.9rem;
 
+		@include breakpoint-down(tablet) {
+			margin-bottom: 2rem;
+		}
+
 		@include breakpoint-down(mobile) {
 			margin-bottom: 4.6rem;
+		}
+	}
+
+	.section__scroll-btn {
+		display: none;
+
+		@include breakpoint-down(tablet) {
+			display: inline-block;
+			margin: 4rem 0 0;
 		}
 	}
 
