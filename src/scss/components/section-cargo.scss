@@ -28,22 +28,11 @@
 
 	.section__image-left {
 		opacity: 0;
-
-		@include breakpoint-down(tablet) {
-			order: 1;
-		}
-	}
-
-	.section__image-right {
-		@include breakpoint-down(tablet) {
-			order: 0;
-		}
 	}
 
 	.section__content h1 {
-		@include breakpoint-down(tablet) {
-			text-align: center;
-		}
+		text-align: center;
+		letter-spacing: 0.05em;
 
 		@include breakpoint-down(mobile) {
 			margin-bottom: 1.6rem;

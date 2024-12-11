@@ -134,8 +134,20 @@
 		position: relative;
 
 		@include breakpoint-down(tablet) {
+			display: flex;
+			max-width: 38rem;
+			justify-content: space-between;
+			gap: 2rem;
+			align-items: center;
 			margin: 0 auto;
-			display: block;
+		}
+
+		@include breakpoint-down(mobile) {
+			max-width: 27rem;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			max-width: 23rem;
 		}
 	}
 
@@ -144,31 +156,25 @@
 
 		@include breakpoint-down(tablet) {
 			display: inline-block;
-			position: absolute;
-			top: -4rem;
-			width: 20rem;
-			z-index: -1;
-			transform: rotateY(180deg);
-			left: 50%;
-			margin-left: -30rem;
+			position: relative;
+			left: -12rem;
 			pointer-events: none;
 		}
 
 		@include breakpoint-down(mobile) {
 			width: 15rem;
-			margin-left: -20rem;
-			top: -3rem;
+			left: -6rem;
 		}
 
 		@include breakpoint-down(mobile-medium) {
-			width: 12rem;
-			top: -1.5rem;
-			margin-left: -17rem;
+			width: 14rem;
+			top: -.5rem
 		}
 
 		@include breakpoint-down(mobile-small) {
-			width: 10rem;
-			margin-left: -14rem;
+			width: 12rem;
+			margin-left: 0;
+			left: -4rem;
 		}
 	}
 
@@ -199,12 +205,11 @@
 		@include breakpoint-down(tablet) {
 			display: flex;
 			text-align: center;
-			margin: 0 auto;
 		}
 	}
 
 	.header__wrapper {
-		max-width: 126.7rem;
+		max-width: 127.7rem;
 		margin: 0 auto;
 
 		@include breakpoint-down(tablet) {

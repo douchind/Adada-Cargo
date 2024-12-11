@@ -39,10 +39,12 @@
 	}
 
 	.accordion__head h3 {
-		font-size: 3.2rem;
+		font-size: 2.8rem;
+		font-weight: 400;
+		letter-spacing: 0.05em;
 
 		@include breakpoint-down(tablet) {
-			font-size: 2.6rem;
+			font-size: 2.4rem;
 		}
 
 		@include breakpoint-down(mobile) {
@@ -116,11 +118,7 @@
 	}
 
 	.is-open .accordion__content {
-		padding: 10rem 0 0;
-
-		@include breakpoint-down(tablet) {
-			padding: 6rem 0 0;
-		}
+		padding: 6rem 0 0;
 
 		@include breakpoint-down(mobile) {
 			padding: 4.2rem 0 0;

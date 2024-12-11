@@ -12,12 +12,14 @@
 	padding: 2rem 5.8rem;
 	background-color: #1b9da1;
 	color: #fff;
-	font-size: 2.6rem;
+	font-size: 2.4rem;
 	font-weight: 700;
-	font-family: var(--ff-now);
+	font-family: var(--ff-jumbo);
+	font-weight: 400;
+	letter-spacing: 0.05em;
 
-	@media screen and (max-width: 1400px) {
-		font-size: 2.4rem;
+	@include breakpoint-down(small-desktop) {
+		font-size: 2.2rem;
 		gap: 2rem 4rem;
 	}
 
@@ -33,13 +35,25 @@
 		gap: 1.8rem 1.6rem;
 	}
 
+	.steps__number {
+		font-family: var(--ff-obelix-pro);
+	}
+
+	.steps__image {
+		@include breakpoint-down(small-desktop) {
+			width: 6rem;
+		}
+	}
+
+	li:has(.steps__image) {
+		@include breakpoint-down(tablet) {
+			display: none;
+		}
+	}
+
 	li:not(:nth-child(1)) {
 		position: relative;
-		padding-left: 13rem;
 
-		@media screen and (max-width: 1400px) {
-			padding-left: 8rem;
-		}
 
 		@include breakpoint-down(tablet) {
 			padding-left: 6rem;
@@ -51,7 +65,7 @@
 
 		&:before {
 			content: '';
-			display: inline-block;
+			display: none;
 			position: absolute;
 			left: 0;
 			top: 0.4rem;
@@ -61,14 +75,10 @@
 			background-repeat: no-repeat;
 			background-size: contain;
 
-			@media screen and (max-width: 1400px) {
-				width: 4.8rem;
-				height: 2.2rem;
-			}
-
 			@include breakpoint-down(tablet) {
 				width: 3.6rem;
 				height: 2.2rem;
+				display: inline-block;
 			}
 
 			@include breakpoint-down(mobile) {
@@ -84,6 +94,22 @@
 	}
 
 	// is active
+	li.is-active {
+		font-size: 2.6rem;
+
+		@include breakpoint-down(small-desktop) {
+			font-size: 2.4rem;
+		}
+
+		@include breakpoint-down(tablet) {
+			font-size: 2rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.6rem;
+		}
+	}
+
 	li.is-active span {
 		opacity: 1;
 	}

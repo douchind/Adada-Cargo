@@ -10,13 +10,13 @@
 	border: 0.1rem solid #000000;
 	height: 8rem;
 	padding: 0 2rem 0 9.4rem;
-	font-size: 2.4rem;
+	font-size: 2rem;
 	font-weight: 400;
 	font-family: var(--ff-now-alt);
 
 	@include breakpoint-down(mobile) {
 		height: 6.4rem;
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 		padding-left: 7.8rem;
 	}
 
