@@ -55,6 +55,7 @@ h6 {
 .level-1,
 h1 {
 	font-size: 4rem;
+	letter-spacing: 0.1em;
 
 	@include breakpoint-down(mobile) {
 		font-size: 2.8rem;
@@ -64,6 +65,7 @@ h1 {
 .level-2,
 h2 {
 	font-size: 3.4rem;
+	letter-spacing: 0.1em;
 
 	@include breakpoint-down(mobile) {
 		font-size: 2rem;
@@ -73,7 +75,7 @@ h2 {
 .level-3,
 h3 {
 	font-size: 3rem;
-	letter-spacing: 0.012em;
+	letter-spacing: 0.1em;
 }
 
 .level-4,

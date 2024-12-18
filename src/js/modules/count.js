@@ -11,7 +11,7 @@ $('.js-quantity').on('click', '.btn-increase', function (event) {
 
 $('.js-quantity').on('click', '.btn-decrease', function (event) {
 	event.preventDefault();
-	const $input = $(this).closest('.checkbox').find('input')
+	const $input = $(this).closest('.checkbox').find('input');
 	const $countSpan = $(this).closest('.js-quantity').find('.checkbox__count');
 	let count = parseInt($countSpan.text());
 
@@ -28,11 +28,11 @@ $('.js-quantity').on('click', '.btn-decrease', function (event) {
 	}
 });
 
-$('.checkbox').on('click', 'label', function(event) {
+$('.checkbox').on('click', 'label', function (event) {
 	event.preventDefault();
 
-	let isClicked = true;
-	$(this).siblings('input').attr('checked', isClicked);
+	let inputElement = $(this).siblings('input');
+	let isChecked = inputElement.attr('checked');
 
-	isClicked = !isClicked
-})
+	inputElement.attr('checked', !isChecked);
+});
