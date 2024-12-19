@@ -3,6 +3,52 @@
 \* ------------------------------------------------------------ */
 
 .form {
+	.form__cols {
+		display: flex;
+		align-items: flex-start;
+		gap: 1rem;
+
+		@include breakpoint-down(tablet) {
+			flex-direction: column;
+			gap: 4rem;
+			align-items: center;
+			justify-content: center;
+		}
+
+		@include breakpoint-down(mobile) {
+			gap: 3rem;
+		}
+	}
+
+	.form__col {
+		flex: 1 1 auto;
+
+		@include breakpoint-down(tablet) {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+
+	.form__col-alt img {
+		@include breakpoint-down(tablet) {
+			transform: rotate(90deg);
+		}
+
+		@include breakpoint-down(mobile) {
+			width: 4.4rem;
+		}
+	}
+
+	.form__content {
+		width: 100%;
+		max-width: 42rem;
+		margin: 0 auto;
+
+		@include breakpoint-down(tablet) {
+			max-width: 100%;
+		}
+	}
+
 	.form__head {
 		margin-bottom: 3.6rem;
 		font-family: var(--ff-now);
@@ -97,11 +143,11 @@
 
 	// is error
 	.is-error .form__label {
-		color: #E14137;
+		color: #e14137;
 	}
 
 	.is-error input {
-		border-color: #E14137;
+		border-color: #e14137;
 	}
 
 	.form__btn {

@@ -92,15 +92,15 @@
 		}
 	}
 
-	.section__form {
-		width: 100%;
-		max-width: 42rem;
-		margin: 0 auto;
+	// .section__form {
+	// 	width: 100%;
+	// 	max-width: 42rem;
+	// 	margin: 0 auto;
 
-		@include breakpoint-down(tablet) {
-			max-width: 100%;
-		}
-	}
+	// 	@include breakpoint-down(tablet) {
+	// 		max-width: 100%;
+	// 	}
+	// }
 
 	.section__foot {
 		display: flex;
