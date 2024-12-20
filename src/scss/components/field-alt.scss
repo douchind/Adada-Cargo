@@ -1,0 +1,24 @@
+/* ------------------------------------------------------------ *\
+	field-alt
+\* ------------------------------------------------------------ */
+
+.field-alt {
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 0;
+	border: none;
+	height: 5.4rem;
+	color: #666666;
+	padding: 0 2rem;
+	font-size: 2rem;
+	font-weight: 400;
+	font-family: var(--ff-now);
+}
+
+// field textarea
+.field-alt--textarea {
+	padding: 2rem;
+	height: 21.5rem;
+	resize: none;
+}

@@ -1,0 +1,31 @@
+/* ------------------------------------------------------------ *\
+	panel
+\* ------------------------------------------------------------ */
+
+.panel {
+	padding: 3.3rem 1.2rem 11rem;
+	text-align: center;
+	text-wrap: balance;
+	color: #4d4d4d;
+	font-size: 1.7rem;
+	line-height: 1.352;
+	letter-spacing: 0.01em;
+	font-weight: 500;
+	font-family: var(--ff-now);
+	background-color: #fff;
+	background-image: url('/assets/images/temp/panel-img.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+
+	> p:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+
+	> strong {
+		display: block;
+		text-transform: uppercase;
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+}

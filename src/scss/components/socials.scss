@@ -78,3 +78,17 @@
 		}
 	}
 }
+
+// socials alt
+.socials--alt {
+	padding: 0;
+
+	> ul {
+		justify-content: center;
+	}
+
+	.full-width {
+		margin-left: -1rem;
+		justify-content: center;
+	}
+}

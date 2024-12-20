@@ -1,0 +1,82 @@
+/* ------------------------------------------------------------ *\
+	section-form
+\* ------------------------------------------------------------ */
+
+.section-form {
+	padding: 7rem 0;
+
+	.section__cols {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.section__col {
+		flex: 1 1 auto;
+	}
+
+	.section__col-fixed {
+		width: 52rem;
+		max-width: 52rem;
+		position: relative;
+		z-index: 10;
+		padding-top: 9.6rem;
+	}
+
+	.section__content {
+		position: relative;
+		padding: 5rem 4rem 12.5rem;
+		isolation: isolate;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			right: -10.2rem;
+			height: 100%;
+			background-image: url('/assets/images/svg/form-decoration.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom;
+		}
+	}
+
+	.section__holder {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2rem;
+		margin-top: -4rem;
+	}
+
+	.section__holder-aside {
+		text-align: center;
+	}
+
+	.section__holder-aside h5 {
+		font-size: 2.1rem;
+		font-family: var(--ff-now);
+		font-weight: 500;
+		text-wrap: balance;
+		text-align: center;
+		margin-bottom: 3rem;
+		text-transform: uppercase;
+	}
+
+	.section__label {
+		margin-bottom: 1.8rem;
+	}
+
+	.section__aside-content {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.section__panel {
+		width: 37.5rem;
+		max-width: 37.5rem;
+	}
+}

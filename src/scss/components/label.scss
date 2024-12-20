@@ -1,0 +1,36 @@
+/* ------------------------------------------------------------ *\
+	label
+\* ------------------------------------------------------------ */
+
+.label {
+	position: relative;
+	display: inline-block;
+
+	.label__inner {
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		min-width: 22.8rem;
+		padding: 2.6rem;
+		border-radius: 10rem;
+		border: 1px solid #000;
+		background-color: #fff;
+		font-size: 2rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-family: var(--f--now);
+		isolation: isolate;
+	}
+
+	.label__decoration {
+		display: inline-block;
+		position: absolute;
+		left: 50%;
+		bottom: 50%;
+		width: 20.9rem;
+		height: 6rem;
+		z-index: -1;
+		background-color: #1b9da1;
+		border-radius: 10rem;
+	}
+}

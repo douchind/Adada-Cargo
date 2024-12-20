@@ -1,0 +1,22 @@
+/* ------------------------------------------------------------ *\
+	list-contacts
+\* ------------------------------------------------------------ */
+
+.list-contacts {
+	list-style-type: none;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	text-wrap: initial;
+
+	a {
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.8rem;
+	}
+}
