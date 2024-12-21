@@ -18,12 +18,37 @@
 		background-color: #c6f2f9;
 		padding: 1.2rem 1.5rem;
 		color: #345a67;
+		text-align: left;
 		font-family: var(--ff-inter);
 		text-transform: uppercase;
+		min-width: 28rem;
 		transition: opacity 0.3s ease-in-out;
 
 		&:hover {
 			opacity: 0.8;
+		}
+	}
+
+	// is error
+	.is-error .form__label {
+		color: #e14137;
+	}
+
+	.is-error input {
+		border: 2px solid;
+		border-color: #e14137;
+
+		&::placeholder {
+			color: #e14137;
+		}
+	}
+
+	.is-error textarea {
+		border: 2px solid;
+		border-color: #e14137;
+
+		&::placeholder {
+			color: #e14137;
 		}
 	}
 }

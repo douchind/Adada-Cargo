@@ -1,0 +1,27 @@
+/* ------------------------------------------------------------ *\
+	list-info
+\* ------------------------------------------------------------ */
+
+.list-info {
+	list-style-type: none;
+	font-size: 2.6rem;
+	font-weight: 700;
+	font-family: var(--ff--now);
+	color: #333;
+
+	li ~ li {
+		margin-top: 3rem;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	span {
+		text-decoration: underline;
+	}
+
+	strong {
+		font-size: 3rem;
+	}
+}

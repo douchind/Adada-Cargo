@@ -23,30 +23,38 @@
 					<div class="section__cols">
 						<div class="section__col">
 							<div class="section__content">
-								<div class="js-form form-simple">
+								<div class="js-form form-simple section__form-simple">
 									<form action="?" method="POST">
 										<div class="form__row">
-											<label for="name" class="sr-only">Name</label>
+											<div class="form__controls">
+												<label for="name" class="sr-only">Name</label>
 
-											<input class="field-alt" type="text" id="name" name="name" data-validate="true" placeholder="* İsim Soyisim:">
+												<input class="field-alt" type="text" id="name" name="name" data-validate="true" placeholder="* İsim Soyisim:">
+											</div><!-- /.form__controls -->
 										</div><!-- /.form__row -->
 
 										<div class="form__row">
-											<label for="email" class="sr-only">Email</label>
+											<div class="form__controls">
+												<label for="email" class="sr-only">Email</label>
 
-											<input class="field-alt" type="email" id="email" name="email" data-validate="true" placeholder="* E-posta adresi:">
+												<input class="field-alt" type="email" id="email" name="email" data-validate="true" placeholder="* E-posta adresi:">
+											</div><!-- /.form__controls -->
 										</div><!-- /.form__row -->
 
 										<div class="form__row">
-											<label for="subject" class="sr-only">Subject</label>
+											<div class="form__controls">
+												<label for="subject" class="sr-only">Subject</label>
 
-											<input class="field-alt" type="text" id="subject" name="subject" data-validate="true" placeholder="* Konu:">
+												<input class="field-alt" type="text" id="subject" name="subject" data-validate="true" placeholder="* Konu:">
+											</div><!-- /.form__controls -->
 										</div><!-- /.form__row -->
 
 										<div class="form__row">
-											<label for="message" class="sr-only">Message</label>
+											<div class="form__controls">
+												<label for="message" class="sr-only">Message</label>
 
-											<textarea name="message" id="message" class="field-alt field-alt--textarea" placeholder="* Mesajınız"></textarea><!-- /# -->
+												<textarea name="message" id="message" data-validate="true" class="field-alt field-alt--textarea" placeholder="* Mesajınız"></textarea><!-- /# -->
+											</div><!-- /.form__controls -->
 										</div><!-- /.form__row -->
 
 										<div class="form__actions">
@@ -143,6 +151,73 @@
 					</div><!-- /.section__cols -->
 				</div><!-- /.shell -->
 			</section><!-- /.section-form -->
+
+			<section class="section-basic">
+				<div class="shell">
+					<div class="section__content">
+						<div class="popup">
+							<a href="#" class="popup__logo">
+								<img src="assets/images/logo-alt.svg" alt="logo" width="120" height="43">
+							</a><!-- /.popup__logo -->
+
+							<h2>uyarı!</h2>
+
+							<div class="popup__entry">
+								<p>Başka hiç kimsenin kullanamayacağı bir otomat alanını 36 saatliğine rezerve ediyorsunuz.</p>
+
+								<p>36 saatlik pencere içinde işleminizi yapmamanız durumunda YARI İADE ile iptal edilecektir.</p>
+							</div><!-- /.popup__entry -->
+
+							<div class="popup__holder">
+								<a href="#">Yasaklı ürün bilgileri için tıklayınız.</a>
+							</div><!-- /.popup__holder -->
+
+							<div class="popup__actions">
+								<a href="#" class="popup__btn">Reddet</a>
+
+								<a href="#" class="popup__btn popup__btn--alt">Kabul ediyorum</a>
+							</div><!-- /.popup__actions -->
+						</div><!-- /.popup -->
+					</div><!-- /.section__content -->
+				</div><!-- /.shell -->
+			</section><!-- /.section-basic -->
+
+			<section class="section-basic">
+				<div class="shell">
+					<div class="section__content">
+						<div class="popup popup--alt">
+							<h2>teşekkürler!</h2>
+
+							<div class="popup__entry">
+								<p>Rezervasyon bilgileriniz SMS ve E-posta olarak size gönderildi. <br>
+									Lütfen <a href="#">takip numarasını paket üzerine yazmayı</a> UNUTMAYIN!</p>
+							</div><!-- /.popup__entry -->
+
+							<div class="popup__holder">
+								<ul class="list-info popup__list-info">
+									<li>
+										<a href="#">
+											<span>Bırakma Kodunuz:</span>
+
+											<strong>123456</strong>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<span>Takip No:</span>
+
+											<strong>98765432</strong>
+										</a>
+									</li>
+								</ul><!-- /.list-info -->
+
+								<p>Şifrenizi üçüncü kişilerle paylaşırsanız, işlem sizin adınıza yapılmış sayılır.</p>
+							</div><!-- /.popup__holder -->
+						</div><!-- /.popup -->
+					</div><!-- /.section__content -->
+				</div><!-- /.shell -->
+			</section><!-- /.section-basic -->
 		</div><!-- /.holder -->
 	</div><!-- /.wrapper -->
 

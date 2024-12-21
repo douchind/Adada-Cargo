@@ -148,6 +148,19 @@
 
 	.is-error input {
 		border-color: #e14137;
+
+		&::placeholder {
+			color: #e14137;
+		}
+	}
+
+	.is-error textarea {
+		border: 2px solid;
+		border-color: #e14137;
+
+		&::placeholder {
+			color: #e14137;
+		}
 	}
 
 	.form__btn {

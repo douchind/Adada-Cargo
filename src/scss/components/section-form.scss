@@ -43,12 +43,17 @@
 		}
 	}
 
+	.section__form-simple {
+		max-width: 77rem;
+	}
+
 	.section__holder {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		gap: 2rem;
 		margin-top: -4rem;
+		padding-right: 2rem;
 	}
 
 	.section__holder-aside {
