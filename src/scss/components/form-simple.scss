@@ -24,6 +24,11 @@
 		min-width: 28rem;
 		transition: opacity 0.3s ease-in-out;
 
+		@include breakpoint-down(mobile) {
+			font-size: 1.6rem;
+			min-width: 20rem;
+		}
+
 		&:hover {
 			opacity: 0.8;
 		}

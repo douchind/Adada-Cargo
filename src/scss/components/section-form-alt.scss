@@ -8,10 +8,18 @@
 	.section__cols {
 		display: flex;
 		gap: 2.4rem;
+
+		@include breakpoint-down(mobile) {
+			flex-direction: column;
+		}
 	}
 
 	.section__col {
 		min-width: 44rem;
+
+		@include breakpoint-down(tablet) {
+			min-width: 44%;
+		}
 	}
 
 	.section__col-alt {

@@ -85,10 +85,24 @@
 
 	> ul {
 		justify-content: center;
+
+		@include breakpoint-down(tablet) {
+			flex-direction: row;
+		}
 	}
 
-	.full-width {
+	> ul li.full-width {
 		margin-left: -1rem;
 		justify-content: center;
+
+		@include breakpoint-down(tablet) {
+			justify-content: center;
+		}
+	}
+
+	> ul li.full-width a img {
+		@include breakpoint-down(tablet) {
+			width: 13rem;
+		}
 	}
 }

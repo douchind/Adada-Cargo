@@ -8,10 +8,18 @@
 	.section__cols {
 		display: flex;
 		align-items: flex-start;
+
+		@include breakpoint-down(tablet) {
+			flex-direction: column;
+		}
 	}
 
 	.section__col {
 		flex: 1 1 auto;
+
+		@include breakpoint-down(tablet) {
+			width: 100%;
+		}
 	}
 
 	.section__col-fixed {
@@ -20,12 +28,20 @@
 		position: relative;
 		z-index: 10;
 		padding-top: 9.6rem;
+
+		@include breakpoint-down(tablet) {
+			margin: 0 auto;
+		}
 	}
 
 	.section__content {
 		position: relative;
 		padding: 5rem 4rem 12.5rem;
 		isolation: isolate;
+
+		@include breakpoint-down(mobile) {
+			padding: 3rem 2rem 9.5rem;
+		}
 
 		&:before {
 			content: '';
@@ -39,7 +55,11 @@
 			background-image: url('/assets/images/svg/form-decoration.svg');
 			background-repeat: no-repeat;
 			background-size: cover;
-			background-position: bottom;
+			background-position: bottom left;
+
+			@include breakpoint-down(tablet) {
+				right: 0;
+			}
 		}
 	}
 
@@ -54,6 +74,16 @@
 		gap: 2rem;
 		margin-top: -4rem;
 		padding-right: 2rem;
+
+		@include breakpoint-down(mobile) {
+			padding: 0;
+		}
+	}
+
+	.section__holder > img {
+		@include breakpoint-down(mobile) {
+			max-width: 60%;
+		}
 	}
 
 	.section__holder-aside {
@@ -68,6 +98,10 @@
 		text-align: center;
 		margin-bottom: 3rem;
 		text-transform: uppercase;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.6rem;
+		}
 	}
 
 	.section__label {
@@ -78,6 +112,14 @@
 		display: flex;
 		align-items: center;
 		gap: 2rem;
+
+		@include breakpoint-down(small-desktop) {
+			justify-content: space-between;
+		}
+
+		@include breakpoint-down(tablet) {
+			justify-content: center;
+		}
 	}
 
 	.section__panel {

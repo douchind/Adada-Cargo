@@ -20,6 +20,12 @@
 		text-transform: uppercase;
 		font-family: var(--f--now);
 		isolation: isolate;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.6rem;
+			padding: 1.8rem;
+			min-width: 18rem;
+		}
 	}
 
 	.label__decoration {
@@ -32,5 +38,10 @@
 		z-index: -1;
 		background-color: #1b9da1;
 		border-radius: 10rem;
+
+		@include breakpoint-down(mobile) {
+			min-width: 18rem;
+			height: 4.5rem;
+		}
 	}
 }
