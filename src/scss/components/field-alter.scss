@@ -1,0 +1,23 @@
+/* ------------------------------------------------------------ *\
+	field-alter
+\* ------------------------------------------------------------ */
+
+.field-alter {
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 10rem;
+	border: 0.1rem solid #666666;
+	height: 6rem;
+	padding: 0 2rem 0 6.7rem;
+	font-size: 2rem;
+	font-weight: 400;
+	font-family: var(--ff-now);
+	color: #666666;
+
+	@include breakpoint-down(mobile) {
+		height: 6.4rem;
+		font-size: 1.6rem;
+		padding-left: 7.8rem;
+	}
+}

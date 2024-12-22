@@ -1,0 +1,100 @@
+/* ------------------------------------------------------------ *\
+	section-form-alt
+\* ------------------------------------------------------------ */
+
+.section-form-alt {
+	padding: 5rem 0;
+
+	.section__cols {
+		display: flex;
+		gap: 2.4rem;
+	}
+
+	.section__col {
+		min-width: 44rem;
+	}
+
+	.section__col-alt {
+		flex: 1 1 auto;
+	}
+
+	.section__bar {
+		text-align: center;
+		margin-bottom: 3.2rem;
+	}
+
+	.section__bar h2 {
+		font-size: 2.4rem;
+		font-weight: 700;
+		font-family: var(--ff-now);
+		margin-bottom: 1.6rem;
+		text-transform: uppercase;
+	}
+
+	.section__actions {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2rem;
+		max-width: 70%;
+		margin: 0 auto 2rem;
+	}
+
+	.section__btn {
+		padding: 0.9rem 2.9rem;
+		display: inline-block;
+		text-decoration: none;
+		color: #fff;
+		font-weight: 700;
+		font-size: 2rem;
+		text-transform: uppercase;
+		background-color: #e14137;
+		clip-path: polygon(3% 0, 97% 0, 100% 100%, 0% 100%);
+		transition: opacity 0.3s ease-in-out;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+
+	.section__aside {
+		height: 100%;
+		padding: 3.2rem 3.7rem 2rem 12rem;
+		color: #fff;
+		background-color: #4d4d4d;
+		font-weight: 400;
+		font-size: 1.9rem;
+		text-align: right;
+		font-family: var(--ff-now);
+		clip-path: polygon(6% 0, 100% 0, 100% 100%, 0 100%);
+	}
+
+	.section__aside > h5 {
+		font-size: 2.1rem;
+		text-transform: uppercase;
+		font-family: var(--ff-now);
+		margin-bottom: 1.8rem;
+	}
+
+	.section__aside > p:not(:last-child) {
+		margin-bottom: 7.2rem;
+	}
+
+	.section__entry {
+		max-width: 35rem;
+		margin-left: auto;
+		margin-bottom: 5.2rem;
+	}
+
+	.section__intro strong {
+		font-size: 2rem;
+		font-weight: 700;
+		display: block;
+	}
+
+	// section btn yellow
+	.section__btn--yellow {
+		background-color: #f7aa1a;
+		clip-path: polygon(0 0, 100% 0, 97% 100%, 3% 100%);
+	}
+}

@@ -1,0 +1,77 @@
+/* ------------------------------------------------------------ *\
+	form-alt
+\* ------------------------------------------------------------ */
+
+.form-alt {
+	.form__row ~ .form__row {
+		margin-top: 2rem;
+	}
+
+	.form__actions {
+		margin-top: 3rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+	}
+
+	.form__btn {
+		border: none;
+		display: inline-block;
+		border-radius: 10rem;
+		background-color: #1b9da1;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+		padding: 1.1rem 2.6rem 1.3rem;
+		line-height: 1.2;
+		font-size: 2.5rem;
+		font-weight: 400;
+		font-family: var(--ff-now);
+		transition: opacity 0.3s ease-in-out;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+
+	.form__controls {
+		position: relative;
+	}
+
+	.form__controls img {
+		position: absolute;
+		left: 2rem;
+		top: 2rem;
+
+		@include breakpoint-down(mobile) {
+			width: 4.2rem;
+			height: 4.2rem;
+			left: 1.8rem;
+			top: 1.2rem;
+		}
+	}
+
+	// is error
+	.is-error .form__label {
+		color: #e14137;
+	}
+
+	.is-error input {
+		border-color: #e14137;
+
+		&::placeholder {
+			color: #e14137;
+		}
+	}
+
+	.is-error textarea {
+		border: 2px solid;
+		border-color: #e14137;
+
+		&::placeholder {
+			color: #e14137;
+		}
+	}
+}

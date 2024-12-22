@@ -30,6 +30,17 @@ $('.js-form form').on('submit', function (event) {
 			$parent.removeClass('is-error');
 		}
 
+		if (type === 'password') {
+			const $parent = $this.closest('.form__controls');
+
+			if ($this[0].value === '') {
+				$parent.addClass('is-error');
+				return;
+			}
+
+			$parent.removeClass('is-error');
+		}
+
 		if ($this[0].tagName.toLowerCase() === 'textarea') {
 			const $parent = $this.closest('.form__controls');
 
