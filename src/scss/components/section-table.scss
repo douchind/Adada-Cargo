@@ -1,0 +1,22 @@
+/* ------------------------------------------------------------ *\
+	section-table
+\* ------------------------------------------------------------ */
+
+.section-table {
+	padding: 5rem 0;
+	overflow: hidden;
+
+	.section__bar {
+		text-align: center;
+		color: #fff;
+		background-color: #1b97a7;
+		padding: 1.2rem;
+		margin-bottom: 2.4rem;
+	}
+
+	.section__bar h3 {
+		font-family: var(--ff-montserrat);
+		font-size: 2.7rem;
+		font-weight: 600;
+	}
+}
