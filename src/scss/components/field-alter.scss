@@ -16,8 +16,8 @@
 	color: #666666;
 
 	@include breakpoint-down(mobile) {
-		height: 6.4rem;
+		height: 4.5rem;
 		font-size: 1.6rem;
-		padding-left: 7.8rem;
+		padding-left: 5rem;
 	}
 }

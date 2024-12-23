@@ -32,6 +32,11 @@
 		@include breakpoint-down(tablet) {
 			margin: 0 auto;
 		}
+
+		@include breakpoint-down(mobile-medium) {
+			width: 100%;
+			max-width: 100%;
+		}
 	}
 
 	.section__content {
@@ -41,6 +46,10 @@
 
 		@include breakpoint-down(mobile) {
 			padding: 3rem 2rem 9.5rem;
+		}
+
+		@include breakpoint-down(mobile-small) {
+			padding: 2rem 2rem 6.5rem;
 		}
 
 		&:before {
@@ -78,11 +87,21 @@
 		@include breakpoint-down(mobile) {
 			padding: 0;
 		}
+
+		@include breakpoint-down(mobile-medium) {
+			margin-top: 2rem;
+			flex-direction: column;
+		}
 	}
 
 	.section__holder > img {
 		@include breakpoint-down(mobile) {
 			max-width: 60%;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			max-width: 100%;
+			width: 100%;
 		}
 	}
 
@@ -120,10 +139,33 @@
 		@include breakpoint-down(tablet) {
 			justify-content: center;
 		}
+
+		@include breakpoint-down(mobile-medium) {
+			flex-direction: column;
+		}
+	}
+
+	.section__decoration-desktop {
+		@include breakpoint-down(mobile-medium) {
+			display: none;
+		}
+	}
+
+	.section__decoration-mobile {
+		display: none;
+
+		@include breakpoint-down(mobile-medium) {
+			display: block;
+		}
 	}
 
 	.section__panel {
 		width: 37.5rem;
 		max-width: 37.5rem;
+
+		@include breakpoint-down(mobile) {
+			width: 30rem;
+			max-width: 30rem;
+		}
 	}
 }

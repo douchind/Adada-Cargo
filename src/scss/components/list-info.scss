@@ -9,8 +9,16 @@
 	font-family: var(--ff--now);
 	color: #333;
 
+	@include breakpoint-down(mobile) {
+		font-size: 1.6rem;
+	}
+
 	li ~ li {
 		margin-top: 3rem;
+
+		@include breakpoint-down(mobile) {
+			margin-top: 1.2rem;
+		}
 	}
 
 	a {
@@ -23,5 +31,9 @@
 
 	strong {
 		font-size: 3rem;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.8rem;
+		}
 	}
 }

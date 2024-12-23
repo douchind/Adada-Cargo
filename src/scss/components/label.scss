@@ -23,8 +23,8 @@
 
 		@include breakpoint-down(mobile) {
 			font-size: 1.6rem;
-			padding: 1.8rem;
-			min-width: 18rem;
+			padding: 1.2rem;
+			min-width: 15rem;
 		}
 	}
 
@@ -40,8 +40,8 @@
 		border-radius: 10rem;
 
 		@include breakpoint-down(mobile) {
-			min-width: 18rem;
-			height: 4.5rem;
+			width: 15rem;
+			height: 3.5rem;
 		}
 	}
 }

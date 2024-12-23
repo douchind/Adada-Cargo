@@ -10,6 +10,10 @@
 		font-weight: 500;
 		font-family: var(--ff-montserrat);
 		color: #1a1a1a;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.4rem;
+		}
 	}
 
 	.table__col-size1 {
@@ -59,6 +63,10 @@
 		padding: 14px 6px;
 		color: #fff;
 		text-align: center;
+
+		@include breakpoint-down(mobile) {
+			padding: 10px 6px;
+		}
 	}
 
 	th,
@@ -78,5 +86,9 @@
 		border-bottom: 1px solid #1b97a7;
 		padding: 14px 6px;
 		text-align: center;
+
+		@include breakpoint-down(mobile) {
+			padding: 10px 6px;
+		}
 	}
 }

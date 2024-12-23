@@ -31,6 +31,10 @@
 		font-family: var(--ff-now);
 		transition: opacity 0.3s ease-in-out;
 
+		@include breakpoint-down(mobile) {
+			font-size: 1.6rem;
+		}
+
 		&:hover {
 			opacity: 0.8;
 		}
@@ -46,10 +50,8 @@
 		top: 2rem;
 
 		@include breakpoint-down(mobile) {
-			width: 4.2rem;
-			height: 4.2rem;
 			left: 1.8rem;
-			top: 1.2rem;
+			top: 1.5rem;
 		}
 	}
 

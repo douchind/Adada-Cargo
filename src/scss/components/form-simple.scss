@@ -29,6 +29,11 @@
 			min-width: 20rem;
 		}
 
+		@include breakpoint-down(mobile-medium) {
+			font-size: 1.4rem;
+			min-width: 18rem;
+		}
+
 		&:hover {
 			opacity: 0.8;
 		}

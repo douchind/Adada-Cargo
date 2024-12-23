@@ -11,6 +11,7 @@
 
 		@include breakpoint-down(mobile) {
 			flex-direction: column;
+			gap: 4rem;
 		}
 	}
 
@@ -37,6 +38,10 @@
 		font-family: var(--ff-now);
 		margin-bottom: 1.6rem;
 		text-transform: uppercase;
+
+		@include breakpoint-down(mobile) {
+			font-size: 2rem;
+		}
 	}
 
 	.section__actions {
@@ -46,6 +51,12 @@
 		gap: 2rem;
 		max-width: 70%;
 		margin: 0 auto 2rem;
+
+		@include breakpoint-down(mobile) {
+			margin: 0 0 2rem;
+			max-width: 100%;
+			justify-content: center;
+		}
 	}
 
 	.section__btn {
@@ -59,6 +70,10 @@
 		background-color: #e14137;
 		clip-path: polygon(3% 0, 97% 0, 100% 100%, 0% 100%);
 		transition: opacity 0.3s ease-in-out;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.6rem;
+		}
 
 		&:hover {
 			opacity: 0.8;
@@ -75,6 +90,15 @@
 		text-align: right;
 		font-family: var(--ff-now);
 		clip-path: polygon(6% 0, 100% 0, 100% 100%, 0 100%);
+
+		@include breakpoint-down(mobile) {
+			padding-left: 12%;
+			font-size: 1.6rem;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			font-size: 1.4rem;
+		}
 	}
 
 	.section__aside > h5 {
@@ -82,22 +106,54 @@
 		text-transform: uppercase;
 		font-family: var(--ff-now);
 		margin-bottom: 1.8rem;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.8rem;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			font-size: 1.6rem;
+		}
 	}
 
 	.section__aside > p:not(:last-child) {
 		margin-bottom: 7.2rem;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 5rem;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			margin-bottom: 2rem;
+		}
 	}
 
 	.section__entry {
 		max-width: 35rem;
 		margin-left: auto;
 		margin-bottom: 5.2rem;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 5rem;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			margin-bottom: 2rem;
+		}
 	}
 
 	.section__intro strong {
 		font-size: 2rem;
 		font-weight: 700;
 		display: block;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.6rem;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			font-size: 1.4rem;
+		}
 	}
 
 	// section btn yellow
