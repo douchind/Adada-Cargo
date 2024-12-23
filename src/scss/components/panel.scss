@@ -3,6 +3,7 @@
 \* ------------------------------------------------------------ */
 
 .panel {
+	position: relative;
 	padding: 3.3rem 1.2rem 11rem;
 	text-align: center;
 	text-wrap: balance;
@@ -17,6 +18,25 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 1.4rem;
+		width: 7rem;
+		height: 7rem;
+		transform: translateY(-50%);
+		border-radius: 100%;
+		background-color: #1b9da1;
+
+		@include breakpoint-down(mobile) {
+			width: 5rem;
+			height: 5rem;
+			right: 1rem;
+		}
+	}
 
 	@include breakpoint-down(mobile) {
 		padding: 1.7rem 0.8rem 9.1rem;
