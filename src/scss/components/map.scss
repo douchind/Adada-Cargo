@@ -22,7 +22,7 @@
 	}
 
 	.map__image img,
-	.map__image iframe {
+	.map__image iframe .map__image > div {
 		position: absolute;
 		left: 0;
 		top: 0;
