@@ -28,11 +28,11 @@ $('.js-quantity').on('click', '.btn-decrease', function (event) {
 	}
 });
 
-$('.checkbox').on('click', 'label', function (event) {
-	event.preventDefault();
+// $('.checkbox').on('click', 'label', function (event) {
+// 	event.preventDefault();
 
-	let inputElement = $(this).siblings('input');
-	let isChecked = inputElement.attr('checked');
+// 	let inputElement = $(this).siblings('input');
+// 	let isChecked = inputElement.attr('checked');
 
-	inputElement.attr('checked', !isChecked);
-});
+// 	inputElement.attr('checked', !isChecked);
+// });

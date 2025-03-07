@@ -4,6 +4,8 @@
 
 .header {
 	padding: 3rem 0 2rem;
+	position: relative;
+	z-index: 100;
 
 	@include breakpoint-down(tablet) {
 		padding: 0 0 2rem;
@@ -11,6 +13,7 @@
 
 	.header__bar {
 		display: none;
+		text-align: right;
 
 		@include breakpoint-down(tablet) {
 			display: block;
@@ -168,7 +171,7 @@
 
 		@include breakpoint-down(mobile-medium) {
 			width: 14rem;
-			top: -.5rem
+			top: -0.5rem;
 		}
 
 		@include breakpoint-down(mobile-small) {

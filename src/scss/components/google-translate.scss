@@ -1,0 +1,30 @@
+/* ------------------------------------------------------------ *\
+	google-translate
+\* ------------------------------------------------------------ */
+
+.google-translate {
+	position: relative;
+	z-index: 10;
+
+	.gt_white_content {
+		width: 80%;
+		margin: 0;
+		transform: translate(-50%, -50%);
+		margin: 0;
+		padding: 0;
+	}
+
+	.gt_white_content .gt_languages {
+		display: flex;
+		flex-flow: unset;
+		flex-wrap: wrap;
+		gap: 7rem;
+		overflow-x: auto;
+		max-width: 100%;
+		padding: 6px 16px;
+
+		@include breakpoint-down(tablet) {
+			gap: 1rem 4rem;
+		}
+	}
+}

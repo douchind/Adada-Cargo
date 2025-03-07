@@ -100,6 +100,8 @@
 
 	.accordion__col {
 		flex: 1 1 auto;
+		width: 50%;
+		max-width: 50%;
 
 		@include breakpoint-down(tablet) {
 			width: 100%;
@@ -117,10 +119,10 @@
 	}
 
 	.is-open .accordion__content {
-		padding: 6rem 0 0;
+		padding: 2rem 0 0;
 
 		@include breakpoint-down(mobile) {
-			padding: 4.2rem 0 0;
+			padding: 2rem 0 0;
 		}
 	}
 }

@@ -37,7 +37,7 @@
 		list-style-type: none;
 		display: flex;
 		flex-direction: column;
-		gap: 3.9rem;
+		gap: 1rem;
 
 		@include breakpoint-down(tablet) {
 			flex-direction: row;
