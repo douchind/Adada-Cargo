@@ -40,18 +40,20 @@
 		position: relative;
 	}
 
-	.meta__image {
+	.meta__image,
+	meta__image-placeholder {
 		position: relative;
 		aspect-ratio: 16 / 9;
 	}
 
-	.meta__image img {
+	.meta__image img,
+	meta__image-placeholder img {
 		position: absolute;
 		left: 0;
 		top: 0;
 		width: 100%;
 		height: 100%;
-		object-fit:cover;
+		object-fit: cover;
 	}
 
 	.meta__actions {

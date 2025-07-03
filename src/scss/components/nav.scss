@@ -22,8 +22,8 @@
 		flex-wrap: wrap;
 		gap: 3.8rem;
 
-		@media screen and (max-width: 1260px) {
-			justify-content: center;
+		@media screen and (max-width: 1140px) {
+			// justify-content: center;
 		}
 
 		@include breakpoint-down(tablet) {
@@ -57,7 +57,7 @@
 			left: -1.5rem;
 			top: 0;
 			height: 100%;
-			width: .1rem;
+			width: 0.1rem;
 			background-color: #000;
 
 			@include breakpoint-down(tablet) {
@@ -67,11 +67,11 @@
 	}
 
 	> ul > li:nth-child(2):before {
-		left: .1rem;
+		left: 0.1rem;
 	}
 
 	> ul > li:nth-child(3):before {
-		left: -.9rem;
+		left: -0.9rem;
 	}
 
 	> ul > li:nth-child(4):before {
@@ -138,7 +138,7 @@
 	}
 
 	> ul > li:nth-child(2) {
-		padding-left: 2.7rem;
+		padding-left: 4rem;
 
 		@include breakpoint-down(tablet) {
 			padding-left: 0;
@@ -174,8 +174,8 @@
 	}
 
 	> ul > li:nth-child(4) > a:before {
-		left: -.9rem;
-		right: -.9rem;
+		left: -0.9rem;
+		right: -0.9rem;
 		background-color: #e14137;
 		-webkit-mask-image: url('/assets/images/svg/nav-decoration-red2.svg');
 		mask-image: url('/assets/images/svg/nav-decoration-red2.svg');
@@ -187,8 +187,8 @@
 	}
 
 	> ul > li:nth-child(5) > a:before {
-		left: -.9rem;
-		right: -.9rem;
+		left: -0.9rem;
+		right: -0.9rem;
 		background-color: #f7aa1a;
 		-webkit-mask-image: url('/assets/images/svg/nav-decoration-yellow2.svg');
 		mask-image: url('/assets/images/svg/nav-decoration-yellow2.svg');

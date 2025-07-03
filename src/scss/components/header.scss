@@ -138,19 +138,15 @@
 
 		@include breakpoint-down(tablet) {
 			display: flex;
-			max-width: 38rem;
+			max-width: 80%;
 			justify-content: space-between;
 			gap: 2rem;
 			align-items: center;
 			margin: 0 auto;
 		}
 
-		@include breakpoint-down(mobile) {
-			max-width: 27rem;
-		}
-
 		@include breakpoint-down(mobile-medium) {
-			max-width: 23rem;
+			max-width: 100%;
 		}
 	}
 
@@ -160,24 +156,24 @@
 		@include breakpoint-down(tablet) {
 			display: inline-block;
 			position: relative;
-			left: -12rem;
+			left: -4rem;
 			pointer-events: none;
 		}
 
 		@include breakpoint-down(mobile) {
 			width: 15rem;
-			left: -6rem;
+			left: -2rem;
 		}
 
 		@include breakpoint-down(mobile-medium) {
 			width: 14rem;
 			top: -0.5rem;
+			left: -1rem;
 		}
 
 		@include breakpoint-down(mobile-small) {
 			width: 12rem;
 			margin-left: 0;
-			left: -4rem;
 		}
 	}
 
@@ -212,7 +208,8 @@
 	}
 
 	.header__wrapper {
-		max-width: 127.7rem;
+		max-width: 166rem;
+		padding: 0 2rem;
 		margin: 0 auto;
 
 		@include breakpoint-down(tablet) {

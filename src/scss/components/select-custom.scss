@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------ *\
+	select-custom
+\* ------------------------------------------------------------ */
+
+.select-custom {
+	.select2-container {
+		width: 100% !important;
+	}
+
+	.select2-container--default .select2-selection--single {
+		border: 0.1rem solid #000000;
+		height: auto;
+		font-family: var(--ff-now-alt);
+	}
+
+	.select2-container--open .select2-dropdown--below {
+		font-family: var(--ff-now-alt);
+	}
+}
+
+.select-custom .select2-container {
+	width: 100% !important;
+}
+
+.select-custom .select2-container--default .select2-selection--single {
+	border: 0.1rem solid #000000;
+	height: auto;
+	font-family: var(--ff-now-alt);
+}
+
+.select-custom .select2-container--open .select2-dropdown--below {
+	font-family: var(--ff-now-alt);
+}

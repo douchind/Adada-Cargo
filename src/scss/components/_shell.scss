@@ -3,8 +3,8 @@
 // ==========================================================================
 
 .shell {
-	--shell-max-width: 140rem;
-	--shell-gutter: 2rem;
+	--shell-max-width: 1280px;
+	--shell-gutter: 16px;
 
 	max-width: calc(var(--shell-max-width) + (var(--shell-gutter) * 2));
 	padding-inline: var(--shell-gutter);
