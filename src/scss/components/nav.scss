@@ -147,6 +147,10 @@
 
 	> ul > li:nth-child(5) {
 		max-width: 15.4rem;
+
+		@include breakpoint-down(tablet) {
+			max-width: unset;
+		}
 	}
 
 	> ul > li:nth-child(2) > a:before {

@@ -3,6 +3,9 @@
 \* ------------------------------------------------------------ */
 
 .select-custom {
+	@include breakpoint-down(mobile) {
+		font-size: 1.6rem;
+	}
 	.select2-container {
 		width: 100% !important;
 	}
@@ -15,6 +18,11 @@
 
 	.select2-container--open .select2-dropdown--below {
 		font-family: var(--ff-now-alt);
+	}
+
+	.select2-results__option .select2-results__option--disabled {
+		padding: 0;
+		margin: 0;
 	}
 }
 
