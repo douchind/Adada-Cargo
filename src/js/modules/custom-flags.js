@@ -26,7 +26,13 @@ function formatCountry(state) {
 	if (!state.id) return state.text;
 
 	const flag = $(state.element).data('flag');
-	const imgUrl = `https://flagcdn.com/${flag}.svg`;
+	let imgUrl;
+
+	if (flag === 'trnc') {
+		imgUrl = 'assets/images/svg/trnc.png';
+	} else {
+		imgUrl = `https://flagcdn.com/${flag}.svg`;
+	}
 
 	return $(`
 		<span style="margin-top: 3px; display: inline-block;">

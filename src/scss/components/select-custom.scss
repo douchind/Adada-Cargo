@@ -16,6 +16,10 @@
 		font-family: var(--ff-now-alt);
 	}
 
+	.select2-search--dropdown {
+		display: none;
+	}
+
 	.select2-container--open .select2-dropdown--below {
 		font-family: var(--ff-now-alt);
 	}

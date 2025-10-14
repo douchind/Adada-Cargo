@@ -30,8 +30,12 @@
 	}
 
 	.form__col-alt img {
+		position: relative;
+		left: -2rem;
+
 		@include breakpoint-down(tablet) {
 			transform: rotate(90deg);
+			left: 0;
 		}
 
 		@include breakpoint-down(mobile) {
@@ -129,7 +133,7 @@
 	}
 
 	.form__controls:has(.form__custom-flags) .field--number {
-		padding-left: 16rem;
+		padding-left: 19rem;
 
 		@include breakpoint-down(mobile) {
 			padding-left: 13rem;

@@ -21,6 +21,7 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		gap: 3.8rem;
+		gap: 3rem;
 
 		@media screen and (max-width: 1140px) {
 			// justify-content: center;
@@ -59,6 +60,7 @@
 			height: 100%;
 			width: 0.1rem;
 			background-color: #000;
+			display: none;
 
 			@include breakpoint-down(tablet) {
 				display: none;
@@ -66,32 +68,25 @@
 		}
 	}
 
-	> ul > li:nth-child(2):before {
-		left: 0.1rem;
-	}
+	> ul > li.nav__line {
+		&:before {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 0.1rem;
+			background-color: #000;
 
-	> ul > li:nth-child(3):before {
-		left: -0.9rem;
-	}
+			@include breakpoint-down(tablet) {
+				display: none;
+			}
+		}
 
-	> ul > li:nth-child(4):before {
-		left: -2.4rem;
-	}
-
-	> ul > li:nth-child(5):before {
-		left: -1.8rem;
-	}
-
-	> ul > li:nth-child(6):before {
-		left: -1.4rem;
-	}
-
-	> ul > li:nth-child(7):before {
-		left: -2.4rem;
-	}
-
-	> ul > li:nth-child(8):before {
-		left: -1.2rem;
+		@include breakpoint-down(tablet) {
+			display: none;
+		}
 	}
 
 	> ul > li > a {
@@ -137,15 +132,7 @@
 		}
 	}
 
-	> ul > li:nth-child(2) {
-		padding-left: 4rem;
-
-		@include breakpoint-down(tablet) {
-			padding-left: 0;
-		}
-	}
-
-	> ul > li:nth-child(5) {
+	> ul > li:nth-child(9) {
 		max-width: 15.4rem;
 
 		@include breakpoint-down(tablet) {
@@ -153,7 +140,7 @@
 		}
 	}
 
-	> ul > li:nth-child(2) > a:before {
+	> ul > li:nth-child(3) > a:before {
 		background-color: #f7aa1a;
 		-webkit-mask-image: url('/assets/images/svg/nav-decoration-yellow.svg');
 		mask-image: url('/assets/images/svg/nav-decoration-yellow.svg');
@@ -164,7 +151,7 @@
 		}
 	}
 
-	> ul > li:nth-child(3) > a:before {
+	> ul > li:nth-child(5) > a:before {
 		left: 0;
 		right: 0;
 		background-color: #1b9da1;
@@ -177,7 +164,7 @@
 		}
 	}
 
-	> ul > li:nth-child(4) > a:before {
+	> ul > li:nth-child(7) > a:before {
 		left: -0.9rem;
 		right: -0.9rem;
 		background-color: #e14137;
@@ -190,7 +177,7 @@
 		}
 	}
 
-	> ul > li:nth-child(5) > a:before {
+	> ul > li:nth-child(9) > a:before {
 		left: -0.9rem;
 		right: -0.9rem;
 		background-color: #f7aa1a;
@@ -203,7 +190,7 @@
 		}
 	}
 
-	> ul > li:nth-child(6) > a:before {
+	> ul > li:nth-child(11) > a:before {
 		left: 0;
 		right: 0;
 		background-color: #1b9da1;
@@ -216,7 +203,7 @@
 		}
 	}
 
-	> ul > li:nth-child(7) > a:before {
+	> ul > li:nth-child(13) > a:before {
 		background-color: #e14137;
 		-webkit-mask-image: url('/assets/images/svg/nav-decoration-red3.svg');
 		mask-image: url('/assets/images/svg/nav-decoration-red3.svg');
@@ -227,7 +214,7 @@
 		}
 	}
 
-	> ul > li:nth-child(8) > a:before {
+	> ul > li:nth-child(15) > a:before {
 		left: 0;
 		right: 0;
 		background-color: #f7aa1a;

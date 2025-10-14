@@ -57,7 +57,7 @@
 					<h1>Boyut Seçiniz</h1>
 
 					<div class="checkboxes section__checkboxes">
-						<div class="checkbox have-discount">
+						<div data-target="locations" class="js-skip checkbox have-discount">
 							<div class="checkbox__head">
 								<input type="radio" name="checkbox-1" id="checkbox-1">
 
@@ -91,7 +91,7 @@
 							</div><!-- /.checkbox__body -->
 						</div><!-- /.checkbox -->
 
-						<div class="checkbox">
+						<div data-target="locations" class="js-skip checkbox">
 							<div class="checkbox__head">
 								<input type="radio" name="checkbox-1" id="checkbox-2">
 
@@ -123,7 +123,7 @@
 							</div><!-- /.checkbox__body -->
 						</div><!-- /.checkbox -->
 
-						<div class="checkbox">
+						<div data-target="locations" class="js-skip checkbox">
 							<div class="checkbox__head">
 								<input type="radio" name="checkbox-1" id="checkbox-3">
 
@@ -155,7 +155,7 @@
 							</div><!-- /.checkbox__body -->
 						</div><!-- /.checkbox -->
 
-						<div class="checkbox">
+						<div data-target="locations" class="js-skip checkbox">
 							<div class="checkbox__head">
 								<input type="radio" name="checkbox-1" id="checkbox-4">
 
@@ -229,7 +229,7 @@
 			</div><!-- /.shell -->
 		</section><!-- /.section-cargo -->
 
-		<section class="section-simple section-simple--adjust">
+		<section data-target-element="locations" class="section-simple section-simple--adjust">
 			<div class="shell">
 				<div class="js-accordion accordion accordion--adjust section__accordion">
 					<div class="accordion__section is-open">
@@ -374,11 +374,11 @@
 												<label for="phone" class="form__label">Cep Telefonu <span>*</span></label><!-- /.form__label -->
 
 												<div class="form__controls">
-													<input data-validate="true" type="text" class="js-phone-field field field--number" id="phone" name="phone" placeholder="50X-XXX-XX-XX">
+													<input data-validate="true" type="number" class="js-phone-field field field--number" id="phone" name="phone" placeholder="50X-XXX-XX-XX">
 
 													<div class="js-custom-flags custom-flags form__custom-flags">
 														<select id="flags">
-															<option value="tr" data-flag="tr" selected>TR +90</option>
+															<option value="tr" data-flag="trnc" selected>TRNC +90</option>
 
 															<option value="bg" data-flag="bg">BG +359</option>
 

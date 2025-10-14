@@ -65,6 +65,7 @@
 	.accordion__content {
 		overflow: hidden;
 		transition: padding 0.3s ease-in-out;
+		text-wrap: balance;
 	}
 
 	.accordion__inner {
