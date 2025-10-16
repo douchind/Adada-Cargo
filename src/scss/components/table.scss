@@ -5,14 +5,49 @@
 .table {
 	overflow: auto;
 
+	@include breakpoint-down(tablet) {
+		overflow: hidden;
+	}
+
 	table {
 		font-size: 2rem;
 		font-weight: 500;
 		font-family: var(--ff-montserrat);
 		color: #1a1a1a;
 
+		@include breakpoint-down(tablet) {
+			border: 0;
+		}
+
 		@include breakpoint-down(mobile) {
 			font-size: 1.4rem;
+		}
+	}
+
+	thead {
+		@include breakpoint-down(tablet) {
+			border: none;
+			clip: rect(0 0 0 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: 0;
+			display: none;
+		}
+	}
+
+	tr {
+		@include breakpoint-down(tablet) {
+			display: block;
+		}
+	}
+
+	tr + tr {
+		@include breakpoint-down(tablet) {
+			margin-top: 24px;
+			border-top: 3px solid #ddd;
 		}
 	}
 
@@ -20,42 +55,84 @@
 		width: 176px;
 		max-width: 176px;
 		min-width: 176px;
+
+		@include breakpoint-down(tablet) {
+			width: 100%;
+			max-width: 100%;
+			min-width: 100%;
+		}
 	}
 
 	.table__col-size2 {
 		width: 162px;
 		max-width: 162px;
 		min-width: 162px;
+
+		@include breakpoint-down(tablet) {
+			width: unset;
+			max-width: unset;
+			min-width: unset;
+		}
 	}
 
 	.table__col-size3 {
 		width: 188px;
 		max-width: 188px;
 		min-width: 188px;
+
+		@include breakpoint-down(tablet) {
+			width: unset;
+			max-width: unset;
+			min-width: unset;
+		}
 	}
 
 	.table__col-size4 {
 		width: 154px;
 		max-width: 154px;
 		min-width: 154px;
+
+		@include breakpoint-down(tablet) {
+			width: unset;
+			max-width: unset;
+			min-width: unset;
+		}
 	}
 
 	.table__col-size5 {
 		width: 144px;
 		max-width: 144px;
 		min-width: 144px;
+
+		@include breakpoint-down(tablet) {
+			width: unset;
+			max-width: unset;
+			min-width: unset;
+		}
 	}
 
 	.table__col-size6 {
 		width: 60px;
 		max-width: 60px;
 		min-width: 60px;
+
+		@include breakpoint-down(tablet) {
+			width: unset;
+			max-width: unset;
+			min-width: unset;
+		}
 	}
 
 	.table__col-size7 {
 		width: 80px;
 		max-width: 80px;
 		min-width: 80px;
+
+		@include breakpoint-down(tablet) {
+			width: unset;
+			max-width: unset;
+			min-width: unset;
+		}
 	}
 
 	th {
@@ -64,22 +141,45 @@
 		color: #fff;
 		text-align: center;
 
+		@include breakpoint-down(tablet) {
+			display: none;
+		}
+
 		@include breakpoint-down(mobile) {
 			padding: 10px 6px;
+		}
+	}
+
+	thead tr {
+		@include breakpoint-down(tablet) {
+			display: none;
+			border: none;
 		}
 	}
 
 	th,
 	td {
 		border-left: 1px solid #1b97a7;
+
+		@include breakpoint-down(tablet) {
+			border: none;
+		}
 	}
 
 	th:last-child {
 		border-right: 1px solid #1b97a7;
+
+		@include breakpoint-down(tablet) {
+			border: none;
+		}
 	}
 
 	td:last-child {
 		border-right: 1px solid #1b97a7;
+
+		@include breakpoint-down(tablet) {
+			border: none;
+		}
 	}
 
 	td {
@@ -87,8 +187,35 @@
 		padding: 14px 6px;
 		text-align: center;
 
+		@include breakpoint-down(tablet) {
+			display: block;
+			font-size: 16px;
+			text-align: right;
+			border-bottom: 1px solid #1b97a7;
+		}
+
 		@include breakpoint-down(mobile) {
 			padding: 10px 6px;
+		}
+	}
+
+	td:before {
+		@include breakpoint-down(tablet) {
+			content: attr(data-label);
+			float: left;
+			font-weight: bold;
+		}
+	}
+
+	td:last-child {
+		@include breakpoint-down(tablet) {
+			border-bottom: 0;
+		}
+	}
+
+	tbody {
+		@include breakpoint-down(tablet) {
+			border: 1px solid #1b97a7;
 		}
 	}
 }

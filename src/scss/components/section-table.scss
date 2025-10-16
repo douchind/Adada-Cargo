@@ -27,4 +27,10 @@
 			font-size: 1.8rem;
 		}
 	}
+
+	.section__entry {
+		@include breakpoint-down(tablet) {
+			font-size: 18px;
+		}
+	}
 }

@@ -24,3 +24,14 @@
 		color: #afafaf;
 	}
 }
+
+// field adjust
+.field.field--adjust {
+	height: 6rem;
+	padding: 4rem;
+
+	@include breakpoint-down(mobile) {
+		padding: 2rem;
+		height: 6rem;
+	}
+}

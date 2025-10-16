@@ -53,6 +53,12 @@
 		}
 	}
 
+	.form__content.form__content--align-center {
+		@include breakpoint-down(tablet) {
+			text-align: center;
+		}
+	}
+
 	.form__head {
 		margin-bottom: 3.6rem;
 		font-family: var(--ff-now);
@@ -136,7 +142,7 @@
 		padding-left: 19rem;
 
 		@include breakpoint-down(mobile) {
-			padding-left: 13rem;
+			padding-left: 15rem;
 		}
 	}
 

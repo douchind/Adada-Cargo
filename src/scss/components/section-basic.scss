@@ -4,4 +4,10 @@
 
 .section-basic {
 	padding: 5rem 0;
+
+	&.section-basic--small-padding {
+		@include breakpoint-down(tablet) {
+			padding: 0;
+		}
+	}
 }

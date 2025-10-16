@@ -60,3 +60,15 @@
 	display: block;
 	padding-inline: 0;
 }
+
+// Btn success
+.btn-success {
+	width: 100%;
+	background-color: #2a28b8;
+	color: white;
+	font-size: 2.5rem;
+
+	@include breakpoint-down(mobile) {
+		font-size: 18px;
+	}
+}
