@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Adada Cargo - Your trusted cargo and logistics partner.">
+	<meta name="keywords" content="Cargo, Logistics, Shipping, Freight">
+	<meta name="author" content="Adada Cargo">
+
+	<title>Adada Cargo</title>
+
+	<link rel="icon" type="image/png" sizes="any" href="./assets/images/favicon32x32.png">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <script type="module" crossorigin src="./assets/app.js"></script>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+	<div class="js-loading-wrapper loading-wrapper" style="background-color: #fff; position: fixed; top: 0; left: 0; width: 100vw; height: 101svh; display: flex; justify-content: center; align-items: center;">
+		<div class="loading__content">
+			<figure class="loading__image" style="margin-bottom: 2rem;">
+				<picture>
+					<source media="(min-width:768px)" width="400" height="180" srcset="assets/images/logo-alt.svg">
+
+					<img src="assets/images/logo-alt.svg" alt="logo" width="240" height="110">
+				</picture>
+			</figure><!-- /.loading__image -->
+
+			<span class="loader" style="width: 5rem; height: 5rem; display: inline-block;"></span><!-- /.loader -->
+		</div><!-- /.loading__content -->
+	</div><!-- /.loading-wrapper -->
+
+	<div class="wrapper">
+		<header class="js-header header">
+			<div class="shell">
+				<div class="header__bar">
+					<nav class="nav-accounts header__nav-accounts-mobile">
+						<ul>
+							<li>
+								<a href="#">kurumsal hesap</a>
+							</li>
+		
+							<li>
+								<a href="#">partner hesap</a>
+							</li>
+		
+							<li>
+								<a href="#">kargo taki̇p</a>
+							</li>
+						</ul>
+					</nav><!-- /.nav-accounts -->
+				</div><!-- /.header__bar -->
+		
+				<div class="header__intro">
+					<img src="assets/images/svg/logo-decoration.svg" alt="" class="header__decoration header__decoration--adjust">
+		
+					<img src="assets/images/svg/logo-decoration.svg" alt="" class="header__decoration">
+		
+					<div class="socials header__socials">
+						<img src="assets/images/svg/socials-decoration.svg" alt="decoration" class="socials__decoration">
+		
+						<ul>
+							<li>
+								<a href="#">
+									<img src="assets/images/svg/facebook.svg" alt="facebook" width="31" height="31">
+								</a>
+							</li>
+		
+							<li>
+								<a href="#">
+									<img src="assets/images/svg/instagram.svg" alt="instagram" width="31" height="31">
+								</a>
+							</li>
+		
+							<li class="full-width">
+								<a href="#">
+									<img src="assets/images/svg/whatsapp-4.svg" alt="whatsapp" width="75" height="73">
+								</a>
+							</li>
+						</ul>
+					</div><!-- /.socials -->
+		
+					<a href="#" class="logo header__logo">
+						<img src="assets/images/logo-alt.svg" alt="logo-alt" width="200" height="80">
+					</a><!-- /.logo -->
+		
+					<nav class="nav-accounts header__nav-accounts">
+						<img src="assets/images/svg/nav-decoration-alt.svg" alt="decoration" class="nav__decoration">
+		
+						<ul>
+							<li>
+								<a href="#">kurumsal hesap</a>
+							</li>
+		
+							<li>
+								<a href="#">partner hesap</a>
+							</li>
+		
+							<li>
+								<a href="#">kargo taki̇p</a>
+							</li>
+						</ul>
+		
+						<div class="google-translate" id="gt-mordadam-43217984"></div>
+					</nav><!-- /.nav-accounts -->
+		
+					<div class="socials header__socials-mobile">
+						<img src="assets/images/svg/socials-decoration.svg" alt="decoration" class="socials__decoration">
+		
+						<ul>
+							<li>
+								<a href="#">
+									<img src="assets/images/svg/whatsapp-4.svg" alt="whatsapp" width="119" height="116">
+								</a>
+							</li>
+						</ul>
+					</div><!-- /.socials -->
+				</div><!-- /.header__intro -->
+		
+				<div class="header__holder">
+					<div class="google-translate" id="gt-mordadam-43217984"></div>
+		
+					<img src="assets/images/svg/logo-decoration.svg" alt="" class="header__decoration-mobile">
+		
+					<a href="#" class="js-nav-trigger nav-trigger header__nav-trigger">
+						<span></span>
+		
+						<span></span>
+		
+						<span></span>
+					</a><!-- /.js-nav-trigger nav__trigger header__nav-trigger -->
+				</div><!-- /.header__holder -->
+		
+				<div class="header__wrapper">
+					<div class="header__wrapper-content">
+						<nav class="nav">
+							<ul>
+								<li class="is-current">
+									<a href="#">Ana Sayfa</a>
+								</li>
+		
+								<li class="nav__line">
+								</li>
+		
+								<li>
+									<a href="#">Nedir? <br> Nasıl?</a>
+								</li>
+		
+								<li class="nav__line">
+								</li>
+		
+								<li>
+									<a href="#">Cargo Point Lokasyonları</a>
+								</li>
+		
+								<li class="nav__line">
+								</li>
+		
+								<li>
+									<a href="#">Cargo Poin'ten Cargo Point'e</a>
+								</li>
+		
+								<li class="nav__line">
+								</li>
+		
+								<li>
+									<a href="#">Cargo Point'ten Adres'e</a>
+								</li>
+		
+								<li class="nav__line">
+								</li>
+		
+								<li>
+									<a href="#">Adres'ten Cargo Point'e  </a>
+								</li>
+		
+								<li class="nav__line">
+								</li>
+		
+								<li>
+									<a href="#">S.S.S.</a>
+								</li>
+		
+								<li class="nav__line">
+								</li>
+		
+								<li>
+									<a href="#">Hakkımızda İletişim</a>
+								</li>
+							</ul>
+						</nav><!-- /.nav -->
+					</div><!-- /.header__wrapper-content -->
+				</div><!-- /.header__wrapper -->
+			</div><!-- /.shell -->
+		</header><!-- /.header -->
+
+
+	<input name="__RequestVerificationToken" type="hidden" value="CfDJ8AduIVUlNTlEnpvs80GWr88ywfXogaZDUD53Olqddo2gqcoXm_kSQKtDi6gCEPtwH6w0lLZbjPZcTfJ0PXWJif-vXTpwNiTZuvF9JWJYVYVi2WVv36GdCy00niTqdEDyczwapEoloQcwQNUHfXzBqAs">
+
+<section class="section-table">
+    <div class="shell">
+            <ul class="list-steps section__list-steps">
+                <li>
+                    <span><span class="steps__number">1</span>. Locations and Information</span>
+                </li>
+
+                <li>
+                    <img src="../assets/images/svg/arrow.svg" alt="arrow" class="steps__image">
+                </li>
+
+                <li class="is-active">
+                    <span><span class="steps__number">2</span>. Payment</span>
+                </li>
+
+                <li>
+                    <img src="../assets/images/svg/arrow.svg" alt="arrow" class="steps__image">
+                </li>
+
+                <li>
+                    <span><span class="steps__number">3</span>. Reservation Information</span>
+                </li>
+            </ul><!-- /.list-steps -->
+
+			<div class="table">
+				<table>
+					<colgroup>
+						<col class="table__col-size1">
+
+						<col class="table__col-size2">
+
+						<col class="table__col-size2">
+
+						<col class="table__col-size1">
+
+						<col class="table__col-size2">
+
+						<col class="table__col-size2">
+
+						<col class="table__col-size6">
+
+						<col class="table__col-size6">
+
+						<col class="table__col-size6">
+						<col class="table__col-size6">
+					</colgroup>
+
+					<thead>
+					<tr>
+						<th>Sender Name</th>
+
+						<th>Sender Phone</th>
+
+						<th>Sender Method</th>
+
+						<th>Recipient Name</th>
+
+						<th>Receiver Phone</th>
+
+						<th>Receiver Method</th>
+
+						<th>Size</th>
+
+						<th>Fee</th>
+						<th>Discount</th>
+						<th>Total</th>
+					</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td data-label="Sender Name">
+								kopa.ai
+							</td>
+							<td data-label="Sender Phone">
+								887752755
+							</td>
+							<td data-label="Sender Method">
+									Kargomat <a href="https://subdir-8e09805731.preview.weglot.io/en/tr/locations?cabineId=14" style="color:red;"> ISK-1 Pier Park </a>
+							</td>
+							<td data-label="Recipient Name">
+								Doychin Darakchiev
+							</td>
+							<td data-label="Receiver Phone">
+								887752755
+							</td>
+							<td data-label="Receiver Method">
+									Kargomat <a href="https://subdir-8e09805731.preview.weglot.io/en/tr/locations?cabineId=10" style="color:red;"> GON-1 Gonyeli ATMs </a>
+							</td>
+							<td data-label="Size">
+								S
+							</td>
+							<td data-label="Fee">89 TL</td>
+							<td data-label="Discount" class="td-discount">0 TL</td>
+							<td data-label="Total" class="td-total">89 TL</td>
+						</tr>
+
+
+
+					</tbody>
+				</table>
+			</div><!-- /.table -->
+
+			<div class="section__entry" style="text-align: center">
+				<br>
+				<p>* Please check that the size you have selected is suitable for your shipment.</p>
+				<p>* The maximum value of the product to be sent must not exceed 15% of the minimum wage according to the terms of the contract.</p>
+				<p>* Packaging must contain protective materials to preserve the integrity of the contents. If more than one product is being shipped, it must be put into a single package.</p>
+				<p>* Absolutely avoid sending fresh food, liquids, perishables and breakables, as these are highly susceptible to spoilage and damage and are not covered by insurance.</p>
+
+			</div><!-- /.section__entry -->
+		</div><!-- /.shell -->
+
+
+</section><!-- /.section-cargo -->
+
+
+<section class="section-basic section-basic--small-padding">
+    <div class="shell">
+        <div class="section__content">
+            <div class="popup popup--alt" style="border: 0px !important;">
+                <h3>WARNING!</h3>
+
+                <div class="popup__entry">
+                    <p>You are reserving a vending space that no one else can use for 48 hours. <br>
+                        If you do not make your transaction within 48 hours, it will be canceled with a HALF REFUND.</p>
+                </div><!-- /.popup__entry -->
+            </div><!-- /.popup -->
+        </div><!-- /.section__content -->
+    </div><!-- /.shell -->
+</section><!-- /.section-basic -->
+<section class="section">
+    <div class="shell">
+
+        <div class="section__content">
+            <div class="js-form form section__form">
+
+                    <div class="form__cols">
+
+                            <div class="form__col">
+                                <div class="form__content">
+
+
+                                    <div class="form__body">
+
+
+                                        <div class="form__row">
+
+                                            <div class="form__controls">
+                                                <label class="discountLabel"></label>
+                                                <input class="form-control field field--adjust" name="discountCode" type="text" placeholder="Discount Code" fdprocessedid="4gkjlk">
+                                                <br>
+                                                <button class="btn btn-success applyDiscount" fdprocessedid="l57j3u">Apply Code</button>
+                                                <button class="btn btn-danger revertDiscount" style="display: none;width:100%;background-color: #2a28b8;color: white">Take Back</button>
+
+                                            </div><!-- /.form__controls -->
+
+
+                                        </div><!-- /.form__row -->
+                                    </div><!-- /.form__body -->
+                                </div><!-- /.form__content -->
+                            </div>
+
+
+                            <!-- /.form__col -->
+
+
+                        <div class="form__col-alt">
+                            <div class="form__row">
+                                <ul class="list-checkboxes">
+                                    <li>
+                                        <div class="checkbox-alt">
+                                            <input data-validate="true" type="checkbox" name="gp" id="checkbox-alt-1" checked="">
+
+                                            <label for="checkbox-alt-1">
+                                                <a href="https://subdir-8e09805731.preview.weglot.io/en/tr/privacy">Privacy Policy</a>
+                                            </label>
+                                        </div><!-- /.checkbox-alt -->
+                                    </li>
+
+                                    <li>
+                                        <div class="checkbox-alt">
+                                            <input data-validate="true" type="checkbox" name="kbs" id="checkbox-alt-2" checked="">
+
+                                            <label for="checkbox-alt-2">
+                                                <a href="https://subdir-8e09805731.preview.weglot.io/en/tr/terms">Individual Contract with the User</a>
+                                            </label>
+                                        </div><!-- /.checkbox-alt -->
+                                    </li>
+
+                                    <li>
+                                        <div class="checkbox-alt checkbox-alt--yellow-background">
+                                            <input data-validate="true" type="checkbox" name="lo" id="checkbox-alt-3">
+
+                                            <label for="checkbox-alt-3">
+                                                <a href="https://subdir-8e09805731.preview.weglot.io/en/tr/summary#a" class="acceptLink">CONFIRM LOCATIONS</a>
+                                            </label>
+                                        </div><!-- /.checkbox-alt -->
+                                    </li>
+                                </ul><!-- /.list-checkboxes -->
+                            </div><!-- /.form__row -->
+                        </div><!-- /.form__col-alt -->
+                        <div class="form__col">
+                            <div class="form__content form__content--align-center">
+                                <div class="form__body">
+                                    <button type="submit" onclick="location.href = 'pay';" class="form__btn paymentStep" fdprocessedid="o0u4w">
+                                        <img src="../assets/images/svg/card.svg" alt="card" width="280" height="155">
+                                    </button>
+                                    <input name="couponId" type="hidden" value="">
+                                </div><!-- /.form__body -->
+
+                            </div><!-- /.form__content -->
+                        </div><!-- /.form__col -->
+                    </div>
+
+                    <!-- /.form__cols -->
+            </div><!-- /.js-form form section__form -->
+        </div><!-- /.section__content -->
+    </div><!-- /.shell -->
+</section><!-- /.section-simple -->
+
+<script>
+
+
+
+    $(".paymentStep").on("click", function() {
+        if ($("input[name='gp']").prop('checked') == false) {
+            alert("Lütfen Gizlilik Politikasını onaylayın");
+            return;
+        }
+
+
+        if ($("input[name='kbs']").prop('checked') == false) {
+            alert("Lütfen kullanıcı bireysel sözleşmesini onaylayın");
+            return;
+        }
+        if ($("input[name='lo']").prop('checked') == false) {
+           alert("Lütfen lokasyonları onaylayın");
+            return;
+        }
+
+        window.location.href="pay";
+
+    });
+    $(".applyDiscount").on("click",function(e){
+        e.preventDefault();
+        var code = $("input[name='discountCode']").val();
+        $.ajax({
+            type: "POST",
+            url: "/tr/summary?Handler=ApplyCoupon",
+            headers: { "RequestVerificationToken": $('input[name="__RequestVerificationToken"]').val() },
+            data:{"code":code},
+            success: function (result) {
+                if(result.isSuccess == true){
+                    $(".discountLabel").text("Toplam " + result.discount + " TL indirim uygulandı");
+                    $(".td-discount").text(result.discount + " TL");
+                    var total = 89;
+                    $(".td-total").text(total - result.discount + " TL");
+                    $("input[name='couponId']").val(result.couponId);
+                    $(".applyDiscount").hide();
+                    $(".revertDiscount").show();
+                    $("input[name='discountCode']").prop("disabled", true);
+                }else{
+                    $(".discountLabel").text("Geçersiz Kod");
+                }
+            },
+            failure: function (response) {
+                $(".discountLabel").text("Geçersiz Kod");
+
+            }
+        });
+
+    });
+
+    $(".apply-corporate-sales-button").on("click",function(e){
+        e.preventDefault();
+        var type = $("select[name='corporateSalesType']").val();
+        var amount = $("input[name='corporateSalesAmount']").val();
+        $.ajax({
+            type: "POST",
+            url: "/tr/summary?Handler=CorporateSalesUpdate",
+            headers: { "RequestVerificationToken": $('input[name="__RequestVerificationToken"]').val() },
+            data:{"salesType":type, "amount":amount},
+            success: function (result) {
+                if(result.isSuccess == true){
+                    var total = 89;
+                    $(".td-total").text(result.newOrderAmount + " TL");
+                }else{
+                    alert(result.message);
+                }
+            },
+            failure: function (response) {
+                $(".discountLabel").text("Geçersiz Kod");
+
+            }
+        });
+
+    });
+
+
+    $(".revertDiscount").on("click",function(e){
+        e.preventDefault();
+        var couponId = $("input[name='couponId']").val();
+        if(couponId == "0")
+            return;
+
+        $.ajax({
+            type: "POST",
+            url: "/tr/summary?Handler=RevertCoupon",
+            headers: { "RequestVerificationToken": $('input[name="__RequestVerificationToken"]').val() },
+            data:{"couponId":couponId},
+            success: function (result) {
+                if(result.isSuccess == true){
+                    $(".discountLabel").text("");
+                    $(".td-discount").text("0 TL");
+                    var total = 89;
+                    $(".td-total").text(total + " TL");
+                    $("input[name='couponId']").val(result.couponId);
+                    $(".revertDiscount").hide();
+                    $(".applyDiscount").show();
+                    $("input[name='discountCode']").prop("disabled", false);
+                }
+            },
+            failure: function (response) {
+
+            }
+        });
+    });
+
+</script>
+
+
+;
+
+
+	<footer class="footer">
+		<div class="shell">
+			<div class="footer__inner">
+				<div class="footer__wrapper">
+					<ul class="list-links footer__list-links">
+						<li>
+							<a href="https://subdir-8e09805731.preview.weglot.io/en/tr/privacy">Privacy Policy</a>
+						</li>
+
+						<li>
+							<a href="https://subdir-8e09805731.preview.weglot.io/en/tr/cookies">Cookie Policy</a>
+						</li>
+
+						<li class="full-width">
+							<a href="https://subdir-8e09805731.preview.weglot.io/en/tr/terms">Individual Contract with the User</a>
+						</li>
+					</ul><!-- /.list-links -->
+				</div><!-- /.footer__wrapper -->
+
+				<a href="https://subdir-8e09805731.preview.weglot.io/en/tr/summary#" class="footer__logo">
+					<img src="../assets/images/logo.svg" alt="logo" width="156" height="93">
+				</a><!-- /.footer__logo -->
+
+				<ul class="list-links-alt footer__list-links-alt">
+					<li>
+						<a href="https://subdir-8e09805731.preview.weglot.io/en/tr/summary#">
+							<img src="../assets/images/svg/whatsapp-2.svg" alt="whatsapp" width="155" height="50">
+						</a>
+					</li>
+
+					<li>
+						<a href="https://subdir-8e09805731.preview.weglot.io/en/tr/faq">S.S.S.</a>
+					</li>
+
+					<li>
+						<a href="https://subdir-8e09805731.preview.weglot.io/en/tr/contact-us">Contact</a>
+					</li>
+				</ul><!-- /.list-links-alt -->
+			</div><!-- /.footer__inner -->
+		</div><!-- /.shell -->
+	</footer><!-- /.footer -->
+</div>
+
+
+	<script type="text/javascript">
+		window.gtranslateSettings = window.gtranslateSettings || {};
+		window.gtranslateSettings['43217984'] = {
+			"default_language": "en",
+			"languages": ["af", "sq", "am", "en", "fa", "ar", "ps", "ja", "zh-CN", "hy", "az", "eu", "be", "bn", "bs", "bg", "ca", "ceb", "ny", "zh-TW", "co", "hr", "cs", "da", "nl", "eo", "et", "tl", "fi", "fr", "fy", "gl", "ka", "de", "el", "gu", "ht", "ha", "haw", "iw", "hi", "hmn", "hu", "is", "ig", "id", "ga", "it", "jw", "kn", "kk", "km", "ko", "ku", "ky", "lo", "la", "lv", "lt", "lb", "mk", "mg", "ms", "ml", "mt", "mi", "mr", "mn", "my", "ne", "no", "pl", "pt", "pa", "ro", "ru", "sm", "gd", "sr", "st", "sn", "sd", "si", "sk", "sl", "so", "es", "su", "sw", "sv", "tg", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy", "xh", "yi", "yo", "zu"],
+			"wrapper_selector": ".google-translate",
+			"native_language_names": 1,
+			"flag_style": "2d",
+			"flag_size": 24,
+			"horizontal_position": "inline",
+			"flags_location": "assets/images/svg/flags/"
+		};
+	</script>
+	
+	<script type="text/javascript" src="./assets/vendor/jquery-3.7.1.min.js"></script>
+	<script src="./assets/vendor/gt.min.js" data-gt-widget-id="43217984"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	
+
+
+
+</body>
+</html>
+

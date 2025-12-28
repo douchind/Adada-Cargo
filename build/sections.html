@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Adada Cargo - Your trusted cargo and logistics partner.">
+	<meta name="keywords" content="Cargo, Logistics, Shipping, Freight">
+	<meta name="author" content="Adada Cargo">
+
+	<title>Adada Cargo</title>
+
+	<link rel="icon" type="image/png" sizes="any" href="./assets/images/favicon32x32.png">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <script type="module" crossorigin src="./assets/app.js"></script>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+	<div class="js-loading-wrapper loading-wrapper" style="background-color: #fff; position: fixed; top: 0; left: 0; width: 100vw; height: 101svh; display: flex; justify-content: center; align-items: center;">
+		<div class="loading__content">
+			<figure class="loading__image" style="margin-bottom: 2rem;">
+				<picture>
+					<source media="(min-width:768px)" width="400" height="180" srcset="assets/images/logo-alt.svg">
+
+					<img src="assets/images/logo-alt.svg" alt="logo" width="240" height="110">
+				</picture>
+			</figure><!-- /.loading__image -->
+
+			<span class="loader" style="width: 5rem; height: 5rem; display: inline-block;"></span><!-- /.loader -->
+		</div><!-- /.loading__content -->
+	</div><!-- /.loading-wrapper -->
+
+	<div class="wrapper">
+		<div class="holder">
+			<section class="section-form">
+				<div class="shell">
+					<div class="section__cols">
+						<div class="section__col">
+							<div class="section__content">
+								<div class="js-form form-simple section__form-simple">
+									<form action="?" method="POST">
+										<div class="form__row">
+											<div class="form__controls">
+												<label for="name" class="sr-only">Name</label>
+
+												<input class="field-alt" type="text" id="name" name="name" data-validate="true" placeholder="* İsim Soyisim:">
+											</div><!-- /.form__controls -->
+										</div><!-- /.form__row -->
+
+										<div class="form__row">
+											<div class="form__controls">
+												<label for="email" class="sr-only">Email</label>
+
+												<input class="field-alt" type="email" id="email" name="email" data-validate="true" placeholder="* E-posta adresi:">
+											</div><!-- /.form__controls -->
+										</div><!-- /.form__row -->
+
+										<div class="form__row">
+											<div class="form__controls">
+												<label for="subject" class="sr-only">Subject</label>
+
+												<input class="field-alt" type="text" id="subject" name="subject" data-validate="true" placeholder="* Konu:">
+											</div><!-- /.form__controls -->
+										</div><!-- /.form__row -->
+
+										<div class="form__row">
+											<div class="form__controls">
+												<label for="message" class="sr-only">Message</label>
+
+												<textarea name="message" id="message" data-validate="true" class="field-alt field-alt--textarea" placeholder="* Mesajınız"></textarea><!-- /# -->
+											</div><!-- /.form__controls -->
+										</div><!-- /.form__row -->
+
+										<div class="form__actions">
+											<button type="submit" class="form__btn">mesaji gönder</button>
+										</div><!-- /.form__actions -->
+									</form>
+								</div><!-- /.form-simple -->
+							</div><!-- /.section__content -->
+
+							<div class="section__holder">
+								<img src="assets/images/svg/decoration.svg" alt="decoration" width="370" height="39">
+
+								<div class="section__holder-aside">
+									<h5>taki̇p edi̇n <br> haberdar olun</h5>
+
+									<div class="socials socials--alt">
+										<ul>
+											<li>
+												<a href="#">
+													<img src="assets/images/svg/facebook.svg" alt="facebook" width="31" height="31">
+												</a>
+											</li>
+
+											<li>
+												<a href="#">
+													<img src="assets/images/svg/instagram.svg" alt="instagram" width="31" height="31">
+												</a>
+											</li>
+
+											<li class="full-width">
+												<a href="#">
+													<img src="assets/images/svg/whatsapp-3.svg" alt="whatsapp" width="120" height="38">
+												</a>
+											</li>
+										</ul>
+									</div><!-- /.socials -->
+								</div><!-- /.section__holder-aside -->
+							</div><!-- /.section__holder -->
+						</div><!-- /.section__col -->
+
+						<div class="section__col-fixed">
+							<div class="section__aside">
+								<span class="label section__label">
+									<span class="label__inner">
+										ki̇mi̇z?
+									</span><!-- /.label__inner -->
+
+									<span class="label__decoration"></span><!-- /.label__decoration -->
+								</span><!-- /.label -->
+
+								<div class="section__aside-content">
+									<div class="panel section__panel">
+										<p>Yeniyiz Yerliyiz ve Yenilikçiyiz.</p>
+
+										<p>Adada Cargo, 2024 yılında %100 yerli yatırım ile hizmete girerek Adadaki kargo, kurye ve bileşenlerini entegre bir sistem haline getirmeyi hedefliyor</p>
+
+										<p>Görüşleriniz ve önerileriniz ile daha iyi hizmet sağlamamıza yardımcı olabilirsiniz</p>
+
+										<p>Pansel Ticaret ve Nakliyat LTD.</p>
+
+										<strong>bi̇ze ulaşin</strong>
+
+										<ul class="list-contacts">
+											<li>
+												<a href="tel:+905469959697">
+													<img src="assets/images/svg/phone-2.svg" alt="phone" width="16" height="16">
+
+													+90 546 995-9697
+												</a>
+											</li>
+
+											<li>
+												<a href="mailto:info@adadacargo.com">
+													<img src="assets/images/svg/email.svg" alt="mail" width="22" height="16">
+
+													info@adadacargo.com
+												</a>
+											</li>
+
+											<li>
+												<a href="#">
+													<img src="assets/images/svg/marker.svg" alt="marker" width="18" height="26">
+
+													Abc street no 21 Asd town Xxyz city Qwe country
+												</a>
+											</li>
+										</ul><!-- /.list-contacts -->
+									</div><!-- /.panel -->
+
+									<img src="assets/images/svg/decoration-vertical.svg" alt="decoration" class="section__decoration-desktop">
+
+									<img src="assets/images/svg/decoration.svg" alt="decoration" width="370" height="39" class="section__decoration-mobile">
+								</div><!-- /.section__aside-content -->
+							</div><!-- /.section__aside -->
+						</div><!-- /.section__col-fixed -->
+					</div><!-- /.section__cols -->
+				</div><!-- /.shell -->
+			</section><!-- /.section-form -->
+
+			<section class="section-form-alt">
+				<div class="shell">
+					<div class="section__cols">
+						<div class="section__col">
+							<div class="section__bar">
+								<h2>kurumsal hesap</h2>
+
+								<div class="section__actions">
+									<a href="#" class="section__btn">gi̇ri̇ş</a><!-- /.section__btn -->
+
+									<a href="#" class="section__btn section__btn--yellow">üye ol</a><!-- /.section__btn -->
+								</div><!-- /.section__actions -->
+
+								<figure class="section__image">
+									<img src="assets/images/svg/member-2.svg" alt="member" width="70" height="70">
+								</figure><!-- /.section__image -->
+							</div><!-- /.section__bar -->
+
+							<div class="js-form form-alt">
+								<form action="?" method="GET">
+									<div class="form__row">
+										<div class="form__controls">
+											<label for="name-2" class="sr-only">Name</label>
+
+											<input class="field-alter" data-validate="true" type="text" name="name-2" id="name-2" placeholder="Ad - Soyad">
+
+											<img src="assets/images/svg/member-3.svg" alt="member" width="14" height="19">
+										</div><!-- /.form__controls -->
+									</div><!-- /.form__row -->
+
+									<div class="form__row">
+										<div class="form__controls">
+											<label for="number" class="sr-only">Number</label>
+
+											<input class="field-alter" data-validate="true" type="text" name="number" id="number" placeholder="Telefon numarasını">
+
+											<img src="assets/images/svg/phone-3.svg" alt="phone" width="16" height="16">
+										</div><!-- /.form__controls -->
+									</div><!-- /.form__row -->
+
+									<div class="form__row">
+										<div class="form__controls">
+											<label for="email-2" class="sr-only">email</label>
+
+											<input class="field-alter" data-validate="true" type="email" name="email-2" id="email-2" placeholder="E-posta adres">
+
+											<img src="assets/images/svg/sign.svg" alt="sign" width="16" height="17">
+										</div><!-- /.form__controls -->
+									</div><!-- /.form__row -->
+
+									<div class="form__row">
+										<div class="form__controls">
+											<label for="password" class="sr-only">password</label>
+
+											<input class="field-alter" data-validate="true" type="password" name="password" id="password" placeholder="Şifre">
+
+											<img src="assets/images/svg/locker.svg" alt="locker" width="14" height="19">
+										</div><!-- /.form__controls -->
+									</div><!-- /.form__row -->
+
+									<div class="form__actions">
+										<button type="submit" class="form__btn">Giriş Yap</button>
+
+										<a href="#" class="form__btn">şifreyi Unuttum</a>
+
+										<a href="#" class="form__btn">Üye Ol</a>
+									</div><!-- /.form__actions -->
+								</form>
+							</div><!-- /.form-alt -->
+						</div><!-- /.section__col -->
+
+						<div class="section__col-alt">
+							<div class="section__aside">
+								<h5>neden kurumsal hesap?</h5>
+
+								<p>Kurumsal Hesap ile sürekli kargo işlemlerinizde kolaylık sağlayın, kredi kartı kullanmadan ve vadeli ödeme seçeneğiyle işlemlerinizi yapın!</p>
+
+								<h5>üye olmadan ayni i̇şlemleri̇ yapamiyor muyum?</h5>
+
+								<p>İşlemlerinizi bireysel (üye olmadan) da yapabilirsiniz</p>
+
+								<h5>farki ve avantaji nedi̇r?</h5>
+
+								<p>Yönetim paneli ile işlemlerinizi kolayca yapabilir, takip edebilirsiniz.Ön ödeme yaparak bonus avantajlarından yararlanabilirsiniz</p>
+
+								<h5>ki̇mler kurumsal hesaba sahi̇p olabi̇li̇r?</h5>
+
+								<div class="section__entry">
+									<p>Kısaca herkes! Haftada birden fazla kargonuz var,kredi kartı ile uğraşmak istemeyen,Hizmet hatttında öncelik istiyorsanız</p>
+								</div><!-- /.section__entry -->
+
+								<div class="section__intro">
+									<strong>Kolaylıktan faydalanın. <br>Üye ol butonuna tıklayarak ücretsiz hesabınızı oluşturun.</strong>
+								</div><!-- /.section__intro -->
+							</div><!-- /.section__aside -->
+						</div><!-- /.section__col-alt -->
+					</div><!-- /.section__cols -->
+				</div><!-- /.shell -->
+			</section><!-- /.section-form-alt -->
+
+			<section class="section-basic">
+				<div class="shell">
+					<div class="section__content">
+						<div class="popup">
+							<a href="#" class="popup__logo">
+								<img src="assets/images/logo-alt.svg" alt="logo" width="120" height="43">
+							</a><!-- /.popup__logo -->
+
+							<h2>uyarı!</h2>
+
+							<div class="popup__entry">
+								<p>Başka hiç kimsenin kullanamayacağı bir otomat alanını 36 saatliğine rezerve ediyorsunuz.</p>
+
+								<p>36 saatlik pencere içinde işleminizi yapmamanız durumunda YARI İADE ile iptal edilecektir.</p>
+							</div><!-- /.popup__entry -->
+
+							<div class="popup__holder">
+								<a href="#">Yasaklı ürün bilgileri için tıklayınız.</a>
+							</div><!-- /.popup__holder -->
+
+							<div class="popup__actions">
+								<a href="#" class="popup__btn">Reddet</a>
+
+								<a href="#" class="popup__btn popup__btn--alt">Kabul ediyorum</a>
+							</div><!-- /.popup__actions -->
+						</div><!-- /.popup -->
+					</div><!-- /.section__content -->
+				</div><!-- /.shell -->
+			</section><!-- /.section-basic -->
+
+			<section class="section-basic">
+				<div class="shell">
+					<div class="section__content">
+						<div class="popup popup--alt">
+							<h2>teşekkürler!</h2>
+
+							<div class="popup__entry">
+								<p>Rezervasyon bilgileriniz SMS ve E-posta olarak size gönderildi. <br>
+									Lütfen <a href="#">takip numarasını paket üzerine yazmayı</a> UNUTMAYIN!</p>
+							</div><!-- /.popup__entry -->
+
+							<div class="popup__holder">
+								<ul class="list-info popup__list-info">
+									<li>
+										<a href="#">
+											<span>Bırakma Kodunuz:</span>
+
+											<strong>123456</strong>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<span>Takip No:</span>
+
+											<strong>98765432</strong>
+										</a>
+									</li>
+								</ul><!-- /.list-info -->
+
+								<p>Şifrenizi üçüncü kişilerle paylaşırsanız, işlem sizin adınıza yapılmış sayılır.</p>
+							</div><!-- /.popup__holder -->
+						</div><!-- /.popup -->
+					</div><!-- /.section__content -->
+				</div><!-- /.shell -->
+			</section><!-- /.section-basic -->
+
+			<section class="section-table">
+				<div class="shell shell--fluid">
+					<div class="section__bar">
+						<h3>Rezervasyon Özetiniz</h3>
+					</div><!-- /.section__bar -->
+
+					<div class="section__content">
+						<div class="table">
+							<table>
+								<colgroup>
+									<col class="table__col-size1">
+
+									<col class="table__col-size2">
+
+									<col class="table__col-size3">
+
+									<col class="table__col-size4">
+
+									<col class="table__col-size5">
+
+									<col class="table__col-size2">
+
+									<col class="table__col-size2">
+
+									<col class="table__col-size6">
+
+									<col class="table__col-size6">
+
+									<col class="table__col-size6">
+
+									<col class="table__col-size7">
+
+									<col class="table__col-size2">
+
+									<col class="table__col-size2">
+								</colgroup>
+
+								<thead>
+									<tr>
+										<th>Gönerici Adı</th>
+
+										<th>Gönerici Telefon</th>
+
+										<th>Gönderici Mehtobu</th>
+
+										<th>İşlem Zamanı</th>
+
+										<th>Alıcı Adı</th>
+
+										<th>Alıcı Telefon</th>
+
+										<th>Alıcı Metobu</th>
+
+										<th>Ebat</th>
+
+										<th>Ücret</th>
+
+										<th>Diğer</th>
+
+										<th>Toplam</th>
+
+										<th>Bırakma Kodu</th>
+
+										<th>Takip No</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td>PANSEL E-TİCAR...</td>
+
+										<td>905338661510</td>
+
+										<td>
+											<a class="table__link" href="#">sdfdg jkhnsjklh</a>
+										</td>
+
+										<td>01:23 01.01.2024</td>
+
+										<td>ASD JKK</td>
+
+										<td>905338661510</td>
+
+										<td>
+											<a href="#" class="table__link">sdfhjkl erfesd</a><!-- /.table__link -->
+										</td>
+
+										<td>XS</td>
+
+										<td>70</td>
+
+										<td>0</td>
+
+										<td>70 ₺</td>
+
+										<td>123456</td>
+
+										<td>98765432</td>
+									</tr>
+
+									<tr>
+										<td>PANSEL E-TİCAR...</td>
+
+										<td>905338661510</td>
+
+										<td>
+											<a class="table__link" href="#">sdfdg jkhnsjklh</a>
+										</td>
+
+										<td>01:23 01.01.2024</td>
+
+										<td>ASD JKK</td>
+
+										<td>905338661510</td>
+
+										<td>
+											<a href="#" class="table__link">sdfhjkl erfesd</a><!-- /.table__link -->
+										</td>
+
+										<td>XS</td>
+
+										<td>70</td>
+
+										<td>0</td>
+
+										<td>70 ₺</td>
+
+										<td>123456</td>
+
+										<td>98765432</td>
+									</tr>
+
+									<tr>
+										<td>PANSEL E-TİCAR...</td>
+
+										<td>905338661510</td>
+
+										<td>
+											<a class="table__link" href="#">sdfdg jkhnsjklh</a>
+										</td>
+
+										<td>01:23 01.01.2024</td>
+
+										<td>ASD JKK</td>
+
+										<td>905338661510</td>
+
+										<td>
+											<a href="#" class="table__link">sdfhjkl erfesd</a><!-- /.table__link -->
+										</td>
+
+										<td>XS</td>
+
+										<td>70</td>
+
+										<td>0</td>
+
+										<td>70 ₺</td>
+
+										<td>123456</td>
+
+										<td>98765432</td>
+									</tr>
+
+									<tr>
+										<td>PANSEL E-TİCAR...</td>
+
+										<td>905338661510</td>
+
+										<td>
+											<a class="table__link" href="#">sdfdg jkhnsjklh</a>
+										</td>
+
+										<td>01:23 01.01.2024</td>
+
+										<td>ASD JKK</td>
+
+										<td>905338661510</td>
+
+										<td>
+											<a href="#" class="table__link">sdfhjkl erfesd</a><!-- /.table__link -->
+										</td>
+
+										<td>XS</td>
+
+										<td>70</td>
+
+										<td>0</td>
+
+										<td>70 ₺</td>
+
+										<td>123456</td>
+
+										<td>98765432</td>
+									</tr>
+
+									<tr>
+										<td>PANSEL E-TİCAR...</td>
+
+										<td>905338661510</td>
+
+										<td>
+											<a class="table__link" href="#">sdfdg jkhnsjklh</a>
+										</td>
+
+										<td>01:23 01.01.2024</td>
+
+										<td>ASD JKK</td>
+
+										<td>905338661510</td>
+
+										<td>
+											<a href="#" class="table__link">sdfhjkl erfesd</a><!-- /.table__link -->
+										</td>
+
+										<td>XS</td>
+
+										<td>70</td>
+
+										<td>0</td>
+
+										<td>70 ₺</td>
+
+										<td>123456</td>
+
+										<td>98765432</td>
+									</tr>
+
+									<tr>
+										<td>PANSEL E-TİCAR...</td>
+
+										<td>905338661510</td>
+
+										<td>
+											<a class="table__link" href="#">sdfdg jkhnsjklh</a>
+										</td>
+
+										<td>01:23 01.01.2024</td>
+
+										<td>ASD JKK</td>
+
+										<td>905338661510</td>
+
+										<td>
+											<a href="#" class="table__link">sdfhjkl erfesd</a><!-- /.table__link -->
+										</td>
+
+										<td>XS</td>
+
+										<td>70</td>
+
+										<td>0</td>
+
+										<td>70 ₺</td>
+
+										<td>123456</td>
+
+										<td>98765432</td>
+									</tr>
+
+									<tr>
+										<td>PANSEL E-TİCAR...</td>
+
+										<td>905338661510</td>
+
+										<td>
+											<a class="table__link" href="#">sdfdg jkhnsjklh</a>
+										</td>
+
+										<td>01:23 01.01.2024</td>
+
+										<td>ASD JKK</td>
+
+										<td>905338661510</td>
+
+										<td>
+											<a href="#" class="table__link">sdfhjkl erfesd</a><!-- /.table__link -->
+										</td>
+
+										<td>XS</td>
+
+										<td>70</td>
+
+										<td>0</td>
+
+										<td>70 ₺</td>
+
+										<td>123456</td>
+
+										<td>98765432</td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!-- /.table -->
+					</div><!-- /.section__content -->
+				</div><!-- /.shell shell--fluid -->
+			</section><!-- /.section-table -->
+		</div><!-- /.holder -->
+	</div><!-- /.wrapper -->
+
+	<script type="text/javascript">
+		window.gtranslateSettings = window.gtranslateSettings || {};
+		window.gtranslateSettings['43217984'] = {
+			"default_language": "en",
+			"languages": ["af", "sq", "am", "en", "fa", "ar", "ps", "ja", "zh-CN", "hy", "az", "eu", "be", "bn", "bs", "bg", "ca", "ceb", "ny", "zh-TW", "co", "hr", "cs", "da", "nl", "eo", "et", "tl", "fi", "fr", "fy", "gl", "ka", "de", "el", "gu", "ht", "ha", "haw", "iw", "hi", "hmn", "hu", "is", "ig", "id", "ga", "it", "jw", "kn", "kk", "km", "ko", "ku", "ky", "lo", "la", "lv", "lt", "lb", "mk", "mg", "ms", "ml", "mt", "mi", "mr", "mn", "my", "ne", "no", "pl", "pt", "pa", "ro", "ru", "sm", "gd", "sr", "st", "sn", "sd", "si", "sk", "sl", "so", "es", "su", "sw", "sv", "tg", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy", "xh", "yi", "yo", "zu"],
+			"wrapper_selector": ".google-translate",
+			"native_language_names": 1,
+			"flag_style": "2d",
+			"flag_size": 24,
+			"horizontal_position": "inline",
+			"flags_location": "assets/images/svg/flags/"
+		};
+	</script>
+	
+	<script type="text/javascript" src="./assets/vendor/jquery-3.7.1.min.js"></script>
+	<script src="./assets/vendor/gt.min.js" data-gt-widget-id="43217984"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	
+</body>
+</html>
+
