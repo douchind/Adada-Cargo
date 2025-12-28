@@ -1,0 +1,24 @@
+/* ------------------------------------------------------------ *\
+	location image holder
+\* ------------------------------------------------------------ */
+
+.location-image-holder {
+	position: relative;
+	aspect-ratio: 1160 / 650;
+	overflow: hidden;
+	margin-top: 1rem;
+	display: none;
+
+	&.is-visible {
+		display: block;
+	}
+
+	img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}

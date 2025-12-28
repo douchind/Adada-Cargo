@@ -58,3 +58,26 @@ function handleCustomSelect($select) {
 }
 
 handleCustomSelect($('.js-select-custom'));
+
+$('.js-select-custom select').on('change', function () {
+	const selectedValue = $(this).val();
+
+	if (!selectedValue) {
+		$('.location-image-holder').removeClass('is-visible');
+		return;
+	}
+
+	// Обект с картинките спрямо избора
+	const images = {
+		'tx-dallas': 'assets/images/temp/banner-img1.png',
+		'ca-los-angeles': 'assets/images/temp/banner-img2.png',
+		'ca-san-francisco': 'assets/images/temp/banner-img3.png',
+	};
+
+	// Вземи правилната снимка или покажи default
+	const newImage = images[selectedValue];
+
+	// Смени src на картинката
+	$('.location-image-holder img').attr('src', newImage);
+	$('.location-image-holder').addClass('is-visible');
+});

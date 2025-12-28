@@ -143,8 +143,12 @@
 
 // .section-simple--adjust
 .section-simple--adjust {
-	padding: 4rem 0 9rem;
+	padding: 1rem 0 9rem;
 	position: relative;
+
+	&:before {
+		display: none;
+	}
 
 	@include breakpoint-down(tablet) {
 		padding-bottom: 5rem;

@@ -111,15 +111,15 @@
 	}
 
 	// is open
-	.is-open .accordion__head:before {
+	.accordion__section.is-open > .accordion__head:before {
 		content: '-';
 	}
 
-	.is-open .accordion__body {
+	.accordion__section.is-open > .accordion__body {
 		grid-template-rows: 1fr;
 	}
 
-	.is-open .accordion__content {
+	.accordion__section.is-open > .accordion__body > .accordion__content {
 		padding: 2rem 0 0;
 
 		@include breakpoint-down(mobile) {
@@ -132,5 +132,42 @@
 .accordion--adjust {
 	.accordion__body {
 		max-width: 100%;
+	}
+}
+
+// accordio hidden desktop
+.accordion--hidden-desktop {
+	.accordion__section > .accordion__body {
+		grid-template-rows: 1fr;
+
+		@include breakpoint-down(mobile) {
+			grid-template-rows: 0fr;
+		}
+	}
+
+	.accordion__section.is-open > .accordion__body > .accordion__content {
+		padding: 0;
+
+		@include breakpoint-down(mobile) {
+			padding: 1rem 0 0;
+		}
+	}
+
+	.accordion__head {
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: 0;
+		opacity: 0;
+		pointer-events: none;
+
+		@include breakpoint-down(mobile) {
+			width: auto;
+			height: auto;
+			padding: 1.6rem 4rem 1.6rem 1.6rem;
+			opacity: 1;
+			margin: 0 !important;
+			pointer-events: auto;
+		}
 	}
 }
