@@ -76,6 +76,10 @@ h2 {
 h3 {
 	font-size: 3rem;
 	letter-spacing: 0.1em;
+
+	@include breakpoint-down(mobile) {
+		font-size: 1.8rem;
+	}
 }
 
 .level-4,

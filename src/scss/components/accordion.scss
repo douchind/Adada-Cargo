@@ -62,6 +62,10 @@
 		}
 	}
 
+	.accordion__body--full {
+		max-width: 100%;
+	}
+
 	.accordion__content {
 		overflow: hidden;
 		transition: padding 0.3s ease-in-out;
@@ -135,7 +139,7 @@
 	}
 }
 
-// accordio hidden desktop
+// accordion hidden desktop
 .accordion--hidden-desktop {
 	.accordion__section > .accordion__body {
 		grid-template-rows: 1fr;

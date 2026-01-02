@@ -1,0 +1,75 @@
+.btn-alt {
+	display: inline-flex;
+	vertical-align: middle;
+	align-items: stretch;
+	justify-content: flex-start;
+	cursor: pointer;
+	text-decoration: none;
+	appearance: none;
+	text-align: center;
+	gap: 0.4rem;
+	color: #fff;
+	font-weight: 700;
+	font-family: var(--ff-now);
+	font-size: 3rem;
+	line-height: 1.1;
+	transition: transform 0.3s ease-in-out;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+
+	@include breakpoint-down(tablet) {
+		font-size: 2.2rem;
+	}
+
+	.btn-alt__content {
+		background-color: #e55f57;
+		min-width: 17rem;
+
+		@include breakpoint-down(tablet) {
+			min-width: 12rem;
+		}
+	}
+
+	.btn-alt__col {
+		padding: 0.5rem 2rem;
+
+		@include breakpoint-down(tablet) {
+			padding: 0.4rem 1rem;
+		}
+	}
+
+	.btn-alt__col:nth-child(2) {
+		background-color: #ff0000;
+	}
+
+	.btn-alt__aside {
+		background-color: #5e5e5f;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 8rem;
+		border-radius: 0 100% 100% 0;
+
+		@include breakpoint-down(tablet) {
+			min-width: 5rem;
+		}
+	}
+}
+
+.btn-alt--blue .btn-alt__content {
+	background-color: #44a19c;
+}
+
+.btn-alt--blue .btn-alt__col:nth-child(2) {
+	background-color: #218f8a;
+}
+
+.btn-alt--yellow .btn-alt__content {
+	background-color: #f8b73e;
+}
+
+.btn-alt--yellow .btn-alt__col:nth-child(2) {
+	background-color: #f7aa1a;
+}

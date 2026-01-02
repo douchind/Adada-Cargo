@@ -23,9 +23,13 @@
 			<div class="shell">
 				<div class="section__head">
 					<figure class="js-animate section__image">
-						<img src="assets/images/temp/banner-img1.png" alt="banner" width="630" height="330">
+						<a href="#">
+							<img src="assets/images/temp/banner-home.jpg" alt="banner" width="650" height="330">
 
-						<p>Daha fazla lokasyonda yakında hizmet vereceğiz.</p>
+							<span class="section__image-number">49</span>
+						</a>
+
+						<a href="#" class="section__image-link">Any locker, same price — ship the smart way!</a>
 					</figure><!-- /.section__image -->
 
 					<a href="#" data-target="target-1" class="js-skip section__scroll-btn">
@@ -34,32 +38,233 @@
 				</div><!-- /.section__head -->
 
 				<div data-target-element="target-1" class="section__body">
-					<div class="section__row">
-						<figure class="js-animate section__image section__image--adjust">
-							<img src="assets/images/temp/banner-img2.png" alt="banner" width="500" height="230">
+					<div class="section__row section__row--flex">
+						<div class="js-animate section__col">
+							<figure class="section__image section__image--adjust">
+								<img src="assets/images/temp/banner-1.png" alt="banner" width="550" height="250">
 
-							<p>Daha fazla lokasyonda yakında hizmet vereceğiz.</p>
-						</figure><!-- /.section__image -->
+								<p>Click below for CargoPoint-to-CargoPoint delivery</p>
+							</figure><!-- /.section__image -->
+
+							<div class="section__actions">
+								<a href="#" class="btn-alt">
+									<div class="btn-alt__content">
+										<div class="btn-alt__col">
+											<span>Send</span>
+										</div><!-- /.btn-alt__col -->
+
+										<div class="btn-alt__col">
+											<span>Cheap</span>
+										</div><!-- /.btn-alt__col -->
+									</div><!-- /.btn-alt__content -->
+
+									<div class="btn-alt__aside">
+										<img src="assets/images/svg/arrows-right.svg" alt="chevrons" width="22" height="22">
+									</div><!-- /.btn-alt__aside -->
+								</a><!-- /.btn-alt -->
+							</div><!-- /.section__actions -->
+						</div><!-- /.section__col -->
+
+						<div class="js-animate section__col">
+							<figure class="section__image section__image--adjust">
+								<img src="assets/images/temp/banner-2.png" alt="banner" width="550" height="250">
+
+								<p>Click below for CargoPoint-to-Address delivery</p>
+							</figure><!-- /.section__image -->
+
+							<div class="section__actions">
+								<a href="#" class="btn-alt btn-alt--blue">
+									<div class="btn-alt__content">
+										<div class="btn-alt__col">
+											<span>Send to</span>
+										</div><!-- /.btn-alt__col -->
+
+										<div class="btn-alt__col">
+											<span>Address</span>
+										</div><!-- /.btn-alt__col -->
+									</div><!-- /.btn-alt__content -->
+
+									<div class="btn-alt__aside">
+										<img src="assets/images/svg/arrows-right.svg" alt="chevrons" width="22" height="22">
+									</div><!-- /.btn-alt__aside -->
+								</a><!-- /.btn-alt -->
+							</div><!-- /.section__actions -->
+						</div><!-- /.section__col -->
 					</div><!-- /.section__row -->
 
-					<div class="section__row section__row--align-right">
+					<div class="section__row section__row--align-center">
 						<figure class="js-animate section__image section__image--adjust">
-							<img src="assets/images/temp/banner-img3.png" alt="banner" width="500" height="230">
+							<img src="assets/images/temp/banner-3.png" alt="banner" width="550" height="250">
 
-							<p>Daha fazla lokasyonda yakında hizmet vereceğiz.</p>
+							<p>Click below to rent a storage locker</p>
 						</figure><!-- /.section__image -->
+
+						<div class="section__actions">
+							<a href="#" class="btn-alt btn-alt--yellow">
+								<div class="btn-alt__content">
+									<div class="btn-alt__col">
+										<span>Storage</span>
+									</div><!-- /.btn-alt__col -->
+
+									<div class="btn-alt__col">
+										<span>Locker</span>
+									</div><!-- /.btn-alt__col -->
+								</div><!-- /.btn-alt__content -->
+
+								<div class="btn-alt__aside">
+									<img src="assets/images/svg/arrows-right.svg" alt="chevrons" width="22" height="22">
+								</div><!-- /.btn-alt__aside -->
+							</a><!-- /.btn-alt -->
+						</div><!-- /.section__actions -->
 					</div><!-- /.section__row -->
 
 					<div class="section__row">
-						<figure class="js-animate section__image section__image--adjust">
-							<img src="assets/images/temp/banner-img4.png" alt="banner" width="430" height="230">
+						<div class="map">
+							<div class="map__title-area">
+								<h4 class="level-1 mb-0">Cargo Point Locations</h4><!-- /.level-2 -->
+							</div>
 
-							<p>Daha fazla lokasyonda yakında hizmet vereceğiz.</p>
-						</figure><!-- /.section__image -->
+							<div class="js-select-custom select-custom select-custom--xl">
+								<select id="example">
+									<optgroup label="United States - West Coast">
+										<option disabled selected></option>
+
+										<option value="ca-los-angeles">California - Los Angeles</option>
+
+										<option value="ca-san-francisco">California - San Francisco</option>
+
+										<option value="wa-seattle">Washington - Seattle</option>
+									</optgroup>
+
+									<optgroup label="United States - South">
+										<option value="tx-dallas">Texas - Dallas</option>
+
+										<option value="tx-houston">Texas - Houston</option>
+
+										<option value="fl-miami">Florida - Miami</option>
+									</optgroup>
+
+									<optgroup label="Canada - West">
+										<option value="bc-vancouver">British Columbia - Vancouver</option>
+
+										<option value="ab-calgary">Alberta - Calgary</option>
+
+										<option value="ab-edmonton">Alberta - Edmonton</option>
+									</optgroup>
+
+									<optgroup label="Canada - East">
+										<option value="on-toronto">Ontario - Toronto</option>
+
+										<option value="qc-montreal">Quebec - Montreal</option>
+
+										<option value="ns-halifax">Nova Scotia - Halifax</option>
+									</optgroup>
+								</select>
+							</div><!-- /.select-custom -->
+
+							<div class="js-accordion accordion accordion--hidden-desktop">
+								<div class="accordion__section">
+									<div class="accordion__head accordion__head--wrapped">
+										<h3 class="accordion__title">Cargo Point Locations</h3><!-- /.accordion__title -->
+									</div><!-- /.accordion__head -->
+
+									<div class="accordion__body accordion__body--full">
+										<div class="accordion__content">
+											<figure class="map__image">
+												<img src="assets/images/temp/map-img1.jpg" alt="map" width="650" height="420">
+											</figure><!-- /.map__image -->
+										</div><!-- /.accordion__content -->
+									</div><!-- /.accordion__body -->
+								</div><!-- /.accordion__section -->
+							</div><!-- /.accordion -->
+
+							<div class="map__meta">
+								<h3>You can also select from the map</h3>
+								<img src="assets/images/svg/check-round.svg" alt="" width="40px" height="40px">
+							</div><!-- /.map__meta -->
+
+							<a class="map__link" href="#">Click here to view locaton photos and directions for all lockers</a>
+
+							<figure class="location-image-holder">
+								<img src="assets/images/temp/map-img1.jpg" alt="location" width="650" height="420">
+							</figure><!-- /.location-image-holder -->
+						</div><!-- /.map -->
 					</div><!-- /.section__row -->
 				</div><!-- /.section__body -->
 			</div><!-- /.shell -->
 		</section><!-- /.section -->
+
+		<section class="section-alt">
+			<div class="shell">
+				<div class="section__head">
+					<h4 class="level-1">How to use it — three quick steps</h4>
+				</div><!-- /.section__head -->
+
+				<div class="section__body">
+					<figure class="section__image">
+						<img src="assets/images/temp/how-to-use.png" alt="">
+
+						<a href="#" class="section__link">How to use our servces? Clck here for more details</a>
+					</figure><!-- /.section__image -->
+
+					<div class="section__actions">
+						<h4>Which service would you like to choose?</h4>
+
+						<div class="section__actions__area">
+							<a href="#" class="btn-alt">
+									<div class="btn-alt__content">
+										<div class="btn-alt__col">
+											<span>Send</span>
+										</div><!-- /.btn-alt__col -->
+
+										<div class="btn-alt__col">
+											<span>Cheap</span>
+										</div><!-- /.btn-alt__col -->
+									</div><!-- /.btn-alt__content -->
+
+									<div class="btn-alt__aside">
+										<img src="assets/images/svg/arrows-right.svg" alt="chevrons" width="22" height="22">
+									</div><!-- /.btn-alt__aside -->
+								</a><!-- /.btn-alt -->
+
+								<a href="#" class="btn-alt btn-alt--blue">
+									<div class="btn-alt__content">
+										<div class="btn-alt__col">
+											<span>Send to</span>
+										</div><!-- /.btn-alt__col -->
+
+										<div class="btn-alt__col">
+											<span>Address</span>
+										</div><!-- /.btn-alt__col -->
+									</div><!-- /.btn-alt__content -->
+
+									<div class="btn-alt__aside">
+										<img src="assets/images/svg/arrows-right.svg" alt="chevrons" width="22" height="22">
+									</div><!-- /.btn-alt__aside -->
+								</a><!-- /.btn-alt -->
+
+								<a href="#" class="btn-alt btn-alt--yellow">
+									<div class="btn-alt__content">
+										<div class="btn-alt__col">
+											<span>Storage</span>
+										</div><!-- /.btn-alt__col -->
+
+										<div class="btn-alt__col">
+											<span>Locker</span>
+										</div><!-- /.btn-alt__col -->
+									</div><!-- /.btn-alt__content -->
+
+									<div class="btn-alt__aside">
+										<img src="assets/images/svg/arrows-right.svg" alt="chevrons" width="22" height="22">
+									</div><!-- /.btn-alt__aside -->
+								</a><!-- /.btn-alt -->
+						</div><!-- /.section__actions__area -->
+
+						<a href="#" class="section__link">Clck here for Frequently Asked Questons</a>
+					</div><!-- /.section__actions -->
+				</div><!-- /.section__body -->
+			</div><!-- /.shell -->
+		</section>
 
 		{{> footer }}
 	</div><!-- /.wrapper -->
