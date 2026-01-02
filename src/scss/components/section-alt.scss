@@ -23,6 +23,12 @@
 		}
 	}
 
+	.section__head h4 {
+		@include breakpoint-down(mobile) {
+			font-size: 2.6rem;
+		}
+	}
+
 	.section__body {
 		max-width: 100rem;
 		margin: 0 auto;
@@ -31,29 +37,53 @@
 
 	.section__image {
 		margin-bottom: 10rem;
+
+		margin-bottom: 6rem;
 	}
 
 	.section__image img {
 		margin-bottom: 2rem;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 1rem;
+		}
 	}
 
 	.section__link {
 		font-size: 2.8rem;
 		color: #000;
 		font-weight: 600;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.8rem;
+		}
 	}
 
 	.section__actions h4 {
 		font-weight: 600;
 		color: #000;
 		margin-bottom: 3rem;
+
+		@include breakpoint-down(mobile) {
+			font-size: 2.4rem;
+		}
 	}
 
 	.section__actions .section__actions__area {
 		display: flex;
 		justify-content: space-between;
 		gap: 3rem;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		margin-bottom: 7rem;
+
+		@include breakpoint-down(tablet) {
+			justify-content: center;
+			gap: 5rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			gap: 2rem;
+			margin-bottom: 4rem;
+		}
 	}
 }
