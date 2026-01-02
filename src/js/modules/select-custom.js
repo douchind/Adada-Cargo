@@ -60,10 +60,13 @@ function handleCustomSelect($select) {
 handleCustomSelect($('.js-select-custom'));
 
 $('.js-select-custom select').on('change', function () {
+	const $this = $(this);
+	const imageTargetValue = $this.data('image-target');
+	const $imageTarget = $(`[data-image="${imageTargetValue}"]`);
 	const selectedValue = $(this).val();
 
 	if (!selectedValue) {
-		$('.location-image-holder').removeClass('is-visible');
+		$imageTarget.removeClass('is-visible');
 		return;
 	}
 
@@ -78,6 +81,6 @@ $('.js-select-custom select').on('change', function () {
 	const newImage = images[selectedValue];
 
 	// Смени src на картинката
-	$('.location-image-holder img').attr('src', newImage);
-	$('.location-image-holder').addClass('is-visible');
+	$imageTarget.find('img').attr('src', newImage);
+	$imageTarget.addClass('is-visible');
 });

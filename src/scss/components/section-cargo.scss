@@ -57,6 +57,18 @@
 		}
 	}
 
+	.section__select-area {
+		max-width: 52rem;
+		margin: 0 auto 4rem;
+	}
+
+	.section__select-area h6 {
+		font-size: 2.6rem;
+		font-weight: 500;
+		margin-bottom: 2rem;
+		color: #e14137;
+	}
+
 	// is visible
 	.section__image-left.is-visible {
 		animation: bounce-in 1.6s ease;

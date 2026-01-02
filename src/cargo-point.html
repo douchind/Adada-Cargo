@@ -220,11 +220,47 @@
 						</div><!-- /.checkbox -->
 					</div><!-- /.checkboxes -->
 
-					<div class="section__entry">
-						<p>* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+					<div class="section__select-area">
+						<h6>Select the <b>Durationurat</b> of the Rental</h6>
 
-						<p>** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-					</div><!-- /.section__entry -->
+						<div class="js-select-custom select-custom section__select-custom">
+							<select id="example-5">
+								<optgroup label="United States - West Coast">
+									<option disabled selected></option>
+
+									<option value="ca-los-angeles">California - Los Angeles</option>
+
+									<option value="ca-san-francisco">California - San Francisco</option>
+
+									<option value="wa-seattle">Washington - Seattle</option>
+								</optgroup>
+
+								<optgroup label="United States - South">
+									<option value="tx-dallas">Texas - Dallas</option>
+
+									<option value="tx-houston">Texas - Houston</option>
+
+									<option value="fl-miami">Florida - Miami</option>
+								</optgroup>
+
+								<optgroup label="Canada - West">
+									<option value="bc-vancouver">British Columbia - Vancouver</option>
+
+									<option value="ab-calgary">Alberta - Calgary</option>
+
+									<option value="ab-edmonton">Alberta - Edmonton</option>
+								</optgroup>
+
+								<optgroup label="Canada - East">
+									<option value="on-toronto">Ontario - Toronto</option>
+
+									<option value="qc-montreal">Quebec - Montreal</option>
+
+									<option value="ns-halifax">Nova Scotia - Halifax</option>
+								</optgroup>
+							</select>
+						</div><!-- /.select-custom -->
+					</div>
 				</div><!-- /.section__content -->
 			</div><!-- /.shell -->
 		</section><!-- /.section-cargo -->
@@ -241,7 +277,7 @@
 											<h4 class="level-2">Gönderici Otomatını Seçin</h4><!-- /.level-2 -->
 
 											<div class="js-select-custom select-custom section__select-custom">
-												<select id="example">
+												<select data-image-target="target-1" id="example">
 													<optgroup label="United States - West Coast">
 														<option disabled selected></option>
 
@@ -298,7 +334,7 @@
 												<img src="assets/images/svg/check-round.svg" alt="" width="40px" height="40px">
 											</div><!-- /.map__meta -->
 
-											<figure class="location-image-holder">
+											<figure data-image="target-1" class="location-image-holder">
 												<img src="assets/images/temp/map-img1.jpg" alt="location" width="650" height="420">
 											</figure><!-- /.location-image-holder -->
 										</div><!-- /.map -->
@@ -311,7 +347,7 @@
 											<h4 class="level-2">Alıcı Otomatını Seçin</h4><!-- /.level-2 -->
 
 											<div class="js-select-custom select-custom section__select-custom">
-												<select id="example-3">
+												<select data-image-target="target-2" id="example-3">
 													<optgroup label="United States - West Coast">
 														<option disabled selected></option>
 
@@ -368,7 +404,7 @@
 												<img src="assets/images/svg/check-round.svg" alt="" width="40px" height="40px">
 											</div><!-- /.map__meta -->
 
-											<figure class="location-image-holder">
+											<figure data-image="target-2" class="location-image-holder">
 												<img src="assets/images/temp/map-img1.jpg" alt="location" width="650" height="420">
 											</figure><!-- /.location-image-holder -->
 										</div><!-- /.map -->
