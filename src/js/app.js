@@ -8,6 +8,7 @@ import '/scss/style.scss';
  */
 import './modules/form-validation';
 import './modules/select-custom';
+import './modules/select-price';
 import './modules/custom-flags';
 import './modules/phone-field';
 import './modules/accordion';

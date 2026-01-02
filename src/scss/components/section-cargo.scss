@@ -59,7 +59,7 @@
 
 	.section__select-area {
 		max-width: 52rem;
-		margin: 0 auto 4rem;
+		margin: 0 auto;
 	}
 
 	.section__select-area h6 {
@@ -67,6 +67,11 @@
 		font-weight: 500;
 		margin-bottom: 2rem;
 		color: #e14137;
+
+		@include breakpoint-down(mobile) {
+			font-size: 2rem;
+			text-align: center;
+		}
 	}
 
 	// is visible
