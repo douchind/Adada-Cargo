@@ -1,13 +1,18 @@
 // Select the radio buttons and the element to toggle
-const yesRadio = document.getElementById('radio-alt-1');
-const noRadio = document.getElementById('radio-alt-2');
-const receiverCol = document.querySelector('.form__col--receiver');
+const $noRadio = $('#radio-alt-1');
+const $yesRadio = $('#radio-alt-2');
+const $receiverCol = $('.form__col--receiver');
 
-// Listen for changes
-noRadio.addEventListener('change', () => {
-	receiverCol.classList.add('is-active');
+// When "No" is selected, remove the class
+$noRadio.on('change', function () {
+	if ($(this).is(':checked')) {
+		$receiverCol.removeClass('is-active');
+	}
 });
 
-yesRadio.addEventListener('change', () => {
-	receiverCol.classList.remove('is-active');
+// When "Yes" is selected, add the class
+$yesRadio.on('change', function () {
+	if ($(this).is(':checked')) {
+		$receiverCol.addClass('is-active');
+	}
 });

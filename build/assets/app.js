@@ -136,9 +136,12 @@ function handleCustomSelect($select) {
 }
 handleCustomSelect($(".js-select-custom"));
 $(".js-select-custom select").on("change", function() {
+  const $this = $(this);
+  const imageTargetValue = $this.data("image-target");
+  const $imageTarget = $(`[data-image="${imageTargetValue}"]`);
   const selectedValue = $(this).val();
   if (!selectedValue) {
-    $(".location-image-holder").removeClass("is-visible");
+    $imageTarget.removeClass("is-visible");
     return;
   }
   const images = {
@@ -147,9 +150,51 @@ $(".js-select-custom select").on("change", function() {
     "ca-san-francisco": "assets/images/temp/banner-img3.png"
   };
   const newImage = images[selectedValue];
-  $(".location-image-holder img").attr("src", newImage);
-  $(".location-image-holder").addClass("is-visible");
+  $imageTarget.find("img").attr("src", newImage);
+  $imageTarget.addClass("is-visible");
 });
+const yesRadio = document.getElementById("radio-alt-1");
+const noRadio = document.getElementById("radio-alt-2");
+const receiverCol = document.querySelector(".form__col--receiver");
+noRadio.addEventListener("change", () => {
+  receiverCol.classList.add("is-active");
+});
+yesRadio.addEventListener("change", () => {
+  receiverCol.classList.remove("is-active");
+});
+function handleCustomSelectPrice($select) {
+  $select.each((idx, select) => {
+    const $customSelect = $(select);
+    const targetSelect = $customSelect.find("select");
+    targetSelect.select2({
+      placeholder: "Select a duration",
+      allowClear: true,
+      dropdownParent: $customSelect,
+      templateResult: formatOption,
+      templateSelection: formatSelected
+    });
+  });
+}
+function formatOption(option) {
+  if (!option.id)
+    return option.text;
+  const time = $(option.element).data("time");
+  const price = $(option.element).data("price");
+  return $(`
+	<div class="select-option">
+	  <span class="select-option__time">${time}</span>
+	  <span class="select-option__price">${price}</span>
+	</div>
+  `);
+}
+function formatSelected(option) {
+  if (!option.id)
+    return option.text;
+  const time = $(option.element).data("time");
+  const price = $(option.element).data("price");
+  return `${time} – ${price}`;
+}
+handleCustomSelectPrice($(".js-select-custom-price"));
 function handleCustomFlags($customFlags) {
   $customFlags.each((idx, customFlag) => {
     const $customFlag = $(customFlag);
@@ -157,7 +202,7 @@ function handleCustomFlags($customFlags) {
     $targetSelect.select2({
       templateResult: formatCountry,
       templateSelection: formatCountry,
-      dropdownParent: $customFlags,
+      dropdownParent: $customFlag,
       minimumResultsForSearch: -1
     });
   });
