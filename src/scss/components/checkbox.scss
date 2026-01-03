@@ -47,10 +47,18 @@
 	}
 
 	.checkbox__discount {
+		display: none;
+
+		@include breakpoint-down(mobile) {
+			width: 2.4rem;
+		}
+	}
+
+	.checkbox__size {
 		position: absolute;
 		top: 1rem;
 		left: 1rem;
-		display: none;
+		font-size: 4rem;
 
 		@include breakpoint-down(mobile) {
 			width: 2.4rem;
