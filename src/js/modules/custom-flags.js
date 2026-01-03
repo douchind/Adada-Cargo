@@ -11,7 +11,7 @@ function handleCustomFlags($customFlags) {
 		$targetSelect.select2({
 			templateResult: formatCountry,
 			templateSelection: formatCountry,
-			dropdownParent: $customFlags,
+			dropdownParent: $customFlag,
 			minimumResultsForSearch: -1,
 		});
 	});
