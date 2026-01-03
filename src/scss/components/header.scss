@@ -18,12 +18,12 @@
 		@include breakpoint-down(tablet) {
 			display: block;
 			background-color: #e4e4e4;
-			padding: 2rem 2rem;
+			padding: 2rem 2rem 1rem;
 			margin: 0 -2rem 2rem;
 		}
 
 		@include breakpoint-down(mobile) {
-			padding: 1.4rem 2rem;
+			padding: 1.4rem 2rem 0.6rem;
 			margin-bottom: 2.3rem;
 		}
 	}
