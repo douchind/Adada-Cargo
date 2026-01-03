@@ -89,6 +89,12 @@
 		}
 	}
 
+	// accordion__inner--gap
+	.accordion__inner--gap {
+		gap: 4rem;
+		justify-content: space-between;
+	}
+
 	.accordion__inner > img {
 		width: 7.2rem;
 		max-width: 7.2rem;
@@ -112,6 +118,12 @@
 			width: 100%;
 			max-width: 100%;
 		}
+	}
+
+	// accordion__col flex center
+	.flex-center {
+		display: flex;
+		justify-content: center;
 	}
 
 	// is open

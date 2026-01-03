@@ -1,0 +1,49 @@
+/* ------------------------------------------------------------ *\
+	radio-alt
+\* ------------------------------------------------------------ */
+
+.radio-alt {
+	input {
+		display: none;
+	}
+
+	label {
+		position: relative;
+		padding-left: 4rem;
+		font-size: 3rem;
+		color: #000;
+		font-weight: 600;
+		font-family: var(--ff-now-alt);
+
+		&:before {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: 54%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 2.5rem;
+			height: 2.5rem;
+			border-radius: 100%;
+			border: 1px solid #000;
+		}
+
+		&:after {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: 54%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 2.5rem;
+			height: 2.5rem;
+			border-radius: 100%;
+			opacity: 0;
+			background-color: #58595b;
+		}
+	}
+
+	input:checked + label:after {
+		opacity: 1;
+	}
+}
