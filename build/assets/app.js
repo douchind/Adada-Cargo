@@ -153,14 +153,18 @@ $(".js-select-custom select").on("change", function() {
   $imageTarget.find("img").attr("src", newImage);
   $imageTarget.addClass("is-visible");
 });
-const yesRadio = document.getElementById("radio-alt-1");
-const noRadio = document.getElementById("radio-alt-2");
-const receiverCol = document.querySelector(".form__col--receiver");
-noRadio.addEventListener("change", () => {
-  receiverCol.classList.add("is-active");
+const $noRadio = $("#radio-alt-1");
+const $yesRadio = $("#radio-alt-2");
+const $receiverCol = $(".form__col--receiver");
+$noRadio.on("change", function() {
+  if ($(this).is(":checked")) {
+    $receiverCol.removeClass("is-active");
+  }
 });
-yesRadio.addEventListener("change", () => {
-  receiverCol.classList.remove("is-active");
+$yesRadio.on("change", function() {
+  if ($(this).is(":checked")) {
+    $receiverCol.addClass("is-active");
+  }
 });
 function handleCustomSelectPrice($select) {
   $select.each((idx, select) => {
