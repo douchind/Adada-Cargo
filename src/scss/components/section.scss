@@ -98,7 +98,7 @@
 		margin-top: 7.7rem;
 
 		@include breakpoint-down(mobile) {
-			margin-top: 3.2rem;
+			margin-top: 5.2rem;
 		}
 	}
 
@@ -152,7 +152,7 @@
 		}
 
 		@include breakpoint-down(mobile) {
-			font-size: 1.8rem;
+			font-size: 1.6rem;
 		}
 	}
 

@@ -46,6 +46,9 @@ $(".js-form form").on("submit", function(event) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   $form.find("[data-validate]").each(function(index, el) {
     const $this = $(el);
+    if (!$this.is(":visible")) {
+      return;
+    }
     const type = $this[0].type;
     if (type === "checkbox") {
       const $parent = $this.closest(".checkbox-alt");
@@ -158,7 +161,7 @@ const $yesRadio = $("#radio-alt-2");
 const $receiverCol = $(".form__col--receiver");
 $noRadio.on("change", function() {
   if ($(this).is(":checked")) {
-    $receiverCol.removeClass("is-active");
+    $receiverCol.removeClass("is-active").find(".is-error").removeClass("is-error");
   }
 });
 $yesRadio.on("change", function() {

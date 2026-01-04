@@ -1226,7 +1226,7 @@ blockquote:last-child {
 
 @media (max-width: 767px) {
   .checkbox .checkbox__size {
-    width: 2.4rem;
+    font-size: 3rem;
   }
 }
 
@@ -1892,6 +1892,12 @@ blockquote:last-child {
   margin-bottom: 2rem;
   color: #e14137;
   font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .form .form__row-title {
+    font-size: 2.2rem;
+  }
 }
 
 .form .form__content {
@@ -3935,6 +3941,13 @@ blockquote:last-child {
   font-family: var(--ff-now-alt);
 }
 
+@media (max-width: 767px) {
+  .radio-alt label {
+    font-size: 2rem;
+    padding-left: 3.5rem;
+  }
+}
+
 .radio-alt label:before {
   content: "";
   display: inline-block;
@@ -3946,6 +3959,13 @@ blockquote:last-child {
   height: 2.5rem;
   border-radius: 100%;
   border: 1px solid #000;
+}
+
+@media (max-width: 767px) {
+  .radio-alt label:before {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 .radio-alt label:after {
@@ -3960,6 +3980,13 @@ blockquote:last-child {
   border-radius: 100%;
   opacity: 0;
   background-color: #58595b;
+}
+
+@media (max-width: 767px) {
+  .radio-alt label:after {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 .radio-alt input:checked + label:after {
