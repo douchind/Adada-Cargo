@@ -15,6 +15,11 @@
 		font-weight: 600;
 		font-family: var(--ff-now-alt);
 
+		@include breakpoint-down(mobile) {
+			font-size: 2rem;
+			padding-left: 3.5rem;
+		}
+
 		&:before {
 			content: '';
 			display: inline-block;
@@ -26,6 +31,11 @@
 			height: 2.5rem;
 			border-radius: 100%;
 			border: 1px solid #000;
+
+			@include breakpoint-down(mobile) {
+				width: 2rem;
+				height: 2rem;
+			}
 		}
 
 		&:after {
@@ -40,6 +50,11 @@
 			border-radius: 100%;
 			opacity: 0;
 			background-color: #58595b;
+
+			@include breakpoint-down(mobile) {
+				width: 2rem;
+				height: 2rem;
+			}
 		}
 	}
 

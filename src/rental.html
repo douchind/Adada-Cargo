@@ -57,7 +57,7 @@
 					<h1>Boyut Seçiniz</h1>
 
 					<div class="checkboxes section__checkboxes">
-						<div data-target="locations" class="js-skip checkbox have-discount">
+						<div data-target="rental" class="js-skip checkbox have-discount">
 							<div class="checkbox__head">
 								<input type="radio" name="checkbox-1" id="checkbox-1">
 
@@ -69,19 +69,11 @@
 							</div><!-- /.checkbox__head -->
 
 							<div class="checkbox__body">
-								<div class="checkbox__price">
-									<img src="assets/images/svg/discount.svg" width="20" height="45" alt="discount" class="checkbox__discount">
-
-									<span class="checkbox__price-old">60₺</span><!-- /.checkbox__price-old -->
-
-									<span>40₺</span>
-								</div><!-- /.checkbox__price -->
-
 								<span class="checkbox__size">XS</span>
 							</div><!-- /.checkbox__body -->
 						</div><!-- /.checkbox -->
 
-						<div data-target="locations" class="js-skip checkbox">
+						<div data-target="rental" class="js-skip checkbox">
 							<div class="checkbox__head">
 								<input type="radio" name="checkbox-1" id="checkbox-2">
 
@@ -93,17 +85,11 @@
 							</div><!-- /.checkbox__head -->
 
 							<div class="checkbox__body">
-								<div class="checkbox__price">
-									<img src="assets/images/svg/discount.svg" width="20" height="45" alt="discount" class="checkbox__discount">
-
-									<span>130₺</span>
-								</div><!-- /.checkbox__price -->
-
 								<span class="checkbox__size">S</span>
 							</div><!-- /.checkbox__body -->
 						</div><!-- /.checkbox -->
 
-						<div data-target="locations" class="js-skip checkbox">
+						<div data-target="rental" class="js-skip checkbox">
 							<div class="checkbox__head">
 								<input type="radio" name="checkbox-1" id="checkbox-3">
 
@@ -117,17 +103,11 @@
 							</div><!-- /.checkbox__head -->
 
 							<div class="checkbox__body">
-								<div class="checkbox__price">
-									<img src="assets/images/svg/discount.svg" width="20" height="45" alt="discount" class="checkbox__discount">
-
-									<span>160₺</span>
-								</div><!-- /.checkbox__price -->
-
 								<span class="checkbox__size">M</span>
 							</div><!-- /.checkbox__body -->
 						</div><!-- /.checkbox -->
 
-						<div data-target="locations" class="js-skip checkbox">
+						<div data-target="rental" class="js-skip checkbox">
 							<div class="checkbox__head">
 								<input type="radio" name="checkbox-1" id="checkbox-4">
 
@@ -139,12 +119,6 @@
 							</div><!-- /.checkbox__head -->
 
 							<div class="checkbox__body">
-								<div class="checkbox__price">
-									<img src="assets/images/svg/discount.svg" width="20" height="45" alt="discount" class="checkbox__discount">
-
-									<span>200₺</span>
-								</div><!-- /.checkbox__price -->
-
 								<span class="checkbox__size">L</span>
 							</div><!-- /.checkbox__body -->
 						</div><!-- /.checkbox -->
@@ -161,18 +135,12 @@
 							</div><!-- /.checkbox__head -->
 
 							<div class="checkbox__body">
-								<div class="checkbox__price">
-									<img src="assets/images/svg/discount.svg" width="29" height="65" alt="discount" class="checkbox__discount">
-
-									<span>280₺</span>
-								</div><!-- /.checkbox__price -->
-
 								<span class="checkbox__size">XL</span>
 							</div><!-- /.checkbox__body -->
 						</div><!-- /.checkbox -->
 					</div><!-- /.checkboxes -->
 
-					<div class="section__select-area">
+					<div data-target-element="rental" class="section__select-area">
 						<h6>Select the <b>Duration</b> of the Rental</h6>
 
 						<div class="js-select-custom-price select-custom select-custom--price section__select-custom">
@@ -199,364 +167,6 @@
 				</div><!-- /.section__content -->
 			</div><!-- /.shell -->
 		</section><!-- /.section-cargo -->
-
-		<section data-target-element="locations" class="section-simple section-simple--adjust">
-			<div class="shell">
-				<div class="accordion accordion--adjust section__accordion">
-					<div class="accordion__section is-open">
-						<div class="accordion__body">
-							<div class="accordion__content">
-								<div class="accordion__inner">
-									<div class="accordion__col">
-										<div class="map">
-											<h4 class="level-2">Gönderici Otomatını Seçin</h4><!-- /.level-2 -->
-
-											<div class="js-select-custom select-custom section__select-custom">
-												<select data-image-target="target-1" id="example-1">
-													<optgroup label="United States - West Coast">
-														<option disabled selected></option>
-
-														<option value="ca-los-angeles">California - Los Angeles</option>
-
-														<option value="ca-san-francisco">California - San Francisco</option>
-
-														<option value="wa-seattle">Washington - Seattle</option>
-													</optgroup>
-
-													<optgroup label="United States - South">
-														<option value="tx-dallas">Texas - Dallas</option>
-
-														<option value="tx-houston">Texas - Houston</option>
-
-														<option value="fl-miami">Florida - Miami</option>
-													</optgroup>
-
-													<optgroup label="Canada - West">
-														<option value="bc-vancouver">British Columbia - Vancouver</option>
-
-														<option value="ab-calgary">Alberta - Calgary</option>
-
-														<option value="ab-edmonton">Alberta - Edmonton</option>
-													</optgroup>
-
-													<optgroup label="Canada - East">
-														<option value="on-toronto">Ontario - Toronto</option>
-
-														<option value="qc-montreal">Quebec - Montreal</option>
-
-														<option value="ns-halifax">Nova Scotia - Halifax</option>
-													</optgroup>
-												</select>
-											</div><!-- /.select-custom -->
-
-											<div class="js-accordion accordion accordion--hidden-desktop">
-												<div class="accordion__section">
-													<div class="accordion__head">
-														<h3 class="accordion__title">Harita için tıklayın</h3><!-- /.accordion__title -->
-													</div><!-- /.accordion__head -->
-
-													<div class="accordion__body">
-														<div class="accordion__content">
-															<figure class="map__image">
-																<img src="assets/images/temp/map-img1.jpg" alt="map" width="650" height="420">
-															</figure><!-- /.map__image -->
-														</div><!-- /.accordion__content -->
-													</div><!-- /.accordion__body -->
-												</div><!-- /.accordion__section -->
-											</div><!-- /.accordion -->
-
-											<div class="map__meta"><strong>LEF-01 7/24 açık</strong> Xyz Shop - Abc Street Qwe Cty ...
-												<img src="assets/images/svg/check-round.svg" alt="" width="40px" height="40px">
-											</div><!-- /.map__meta -->
-
-											<figure data-image="target-1" class="location-image-holder">
-												<img src="assets/images/temp/map-img1.jpg" alt="location" width="650" height="420">
-											</figure><!-- /.location-image-holder -->
-										</div><!-- /.map -->
-									</div><!-- /.accordion__col -->
-
-									<img src="assets/images/svg/arrow-dark.svg" alt="arrow" width="60" height="30">
-
-									<div class="accordion__col">
-										<div class="map">
-											<h4 class="level-2">Alıcı Otomatını Seçin</h4><!-- /.level-2 -->
-
-											<div class="js-select-custom select-custom section__select-custom">
-												<select data-image-target="target-2" id="example-3">
-													<optgroup label="United States - West Coast">
-														<option disabled selected></option>
-
-														<option value="ca-los-angeles">California - Los Angeles</option>
-
-														<option value="ca-san-francisco">California - San Francisco</option>
-
-														<option value="wa-seattle">Washington - Seattle</option>
-													</optgroup>
-
-													<optgroup label="United States - South">
-														<option value="tx-dallas">Texas - Dallas</option>
-
-														<option value="tx-houston">Texas - Houston</option>
-
-														<option value="fl-miami">Florida - Miami</option>
-													</optgroup>
-
-													<optgroup label="Canada - West">
-														<option value="bc-vancouver">British Columbia - Vancouver</option>
-
-														<option value="ab-calgary">Alberta - Calgary</option>
-
-														<option value="ab-edmonton">Alberta - Edmonton</option>
-													</optgroup>
-
-													<optgroup label="Canada - East">
-														<option value="on-toronto">Ontario - Toronto</option>
-
-														<option value="qc-montreal">Quebec - Montreal</option>
-
-														<option value="ns-halifax">Nova Scotia - Halifax</option>
-													</optgroup>
-												</select>
-											</div><!-- /.select-custom -->
-
-											<div class="js-accordion accordion accordion--hidden-desktop">
-												<div class="accordion__section">
-													<div class="accordion__head">
-														<h3 class="accordion__title">Harita için tıklayın</h3><!-- /.accordion__title -->
-													</div><!-- /.accordion__head -->
-
-													<div class="accordion__body">
-														<div class="accordion__content">
-															<figure class="map__image">
-																<img src="assets/images/temp/map-img1.jpg" alt="map" width="650" height="420">
-															</figure><!-- /.map__image -->
-														</div><!-- /.accordion__content -->
-													</div><!-- /.accordion__body -->
-												</div><!-- /.accordion__section -->
-											</div><!-- /.accordion -->
-
-											<div class="map__meta map__meta--red"><strong>LEF-01 7/24 açık</strong> Xyz Shop - Abc Street Qwe Cty ...
-												<img src="assets/images/svg/check-round.svg" alt="" width="40px" height="40px">
-											</div><!-- /.map__meta -->
-
-											<figure data-image="target-2" class="location-image-holder">
-												<img src="assets/images/temp/map-img1.jpg" alt="location" width="650" height="420">
-											</figure><!-- /.location-image-holder -->
-										</div><!-- /.map -->
-									</div><!-- /.accordion__col -->
-								</div><!-- /.accordion__inner -->
-							</div><!-- /.accordion__content -->
-						</div><!-- /.accordion__body -->
-					</div><!-- /.accordion__section -->
-				</div><!-- /.accordion -->
-
-				<div class="section__content">
-					<div class="js-form form section__form">
-						<form action="?" method="POST">
-							<div class="form__cols">
-								<div class="form__col">
-									<div class="form__content">
-										<div class="form__head">
-											<h4 class="level-2">Gönderici Bilgileri</h4><!-- /.level-2 -->
-
-											<p>*alanların doldurulması zorunludur</p>
-										</div><!-- /.form__head -->
-
-										<div class="form__body">
-											<div class="form__row">
-												<label for="name" class="form__label">İsim Soyisim <span>*</span></label><!-- /.form__label -->
-
-												<div class="form__controls">
-													<input data-validate="true" type="text" class="field" id="name" name="name" placeholder="Ad Soyad veya Şirket">
-
-													<img src="assets/images/svg/member.svg" alt="member" width="35" height="35">
-												</div><!-- /.form__controls -->
-											</div><!-- /.form__row -->
-
-											<div class="form__row">
-												<label for="phone" class="form__label">Cep Telefonu <span>*</span></label><!-- /.form__label -->
-
-												<div class="form__controls">
-													<input data-validate="true" type="text" class="js-phone-field field field--number" id="phone" name="phone" placeholder="50X-XXX-XX-XX">
-
-													<div class="js-custom-flags custom-flags form__custom-flags">
-														<select id="flags">
-															<option value="tr" data-flag="trnc" selected>TRNC +90</option>
-
-															<option value="bg" data-flag="bg">BG +359</option>
-
-															<option value="us" data-flag="us">USA +1</option>
-														</select>
-													</div><!-- /.js-custom-flags custom-flags -->
-												</div><!-- /.form__controls -->
-											</div><!-- /.form__row -->
-
-											<div class="form__row">
-												<label for="mail" class="form__label">E-posta <span>*</span></label><!-- /.form__label -->
-
-												<div class="form__controls">
-													<input data-validate="true" type="email" class="field" id="mail" name="mail" placeholder="E-posta adresini giriniz">
-
-													<img src="assets/images/svg/mail.svg" alt="member" width="35" height="35">
-
-												</div><!-- /.form__controls -->
-											</div><!-- /.form__row -->
-
-											<div class="form__row">
-												<label for="message" class="form__label">Not veya Verg Numarası</label><!-- /.form__label -->
-
-												<div class="form__controls">
-													 <div class="js-select select">
-														<select id="category" required>
-															<option value="" selected disabled hidden>Choose a Category</option>
-
-															<option value="documents">Documents</option>
-
-															<option value="home_appliance">Home Appliance</option>
-
-															<option value="other">Other (Please Specify)</option>
-														</select>
-
-														<input type="text" id="otherInput" class="field" placeholder="Please specify..." style="display: none; margin-top: 10px;" />
-													</div><!-- /.select -->
-
-													<img src="assets/images/svg/message.svg" alt="member" width="35" height="35">
-												</div><!-- /.form__controls -->
-											</div><!-- /.form__row -->
-
-											<div class="form__row">
-												<strong>Zaman Aralığı Seçin</strong>
-
-												<div class="radios">
-													<div class="radio">
-														<input type="radio" name="radio" id="radio-1" checked>
-
-														<label for="radio-1">
-															Fark <br> etmez
-														</label>
-													</div><!-- /.radio -->
-
-													<div class="radio">
-														<input type="radio" name="radio" id="radio-2">
-
-														<label for="radio-2">
-															<span>08:00</span>
-
-															<span>-</span>
-
-															<span>12:00</span>
-														</label>
-													</div><!-- /.radio -->
-
-													<div class="radio">
-														<input type="radio" name="radio" id="radio-3">
-
-														<label for="radio-3">
-															<span>13:00</span>
-
-															<span>-</span>
-
-															<span>18:00</span>
-														</label>
-													</div><!-- /.radio -->
-												</div><!-- /.radios -->
-											</div><!-- /.form__row -->
-										</div><!-- /.form__body -->
-									</div><!-- /.form__content -->
-								</div><!-- /.form__col -->
-
-								<div class="form__col-alt">
-									<img src="assets/images/svg/arrow-dark.svg" alt="arrow" width="60" height="30">
-								</div><!-- /.form__col-alt -->
-
-								<div class="form__col">
-									<div class="form__content">
-										<div class="form__head">
-											<h4 class="level-2">Alıcı Biligleri</h4><!-- /.level-2 -->
-
-											<p>*alanların doldurulması zorunludur</p>
-										</div><!-- /.form__head -->
-
-										<div class="form__body">
-											<div class="form__row">
-												<label for="name-2" class="form__label">İsim Soyisim <span>*</span></label><!-- /.form__label -->
-
-												<div class="form__controls">
-													<input data-validate="true" type="text" class="field" id="name-2" name="name-2" placeholder="Ad Soyad veya Şirket">
-
-													<img src="assets/images/svg/member.svg" alt="member" width="35" height="35">
-												</div><!-- /.form__controls -->
-											</div><!-- /.form__row -->
-
-											<div class="form__row">
-												<label for="phone2" class="form__label">Cep Telefonu <span>*</span></label><!-- /.form__label -->
-
-												<div class="form__controls">
-													<input data-validate="true" type="text" class="js-phone-field field field--number" id="phone2" name="phone" placeholder="50X-XXX-XX-XX">
-
-													<div class="js-custom-flags custom-flags form__custom-flags">
-														<select id="flags2">
-															<option value="tr" data-flag="trnc" selected>TRNC +90</option>
-
-															<option value="bg" data-flag="bg">BG +359</option>
-
-															<option value="us" data-flag="us">USA +1</option>
-														</select>
-													</div><!-- /.js-custom-flags custom-flags -->
-												</div><!-- /.form__controls -->
-											</div><!-- /.form__row -->
-
-
-											<div class="form__row">
-												<ul class="list-checkboxes">
-													<li>
-														<div class="checkbox-alt">
-															<input data-validate="true" type="checkbox" name="checkbox-alt" id="checkbox-alt-1" checked>
-
-															<label for="checkbox-alt-1">
-																<a href="#">Gizlilik Politikası</a>
-															</label>
-														</div><!-- /.checkbox-alt -->
-													</li>
-
-													<li>
-														<div class="checkbox-alt">
-															<input data-validate="true" type="checkbox" name="checkbox-alt" id="checkbox-alt-2" checked>
-
-															<label for="checkbox-alt-2">
-																<a href="#">Kullanıcı ile Breysel Sözleşme</a>
-															</label>
-														</div><!-- /.checkbox-alt -->
-													</li>
-
-													<li>
-														<div class="checkbox-alt checkbox-alt--yellow-background">
-															<input data-validate="true" type="checkbox" name="checkbox-alt" id="checkbox-alt-3">
-
-															<label for="checkbox-alt-3">
-																<a href="#">LOKASYONLARI ONAYLA</a>
-															</label>
-														</div><!-- /.checkbox-alt -->
-													</li>
-												</ul><!-- /.list-checkboxes -->
-											</div><!-- /.form__row -->
-										</div><!-- /.form__body -->
-
-										<div class="form__actions">
-											<button type="submit" class="form__btn">
-												<img src="assets/images/temp/card.png" alt="card" width="250" height="130">
-
-												<span>Ödeme Adımına <br> Geç</span>
-											</button>
-										</div><!-- /.form__actions -->
-									</div><!-- /.form__content -->
-								</div><!-- /.form__col -->
-							</div><!-- /.form__cols -->
-						</form>
-					</div><!-- /.js-form form section__form -->
-				</div><!-- /.section__content -->
-			</div><!-- /.shell -->
-		</section><!-- /.section-simple -->
 
 		<section data-target-element="locations" class="section-simple section-simple--adjust">
 			<div class="shell">
