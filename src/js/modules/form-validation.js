@@ -6,6 +6,11 @@ $('.js-form form').on('submit', function (event) {
 
 	$form.find('[data-validate]').each(function (index, el) {
 		const $this = $(el);
+
+		if (!$this.is(':visible')) {
+			return;
+		}
+
 		const type = $this[0].type;
 
 		if (type === 'checkbox') {

@@ -6,7 +6,7 @@ const $receiverCol = $('.form__col--receiver');
 // When "No" is selected, remove the class
 $noRadio.on('change', function () {
 	if ($(this).is(':checked')) {
-		$receiverCol.removeClass('is-active');
+		$receiverCol.removeClass('is-active').find('.is-error').removeClass('is-error');
 	}
 });
 
