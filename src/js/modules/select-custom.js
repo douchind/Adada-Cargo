@@ -62,6 +62,7 @@ handleCustomSelect($('.js-select-custom'));
 $('.js-select-custom select').on('change', function () {
 	const $this = $(this);
 	const imageTargetValue = $this.data('image-target');
+
 	const $imageTarget = $(`[data-image="${imageTargetValue}"]`);
 	const selectedValue = $(this).val();
 
