@@ -48,9 +48,12 @@
 
 	.checkbox__discount {
 		display: none;
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
 
 		@include breakpoint-down(mobile) {
-			width: 2.4rem;
+			width: 1.4rem;
 		}
 	}
 
@@ -61,22 +64,23 @@
 		font-size: 4rem;
 
 		@include breakpoint-down(mobile) {
-			font-size: 3rem;
+			font-size: 2.4rem;
 		}
 	}
 
 	.checkbox__image img {
 		@include breakpoint-down(mobile) {
-			width: 6rem;
+			width: 7rem;
 		}
 
 		@media screen and (max-width: 390px) {
-			width: 4rem;
+			width: 5rem;
 		}
 	}
 
 	&:has(input:checked) {
 		border-color: #3bb76f;
+		// border-color: rgb(240, 245, 235);
 
 		&:before {
 			display: block;
@@ -141,12 +145,10 @@
 	}
 
 	.checkbox__head {
-		@include breakpoint-down(small-desktop) {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		}
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.checkbox__price {

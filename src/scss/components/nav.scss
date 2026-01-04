@@ -108,15 +108,16 @@
 			right: -1.5rem;
 			top: -1.5rem;
 			bottom: -1.5rem;
-			background-color: #e14137;
-			-webkit-mask-image: url('/assets/images/svg/nav-decoration-red.svg');
-			mask-image: url('/assets/images/svg/nav-decoration-red.svg');
-			-webkit-mask-size: contain;
-			mask-size: contain;
-			-webkit-mask-repeat: no-repeat;
-			mask-repeat: no-repeat;
-			-webkit-mask-position: center;
-			mask-position: center;
+			background-color: #5e5e5f;
+			// -webkit-mask-image: url('/assets/images/svg/nav-decoration-red.svg');
+			// mask-image: url('/assets/images/svg/nav-decoration-red.svg');
+			// -webkit-mask-size: contain;
+			// mask-size: contain;
+			// -webkit-mask-repeat: no-repeat;
+			// mask-repeat: no-repeat;
+			// -webkit-mask-position: center;
+			// mask-position: center;
+			clip-path: polygon(7% 0, 92% 0, 100% 100%, 0% 100%);
 			z-index: -1;
 			opacity: 0;
 			transition: opacity 0.3s ease-in-out;
@@ -124,6 +125,7 @@
 			@include breakpoint-down(tablet) {
 				mask-image: none;
 				-webkit-mask-image: none;
+				clip-path: none;
 				top: 0;
 				left: 0;
 				right: 0;
@@ -141,89 +143,114 @@
 	}
 
 	> ul > li:nth-child(3) > a:before {
-		background-color: #f7aa1a;
-		-webkit-mask-image: url('/assets/images/svg/nav-decoration-yellow.svg');
-		mask-image: url('/assets/images/svg/nav-decoration-yellow.svg');
+		background-color: #e14137;
+		// -webkit-mask-image: url('/assets/images/svg/nav-decoration-yellow.svg');
+		// mask-image: url('/assets/images/svg/nav-decoration-yellow.svg');
+		clip-path: polygon(7% 0, 92% 0, 100% 100%, 0% 100%);
+		top: -0.5rem;
+		bottom: -0.5rem;
 
 		@include breakpoint-down(tablet) {
 			mask-image: none;
 			-webkit-mask-image: none;
+			clip-path: none;
 		}
 	}
 
 	> ul > li:nth-child(5) > a:before {
-		left: 0;
-		right: 0;
+		left: -1rem;
+		right: -1rem;
+		top: -0.5rem;
+		bottom: -0.5rem;
 		background-color: #1b9da1;
-		-webkit-mask-image: url('/assets/images/svg/nav-decoration-blue.svg');
-		mask-image: url('/assets/images/svg/nav-decoration-blue.svg');
+		clip-path: polygon(0 0, 100% 0, 89% 100%, 12% 100%);
+		// -webkit-mask-image: url('/assets/images/svg/nav-decoration-blue.svg');
+		// mask-image: url('/assets/images/svg/nav-decoration-blue.svg');
 
 		@include breakpoint-down(tablet) {
 			mask-image: none;
 			-webkit-mask-image: none;
+			clip-path: none;
 		}
 	}
 
 	> ul > li:nth-child(7) > a:before {
 		left: -0.9rem;
 		right: -0.9rem;
-		background-color: #e14137;
-		-webkit-mask-image: url('/assets/images/svg/nav-decoration-red2.svg');
-		mask-image: url('/assets/images/svg/nav-decoration-red2.svg');
+		top: -0.5rem;
+		bottom: -0.5rem;
+		background-color: #f7aa1a;
+		clip-path: polygon(3% 0, 94% 0, 100% 100%, 0 100%);
+		// -webkit-mask-image: url('/assets/images/svg/nav-decoration-red2.svg');
+		// mask-image: url('/assets/images/svg/nav-decoration-red2.svg');
 
 		@include breakpoint-down(tablet) {
 			mask-image: none;
 			-webkit-mask-image: none;
+			clip-path: none;
 		}
 	}
 
 	> ul > li:nth-child(9) > a:before {
 		left: -0.9rem;
 		right: -0.9rem;
-		background-color: #f7aa1a;
-		-webkit-mask-image: url('/assets/images/svg/nav-decoration-yellow2.svg');
-		mask-image: url('/assets/images/svg/nav-decoration-yellow2.svg');
+		top: -0.5rem;
+		bottom: -0.5rem;
+		clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 91%);
+		// -webkit-mask-image: url('/assets/images/svg/nav-decoration-yellow2.svg');
+		// mask-image: url('/assets/images/svg/nav-decoration-yellow2.svg');
 
 		@include breakpoint-down(tablet) {
 			mask-image: none;
 			-webkit-mask-image: none;
+			clip-path: none;
 		}
 	}
 
 	> ul > li:nth-child(11) > a:before {
-		left: 0;
-		right: 0;
-		background-color: #1b9da1;
-		-webkit-mask-image: url('/assets/images/svg/nav-decoration-blue2.svg');
-		mask-image: url('/assets/images/svg/nav-decoration-blue2.svg');
+		left: -1rem;
+		right: -1rem;
+		top: -0.5rem;
+		bottom: -0.5rem;
+		// background-color: #1b9da1;
+		clip-path: polygon(0 0, 100% 6%, 100% 94%, 9% 100%);
+		// -webkit-mask-image: url('/assets/images/svg/nav-decoration-blue2.svg');
+		// mask-image: url('/assets/images/svg/nav-decoration-blue2.svg');
 
 		@include breakpoint-down(tablet) {
 			mask-image: none;
 			-webkit-mask-image: none;
+			clip-path: none;
 		}
 	}
 
 	> ul > li:nth-child(13) > a:before {
-		background-color: #e14137;
-		-webkit-mask-image: url('/assets/images/svg/nav-decoration-red3.svg');
-		mask-image: url('/assets/images/svg/nav-decoration-red3.svg');
+		// background-color: #e14137;
+		top: -0.5rem;
+		bottom: -0.5rem;
+		clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 91%);
+		// -webkit-mask-image: url('/assets/images/svg/nav-decoration-red3.svg');
+		// mask-image: url('/assets/images/svg/nav-decoration-red3.svg');
 
 		@include breakpoint-down(tablet) {
 			mask-image: none;
 			-webkit-mask-image: none;
+			clip-path: none;
 		}
 	}
 
 	> ul > li:nth-child(15) > a:before {
-		left: 0;
-		right: 0;
-		background-color: #f7aa1a;
-		-webkit-mask-image: url('/assets/images/svg/nav-decoration-yellow3.svg');
-		mask-image: url('/assets/images/svg/nav-decoration-yellow3.svg');
+		top: -1rem;
+		bottom: -1rem;
+		// background-color: #f7aa1a;
+		clip-path: polygon(0 5%, 100% 0, 100% 98%, 0 93%);
+		// -webkit-mask-image: url('/assets/images/svg/nav-decoration-yellow3.svg');
+		// mask-image: url('/assets/images/svg/nav-decoration-yellow3.svg');
 
 		@include breakpoint-down(tablet) {
 			mask-image: none;
 			-webkit-mask-image: none;
+			clip-path: none;
 		}
 	}
 

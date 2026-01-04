@@ -33,6 +33,7 @@
 	.section__content h1 {
 		text-align: center;
 		letter-spacing: 0.05em;
+		font-family: var(--ff--now-alt);
 
 		@include breakpoint-down(mobile) {
 			margin-bottom: 1.6rem;
