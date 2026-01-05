@@ -1235,13 +1235,25 @@ blockquote:last-child {
 
 @media (max-width: 767px) {
   .checkbox .checkbox__image img {
-    width: 7rem;
+    width: 9rem;
   }
 }
 
 @media screen and (max-width: 390px) {
   .checkbox .checkbox__image img {
-    width: 5rem;
+    width: 8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .checkbox .checkbox__image--xs img {
+    width: 6.5rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .checkbox .checkbox__image--xs img {
+    width: 6rem;
   }
 }
 
@@ -3492,8 +3504,8 @@ blockquote:last-child {
   content: "";
   display: inline-block;
   position: absolute;
-  left: -1.5rem;
-  right: -1.5rem;
+  left: -3.5rem;
+  right: -3.5rem;
   top: -1.5rem;
   bottom: -1.5rem;
   background-color: #5e5e5f;
@@ -3541,12 +3553,12 @@ blockquote:last-child {
 }
 
 .nav > ul > li:nth-child(5) > a:before {
-  left: -1rem;
-  right: -1rem;
+  left: 0rem;
+  right: 0rem;
   top: -0.5rem;
   bottom: -0.5rem;
   background-color: #1b9da1;
-  clip-path: polygon(0 0, 100% 0, 89% 100%, 12% 100%);
+  clip-path: polygon(0 0, 100% 0, 94% 100%, 8% 100%);
 }
 
 @media (max-width: 1023px) {
@@ -3558,12 +3570,12 @@ blockquote:last-child {
 }
 
 .nav > ul > li:nth-child(7) > a:before {
-  left: -0.9rem;
-  right: -0.9rem;
-  top: -0.5rem;
-  bottom: -0.5rem;
+  left: -1.9rem;
+  right: -1.9rem;
+  top: -0.9rem;
+  bottom: -0.9rem;
   background-color: #f7aa1a;
-  clip-path: polygon(3% 0, 94% 0, 100% 100%, 0 100%);
+  clip-path: polygon(1% 0, 94% 0, 100% 100%, 0 100%);
 }
 
 @media (max-width: 1023px) {
@@ -3575,11 +3587,11 @@ blockquote:last-child {
 }
 
 .nav > ul > li:nth-child(9) > a:before {
-  left: -0.9rem;
-  right: -0.9rem;
-  top: -0.5rem;
-  bottom: -0.5rem;
-  clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 91%);
+  left: -1.9rem;
+  right: -1.9rem;
+  top: -1.3rem;
+  bottom: -1.3rem;
+  clip-path: polygon(5% 5%, 100% 0, 100% 100%, 0 95%);
 }
 
 @media (max-width: 1023px) {
@@ -3591,10 +3603,10 @@ blockquote:last-child {
 }
 
 .nav > ul > li:nth-child(11) > a:before {
-  left: -1rem;
-  right: -1rem;
-  top: -0.5rem;
-  bottom: -0.5rem;
+  left: -1.3rem;
+  right: -1.3rem;
+  top: -0.8rem;
+  bottom: -0.8rem;
   clip-path: polygon(0 0, 100% 6%, 100% 94%, 9% 100%);
 }
 
@@ -3607,8 +3619,10 @@ blockquote:last-child {
 }
 
 .nav > ul > li:nth-child(13) > a:before {
-  top: -0.5rem;
-  bottom: -0.5rem;
+  top: -1.2rem;
+  bottom: -1.2rem;
+  left: -1.3rem;
+  right: -1.3rem;
   clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 91%);
 }
 
@@ -3623,6 +3637,8 @@ blockquote:last-child {
 .nav > ul > li:nth-child(15) > a:before {
   top: -1rem;
   bottom: -1rem;
+  left: -1rem;
+  right: -1rem;
   clip-path: polygon(0 5%, 100% 0, 100% 98%, 0 93%);
 }
 
@@ -4227,16 +4243,6 @@ blockquote:last-child {
   }
 }
 
-.section-cargo .section__checkboxes {
-  margin-bottom: 4.8rem;
-}
-
-@media (max-width: 1023px) {
-  .section-cargo .section__checkboxes {
-    margin-bottom: 3rem;
-  }
-}
-
 @media (max-width: 1023px) {
   .section-cargo .section__entry {
     font-size: 1.8rem;
@@ -4250,6 +4256,7 @@ blockquote:last-child {
 }
 
 .section-cargo .section__select-area {
+  padding-top: 10rem;
   max-width: 52rem;
   margin: 0 auto;
 }
