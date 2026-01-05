@@ -40,14 +40,6 @@
 		}
 	}
 
-	.section__checkboxes {
-		margin-bottom: 4.8rem;
-
-		@include breakpoint-down(tablet) {
-			margin-bottom: 3rem;
-		}
-	}
-
 	.section__entry {
 		@include breakpoint-down(tablet) {
 			font-size: 1.8rem;
@@ -59,6 +51,7 @@
 	}
 
 	.section__select-area {
+		padding-top: 10rem;
 		max-width: 52rem;
 		margin: 0 auto;
 	}
