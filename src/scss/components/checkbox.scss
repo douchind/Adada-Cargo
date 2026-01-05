@@ -70,11 +70,21 @@
 
 	.checkbox__image img {
 		@include breakpoint-down(mobile) {
-			width: 7rem;
+			width: 9rem;
 		}
 
 		@media screen and (max-width: 390px) {
-			width: 5rem;
+			width: 8rem;
+		}
+	}
+
+	.checkbox__image--xs img {
+		@include breakpoint-down(mobile) {
+			width: 6.5rem;
+		}
+
+		@media screen and (max-width: 390px) {
+			width: 6rem;
 		}
 	}
 
