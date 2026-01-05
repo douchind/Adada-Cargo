@@ -104,19 +104,11 @@
 			content: '';
 			display: inline-block;
 			position: absolute;
-			left: -1.5rem;
-			right: -1.5rem;
+			left: -3.5rem;
+			right: -3.5rem;
 			top: -1.5rem;
 			bottom: -1.5rem;
 			background-color: #5e5e5f;
-			// -webkit-mask-image: url('/assets/images/svg/nav-decoration-red.svg');
-			// mask-image: url('/assets/images/svg/nav-decoration-red.svg');
-			// -webkit-mask-size: contain;
-			// mask-size: contain;
-			// -webkit-mask-repeat: no-repeat;
-			// mask-repeat: no-repeat;
-			// -webkit-mask-position: center;
-			// mask-position: center;
 			clip-path: polygon(7% 0, 92% 0, 100% 100%, 0% 100%);
 			z-index: -1;
 			opacity: 0;
@@ -144,8 +136,6 @@
 
 	> ul > li:nth-child(3) > a:before {
 		background-color: #e14137;
-		// -webkit-mask-image: url('/assets/images/svg/nav-decoration-yellow.svg');
-		// mask-image: url('/assets/images/svg/nav-decoration-yellow.svg');
 		clip-path: polygon(7% 0, 92% 0, 100% 100%, 0% 100%);
 		top: -0.5rem;
 		bottom: -0.5rem;
@@ -158,14 +148,12 @@
 	}
 
 	> ul > li:nth-child(5) > a:before {
-		left: -1rem;
-		right: -1rem;
+		left: 0rem;
+		right: 0rem;
 		top: -0.5rem;
 		bottom: -0.5rem;
 		background-color: #1b9da1;
-		clip-path: polygon(0 0, 100% 0, 89% 100%, 12% 100%);
-		// -webkit-mask-image: url('/assets/images/svg/nav-decoration-blue.svg');
-		// mask-image: url('/assets/images/svg/nav-decoration-blue.svg');
+		clip-path: polygon(0 0, 100% 0, 94% 100%, 8% 100%);
 
 		@include breakpoint-down(tablet) {
 			mask-image: none;
@@ -175,14 +163,12 @@
 	}
 
 	> ul > li:nth-child(7) > a:before {
-		left: -0.9rem;
-		right: -0.9rem;
-		top: -0.5rem;
-		bottom: -0.5rem;
+		left: -1.9rem;
+		right: -1.9rem;
+		top: -0.9rem;
+		bottom: -0.9rem;
 		background-color: #f7aa1a;
-		clip-path: polygon(3% 0, 94% 0, 100% 100%, 0 100%);
-		// -webkit-mask-image: url('/assets/images/svg/nav-decoration-red2.svg');
-		// mask-image: url('/assets/images/svg/nav-decoration-red2.svg');
+		clip-path: polygon(1% 0, 94% 0, 100% 100%, 0 100%);
 
 		@include breakpoint-down(tablet) {
 			mask-image: none;
@@ -192,13 +178,11 @@
 	}
 
 	> ul > li:nth-child(9) > a:before {
-		left: -0.9rem;
-		right: -0.9rem;
-		top: -0.5rem;
-		bottom: -0.5rem;
-		clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 91%);
-		// -webkit-mask-image: url('/assets/images/svg/nav-decoration-yellow2.svg');
-		// mask-image: url('/assets/images/svg/nav-decoration-yellow2.svg');
+		left: -1.9rem;
+		right: -1.9rem;
+		top: -1.3rem;
+		bottom: -1.3rem;
+		clip-path: polygon(5% 5%, 100% 0, 100% 100%, 0 95%);
 
 		@include breakpoint-down(tablet) {
 			mask-image: none;
@@ -208,14 +192,11 @@
 	}
 
 	> ul > li:nth-child(11) > a:before {
-		left: -1rem;
-		right: -1rem;
-		top: -0.5rem;
-		bottom: -0.5rem;
-		// background-color: #1b9da1;
+		left: -1.3rem;
+		right: -1.3rem;
+		top: -0.8rem;
+		bottom: -0.8rem;
 		clip-path: polygon(0 0, 100% 6%, 100% 94%, 9% 100%);
-		// -webkit-mask-image: url('/assets/images/svg/nav-decoration-blue2.svg');
-		// mask-image: url('/assets/images/svg/nav-decoration-blue2.svg');
 
 		@include breakpoint-down(tablet) {
 			mask-image: none;
@@ -225,12 +206,11 @@
 	}
 
 	> ul > li:nth-child(13) > a:before {
-		// background-color: #e14137;
-		top: -0.5rem;
-		bottom: -0.5rem;
+		top: -1.2rem;
+		bottom: -1.2rem;
+		left: -1.3rem;
+		right: -1.3rem;
 		clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 91%);
-		// -webkit-mask-image: url('/assets/images/svg/nav-decoration-red3.svg');
-		// mask-image: url('/assets/images/svg/nav-decoration-red3.svg');
 
 		@include breakpoint-down(tablet) {
 			mask-image: none;
@@ -242,10 +222,9 @@
 	> ul > li:nth-child(15) > a:before {
 		top: -1rem;
 		bottom: -1rem;
-		// background-color: #f7aa1a;
+		left: -1rem;
+		right: -1rem;
 		clip-path: polygon(0 5%, 100% 0, 100% 98%, 0 93%);
-		// -webkit-mask-image: url('/assets/images/svg/nav-decoration-yellow3.svg');
-		// mask-image: url('/assets/images/svg/nav-decoration-yellow3.svg');
 
 		@include breakpoint-down(tablet) {
 			mask-image: none;
